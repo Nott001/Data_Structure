@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Activity1.cs
+namespace Lesson1
 {
     public partial class Activity1 : Form
     {

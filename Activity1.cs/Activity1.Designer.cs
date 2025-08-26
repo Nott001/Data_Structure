@@ -1,4 +1,4 @@
-﻿namespace Activity1.cs
+﻿namespace Lesson1
 {
     partial class Activity1
     {
