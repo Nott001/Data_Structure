@@ -90,7 +90,6 @@
             this.radioButton_bundleB.Name = "radioButton_bundleB";
             this.radioButton_bundleB.Size = new System.Drawing.Size(106, 19);
             this.radioButton_bundleB.TabIndex = 31;
-            this.radioButton_bundleB.TabStop = true;
             this.radioButton_bundleB.Text = "Food Bundle B";
             this.radioButton_bundleB.UseVisualStyleBackColor = true;
             this.radioButton_bundleB.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
@@ -103,7 +102,6 @@
             this.radioButton_bundleA.Name = "radioButton_bundleA";
             this.radioButton_bundleA.Size = new System.Drawing.Size(105, 19);
             this.radioButton_bundleA.TabIndex = 30;
-            this.radioButton_bundleA.TabStop = true;
             this.radioButton_bundleA.Text = "Food Bundle A";
             this.radioButton_bundleA.UseVisualStyleBackColor = true;
             this.radioButton_bundleA.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);

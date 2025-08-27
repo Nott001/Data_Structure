@@ -51,7 +51,7 @@ namespace Lesson1
         {
             // Code for changing the form background
             this.BackColor = Color.LightBlue;
-            // Code for food bundle B to not be selected
+            // Code for food bundle A to not be selected
             radioButton_bundleA.Checked = false;
             // Inserting image inside the picture box
             pictureBox1.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\carbonara.jpg");
