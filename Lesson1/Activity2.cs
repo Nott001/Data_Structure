@@ -23,6 +23,7 @@ namespace Lesson1
             discount_totaltxtbox.Enabled = false;
             discounted_totaltxtbox.Enabled = false;
             changetxtbox.Enabled = false;
+            discounttxtbox.Enabled = false;
 
             // Codes for inserting picture or image inside the picturebox tool
             pictureBox1.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\jollibee_sausage_pancake.jpg");
@@ -264,7 +265,7 @@ namespace Lesson1
             double price, discount_amt, discounted_amt;
             //Convert string data from textboxes to numeric and place it as value of the variable
             qty = Convert.ToInt32(qty_box.Text);
-            price = Convert.ToInt32(pricetextbox.Text);
+            price = Convert.ToDouble(pricetextbox.Text);
             //Create a formula needed for computation
             discount_amt = (qty * price) * 0.30;
             discounted_amt = (qty * price) - discount_amt;
@@ -285,7 +286,7 @@ namespace Lesson1
             double price, discount_amt, discounted_amt;
             //Convert string data from textboxes to numeric and place it as value of the variable
             qty = Convert.ToInt32(qty_box.Text);
-            price = Convert.ToInt32(pricetextbox.Text);
+            price = Convert.ToDouble(pricetextbox.Text);
             //Create a formula needed for computation
             discount_amt = (qty * price) * 0.10;
             discounted_amt = (qty * price) - discount_amt;
@@ -305,7 +306,7 @@ namespace Lesson1
             double price, discount_amt, discounted_amt;
             //Convert string data from textboxes to numeric and place it as value of the variable
             qty = Convert.ToInt32(qty_box.Text);
-            price = Convert.ToInt32(pricetextbox.Text);
+            price = Convert.ToDouble(pricetextbox.Text);
             //Create a formula needed for computation
             discount_amt = (qty * price) * 0.15;
             discounted_amt = (qty * price) - discount_amt;
@@ -325,7 +326,7 @@ namespace Lesson1
             double price, discount_amt, discounted_amt;
             //Convert string data from textboxes to numeric and place it as value of the variable
             qty = Convert.ToInt32(qty_box.Text);
-            price = Convert.ToInt32(pricetextbox.Text);
+            price = Convert.ToDouble(pricetextbox.Text);
             //Create a formula needed for computation
             discount_amt = (qty * price) * 0.00;
             discounted_amt = (qty * price) - discount_amt;
