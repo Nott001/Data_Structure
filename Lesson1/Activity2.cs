@@ -23,6 +23,7 @@ namespace Lesson1
             discount_totaltxtbox.Enabled = false;
             discounted_totaltxtbox.Enabled = false;
             changetxtbox.Enabled = false;
+            discounttxtbox.Enabled = false;
 
             // Codes for inserting picture or image inside the picturebox tool
             pictureBox1.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\jollibee_sausage_pancake.jpg");
