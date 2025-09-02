@@ -13,7 +13,7 @@ namespace Lesson2
 
         private void Activity_Load(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\Default_pfp.jpg");
+       
 
             //Code for manually adding each program into the combobox
             comboBox1.Items.Add("Bachelor of Science in Civil Engineering");
@@ -56,7 +56,7 @@ namespace Lesson2
                     ((ComboBox)ctrl).SelectedIndex = -1;
             }
             // Code for clearing the picturebox as well
-            pictureBox1.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\Default_pfp.jpg");
+   
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -70,26 +70,9 @@ namespace Lesson2
             listBox6.Items.Add(textBox18.Text);
             listBox7.Items.Add(textBox12.Text);
             listBox8.Items.Add(textBox13.Text);
-        }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
 
-        private void listBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

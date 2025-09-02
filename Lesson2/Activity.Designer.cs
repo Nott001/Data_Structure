@@ -70,7 +70,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -107,6 +106,7 @@
             this.listBox6 = new System.Windows.Forms.ListBox();
             this.listBox7 = new System.Windows.Forms.ListBox();
             this.listBox8 = new System.Windows.Forms.ListBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,7 +118,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -524,14 +523,6 @@
             this.textBox4.Size = new System.Drawing.Size(314, 23);
             this.textBox4.TabIndex = 43;
             // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(333, 135);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(314, 23);
-            this.textBox5.TabIndex = 44;
-            // 
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -767,7 +758,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(314, 24);
             this.comboBox1.TabIndex = 136;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // listBox1
             // 
@@ -776,7 +766,6 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(28, 160);
             this.listBox1.TabIndex = 137;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox2
             // 
@@ -801,7 +790,6 @@
             this.listBox4.Name = "listBox4";
             this.listBox4.Size = new System.Drawing.Size(81, 160);
             this.listBox4.TabIndex = 140;
-            this.listBox4.SelectedIndexChanged += new System.EventHandler(this.listBox4_SelectedIndexChanged);
             // 
             // listBox5
             // 
@@ -835,11 +823,19 @@
             this.listBox8.Size = new System.Drawing.Size(89, 160);
             this.listBox8.TabIndex = 144;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(333, 138);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(314, 20);
+            this.dateTimePicker1.TabIndex = 145;
+            // 
             // Activity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 947);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.listBox8);
             this.Controls.Add(this.listBox7);
             this.Controls.Add(this.listBox6);
@@ -876,7 +872,6 @@
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -972,7 +967,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
@@ -1009,6 +1003,7 @@
         private System.Windows.Forms.ListBox listBox6;
         private System.Windows.Forms.ListBox listBox7;
         private System.Windows.Forms.ListBox listBox8;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 

@@ -186,6 +186,30 @@ namespace Lesson1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Declaration of the variables with data types
+            int qty;
+            double discount_amt, discounted_amt, cash_rendered, change;
+            double qty_total = 0;
+            double discount_totalgiven = 0;
+            double discounted_total = 0;    
+
+            qty = Convert.ToInt32(qty_box.Text);
+            discount_amt = Convert.ToDouble(discounttxtbox.Text);
+            discounted_amt = Convert.ToDouble(discountedtxtbox.Text);
+            cash_rendered = Convert.ToDouble(cashrenderedtxtbox.Text);
+
+            //Codes to accumulate the total quantity, total discount, and total discounted amount from one transaction to another
+            qty_total += qty;
+            discount_totalgiven += discount_amt;
+            discounted_total += discounted_amt;
+            change = cash_rendered - discounted_amt;
+
+            //Convert string data from textboxes to numeric and place it as value of the variable
+            qty_totaltxtbox.Text = qty_total.ToString();
+            discount_totaltxtbox.Text = discount_totalgiven.ToString("n");
+            discounted_totaltxtbox.Text = discounted_total.ToString("n");
+            changetxtbox.Text = change.ToString("n");
+            cashrenderedtxtbox.Text = cash_rendered.ToString("n");
 
         }
 
@@ -231,6 +255,105 @@ namespace Lesson1
         private void textBox9_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            //Declaration of the variables within a method of an object
+            int qty;
+            double price, discount_amt, discounted_amt;
+            //Convert string data from textboxes to numeric and place it as value of the variable
+            qty = Convert.ToInt32(qty_box.Text);
+            price = Convert.ToInt32(pricetextbox.Text);
+            //Create a formula needed for computation
+            discount_amt = (qty * price) * 0.30;
+            discounted_amt = (qty * price) - discount_amt;
+            //Converting numeric data to string and display it inside the textboxes
+            discounttxtbox.Text = discount_amt.ToString("n");
+            discountedtxtbox.Text = discounted_amt.ToString("n");
+            //Codes for unchecking the other radio buttons in the interface once the senior citizen method is executed
+            regularRbtn.Checked = false;
+            employeeRbtn.Checked = false;   
+            notaxRbtn.Checked = false;  
+
+        }
+
+        private void regularRbtn_CheckedChanged(object sender, EventArgs e)
+        {
+            //Declaration of the variables within a method of an object
+            int qty;
+            double price, discount_amt, discounted_amt;
+            //Convert string data from textboxes to numeric and place it as value of the variable
+            qty = Convert.ToInt32(qty_box.Text);
+            price = Convert.ToInt32(pricetextbox.Text);
+            //Create a formula needed for computation
+            discount_amt = (qty * price) * 0.10;
+            discounted_amt = (qty * price) - discount_amt;
+            //Converting numeric data to string and display it inside the textboxes
+            discounttxtbox.Text = discount_amt.ToString("n");
+            discountedtxtbox.Text = discounted_amt.ToString("n");
+            //Codes for unchecking the other radio buttons in the interface once the regular method is executed
+            seniorRbtn.Checked = false;
+            employeeRbtn.Checked = false;
+            notaxRbtn.Checked = false;
+        }
+
+        private void employeeRbtn_CheckedChanged(object sender, EventArgs e)
+        {
+            //Declaration of the variables within a method of an object
+            int qty;
+            double price, discount_amt, discounted_amt;
+            //Convert string data from textboxes to numeric and place it as value of the variable
+            qty = Convert.ToInt32(qty_box.Text);
+            price = Convert.ToInt32(pricetextbox.Text);
+            //Create a formula needed for computation
+            discount_amt = (qty * price) * 0.15;
+            discounted_amt = (qty * price) - discount_amt;
+            //Converting numeric data to string and display it inside the textboxes
+            discounttxtbox.Text = discount_amt.ToString("n");
+            discountedtxtbox.Text = discounted_amt.ToString("n");
+            //Codes for unchecking the other radio buttons in the interface 
+            seniorRbtn.Checked = false;
+            regularRbtn.Checked = false;
+            notaxRbtn.Checked = false;
+        }
+
+        private void notaxRbtn_CheckedChanged(object sender, EventArgs e)
+        {
+            //Declaration of the variables within a method of an object
+            int qty;
+            double price, discount_amt, discounted_amt;
+            //Convert string data from textboxes to numeric and place it as value of the variable
+            qty = Convert.ToInt32(qty_box.Text);
+            price = Convert.ToInt32(pricetextbox.Text);
+            //Create a formula needed for computation
+            discount_amt = (qty * price) * 0.00;
+            discounted_amt = (qty * price) - discount_amt;
+            //Converting numeric data to string and display it inside the textboxes
+            discounttxtbox.Text = discount_amt.ToString("n");
+            discountedtxtbox.Text = discounted_amt.ToString("n");
+            //Codes for unchecking the other radio buttons in the interface 
+            seniorRbtn.Checked = false;
+            regularRbtn.Checked = false;
+            employeeRbtn.Checked = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Code for closing the form application once the button clicked
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Codes fro clearing specific pointed textboxes
+            itemnametxtbox.Clear();
+            pricetextbox.Clear();
+            qty_box.Clear();
+            discountedtxtbox.Clear();
+            discounttxtbox.Clear();
+            changetxtbox.Clear();
+            cashrenderedtxtbox.Clear();
         }
     }
 }
