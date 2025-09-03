@@ -23,6 +23,7 @@ namespace Lesson2
             comboBox1.Items.Add("Bachelor of Science in Computer Engineering");
             comboBox1.Items.Add("Bachelor of Science in Industrial Engineering");
             comboBox1.Items.Add("Bachelor of Science in Aeronautical Engineering");
+
         }
 
         private void browse_button_Click(object sender, EventArgs e)
@@ -71,8 +72,19 @@ namespace Lesson2
             listBox7.Items.Add(textBox12.Text);
             listBox8.Items.Add(textBox13.Text);
 
+            total_num_units_box2.Text = total_num_units_box1.Text;
+            lab_fee_box2.Text = lab_fee_box1.Text;
+            total_tuition_box2.Text = total_tuition_box1.Text;
+            total_misc_box2.Text = total_misc_box1.Text;
+            cisco_box2.Text = cisco_box1.Text;
+            booklet_box2.Text = booklet_box1.Text;
+            total_fee_box2.Text = total_fee_box1.Text;
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

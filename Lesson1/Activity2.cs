@@ -14,7 +14,7 @@ namespace Lesson1
 
         private void Activity2_Load(object sender, EventArgs e)
         {
-            // Disable textboxes for item details and totals.
+            // Disable textboxes for item details and totals.C:\Users\karlr\Source\Repos\Data_Structure\Lesson1\pictures\jollibee_sausage_pancake.jpg
             itemnametxtbox.Enabled = false;
             pricetextbox.Enabled = false;
             discountedtxtbox.Enabled = false;
@@ -26,26 +26,26 @@ namespace Lesson1
             discounttxtbox.Enabled = false;
 
             // Codes for inserting picture or image inside the picturebox tool
-            pictureBox1.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\jollibee_sausage_pancake.jpg");
-            pictureBox2.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\Corned-Beef-With-Drink.png");
-            pictureBox3.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\pandesal egg.jpg");
-            pictureBox4.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\1-pc.-Chickenjoy-With-Coke-Float.png");
-            pictureBox5.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\1 meal.jpg");
-            pictureBox6.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\double meal.jpg");
-            pictureBox7.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\two meal.jpg");
-            pictureBox8.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\spag_chicken.jpg");
-            pictureBox9.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\Jollibee-Crispy-Flavored-Fries.jpg");
-            pictureBox10.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\1 bucket 2 sundae.jpg");
-            pictureBox11.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\jabee_spag.jpg");
-            pictureBox12.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\jolli_shake.jpg");
-            pictureBox13.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\burger large.jpg");
-            pictureBox14.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\family double bucket.png");
-            pictureBox15.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\kfc_double_bucket.jpg");
-            pictureBox16.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\kfc_chick_strips.jpg");
-            pictureBox17.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\kfc_chaofun.jpg");
-            pictureBox18.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\chicken_burger.jpg");
-            pictureBox19.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\kfc_combo.jpg");
-            pictureBox20.Image = Image.FromFile("C:\\Users\\karlr\\OneDrive\\Documents\\GitHub\\Data_Structure\\pictures\\kfc_meal.jpg");
+            pictureBox1.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\jollibee_sausage_pancake.jpg");
+            pictureBox2.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\Corned-Beef-With-Drink.png");
+            pictureBox3.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\pandesal egg.jpg");
+            pictureBox4.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\1-pc.-Chickenjoy-With-Coke-Float.png");
+            pictureBox5.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\1 meal.jpg");
+            pictureBox6.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\double meal.jpg");
+            pictureBox7.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\two meal.jpg");
+            pictureBox8.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\spag_chicken.jpg");
+            pictureBox9.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\Jollibee-Crispy-Flavored-Fries.jpg");
+            pictureBox10.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\1 bucket 2 sundae.jpg");
+            pictureBox11.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\jabee_spag.jpg");
+            pictureBox12.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\jolli_shake.jpg");
+            pictureBox13.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\burger large.jpg");
+            pictureBox14.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\family double bucket.png");
+            pictureBox15.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_double_bucket.jpg");
+            pictureBox16.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_chick_strips.jpg");
+            pictureBox17.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_chaofun.jpg");
+            pictureBox18.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\chicken_burger.jpg");
+            pictureBox19.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_combo.jpg");
+            pictureBox20.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_meal.jpg");
 
             // Codes for inserting picture or image inside the picturebox tool
             name1lbl.Text = "Combo Meal A";
@@ -170,21 +170,6 @@ namespace Lesson1
             pricetextbox.Text = "599.99";
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             //Declaration of the variables with data types
@@ -211,50 +196,6 @@ namespace Lesson1
             discounted_totaltxtbox.Text = discounted_total.ToString("n");
             changetxtbox.Text = change.ToString("n");
             cashrenderedtxtbox.Text = cash_rendered.ToString("n");
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void itemnametxtbox_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void qty_box_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pricetextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void discountedtxtbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
 
         }
 

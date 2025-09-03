@@ -374,7 +374,6 @@
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Items DIsplay";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // name20lbl
             // 
@@ -575,7 +574,6 @@
             this.name1lbl.Size = new System.Drawing.Size(88, 13);
             this.name1lbl.TabIndex = 1;
             this.name1lbl.Text = "Name of the Item";
-            this.name1lbl.Click += new System.EventHandler(this.label12_Click);
             // 
             // groupBox2
             // 
@@ -604,7 +602,6 @@
             this.groupBox2.Size = new System.Drawing.Size(542, 168);
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // button4
             // 
@@ -655,7 +652,6 @@
             this.discountedtxtbox.Name = "discountedtxtbox";
             this.discountedtxtbox.Size = new System.Drawing.Size(100, 20);
             this.discountedtxtbox.TabIndex = 9;
-            this.discountedtxtbox.TextChanged += new System.EventHandler(this.discountedtxtbox_TextChanged);
             // 
             // discounttxtbox
             // 
@@ -663,7 +659,6 @@
             this.discounttxtbox.Name = "discounttxtbox";
             this.discounttxtbox.Size = new System.Drawing.Size(100, 20);
             this.discounttxtbox.TabIndex = 8;
-            this.discounttxtbox.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // pricetextbox
             // 
@@ -671,7 +666,6 @@
             this.pricetextbox.Name = "pricetextbox";
             this.pricetextbox.Size = new System.Drawing.Size(100, 20);
             this.pricetextbox.TabIndex = 7;
-            this.pricetextbox.TextChanged += new System.EventHandler(this.pricetextbox_TextChanged);
             // 
             // qty_box
             // 
@@ -679,7 +673,6 @@
             this.qty_box.Name = "qty_box";
             this.qty_box.Size = new System.Drawing.Size(100, 20);
             this.qty_box.TabIndex = 6;
-            this.qty_box.TextChanged += new System.EventHandler(this.qty_box_TextChanged);
             // 
             // itemnametxtbox
             // 
@@ -687,7 +680,6 @@
             this.itemnametxtbox.Name = "itemnametxtbox";
             this.itemnametxtbox.Size = new System.Drawing.Size(337, 20);
             this.itemnametxtbox.TabIndex = 5;
-            this.itemnametxtbox.TextChanged += new System.EventHandler(this.itemnametxtbox_TextChanged);
             // 
             // label6
             // 
@@ -738,7 +730,6 @@
             this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Name of the Item";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // groupBox3
             // 
@@ -830,7 +821,6 @@
             this.changetxtbox.Name = "changetxtbox";
             this.changetxtbox.Size = new System.Drawing.Size(253, 53);
             this.changetxtbox.TabIndex = 11;
-            this.changetxtbox.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // cashrenderedtxtbox
             // 
@@ -839,7 +829,6 @@
             this.cashrenderedtxtbox.Name = "cashrenderedtxtbox";
             this.cashrenderedtxtbox.Size = new System.Drawing.Size(253, 53);
             this.cashrenderedtxtbox.TabIndex = 10;
-            this.cashrenderedtxtbox.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // label11
             // 
@@ -873,7 +862,6 @@
             this.label1.Size = new System.Drawing.Size(383, 25);
             this.label1.TabIndex = 24;
             this.label1.Text = "JABEE FOODS INC. POINT OF SALE";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button5
             // 
