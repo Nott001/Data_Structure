@@ -232,7 +232,6 @@
             this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 15;
             this.label1.Text = "Item Name:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -242,7 +241,6 @@
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 16;
             this.label2.Text = "Price:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // itemnameTxtbox
             // 

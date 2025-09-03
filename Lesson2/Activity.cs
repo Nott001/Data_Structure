@@ -53,11 +53,14 @@ namespace Lesson2
             {
                 if (ctrl is TextBox)
                     ((TextBox)ctrl).Clear();
+                else if (ctrl is ListBox)
+                    ((ListBox)ctrl).Items.Clear();
                 else if (ctrl is ComboBox)
-                    ((ComboBox)ctrl).SelectedIndex = -1;
+                    ((ComboBox)ctrl).Items.RemoveAt(comboBox1.SelectedIndex);
+
             }
             // Code for clearing the picturebox as well
-   
+  
         }
 
         private void button2_Click(object sender, EventArgs e)
