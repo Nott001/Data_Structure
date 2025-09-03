@@ -26,26 +26,26 @@ namespace Lesson1
             discounttxtbox.Enabled = false;
 
             // Codes for inserting picture or image inside the picturebox tool
-            pictureBox1.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\jollibee_sausage_pancake.jpg");
-            pictureBox2.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\Corned-Beef-With-Drink.png");
-            pictureBox3.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\pandesal egg.jpg");
-            pictureBox4.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\1-pc.-Chickenjoy-With-Coke-Float.png");
-            pictureBox5.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\1 meal.jpg");
-            pictureBox6.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\double meal.jpg");
-            pictureBox7.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\two meal.jpg");
-            pictureBox8.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\spag_chicken.jpg");
-            pictureBox9.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\Jollibee-Crispy-Flavored-Fries.jpg");
-            pictureBox10.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\1 bucket 2 sundae.jpg");
-            pictureBox11.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\jabee_spag.jpg");
-            pictureBox12.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\jolli_shake.jpg");
-            pictureBox13.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\burger large.jpg");
-            pictureBox14.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\family double bucket.png");
-            pictureBox15.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_double_bucket.jpg");
-            pictureBox16.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_chick_strips.jpg");
-            pictureBox17.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_chaofun.jpg");
-            pictureBox18.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\chicken_burger.jpg");
-            pictureBox19.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_combo.jpg");
-            pictureBox20.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_meal.jpg");
+            pictureBox1.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\jollibee_sausage_pancake.jpg");
+            pictureBox2.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\Corned-Beef-With-Drink.png");
+            pictureBox3.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\pandesal egg.jpg");
+            pictureBox4.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\1-pc.-Chickenjoy-With-Coke-Float.png");
+            pictureBox5.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\1 meal.jpg");
+            pictureBox6.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\double meal.jpg");
+            pictureBox7.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\two meal.jpg");
+            pictureBox8.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\spag_chicken.jpg");
+            pictureBox9.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\Jollibee-Crispy-Flavored-Fries.jpg");
+            pictureBox10.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\1 bucket 2 sundae.jpg");
+            pictureBox11.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\jabee_spag.jpg");
+            pictureBox12.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\jolli_shake.jpg");
+            pictureBox13.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\burger large.jpg");
+            pictureBox14.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\family double bucket.png");
+            pictureBox15.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_double_bucket.jpg");
+            pictureBox16.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_chick_strips.jpg");
+            pictureBox17.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_chaofun.jpg");
+            pictureBox18.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\chicken_burger.jpg");
+            pictureBox19.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_combo.jpg");
+            pictureBox20.Image = Image.FromFile("C:\\Users\\C203-29\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\kfc_meal.jpg");
 
             // Codes for inserting picture or image inside the picturebox tool
             name1lbl.Text = "Combo Meal A";
@@ -57,7 +57,7 @@ namespace Lesson1
             name7lbl.Text = "Group Meal B";
             name8lbl.Text = "Chicken Spag Meal A";
             name9lbl.Text = "Twin Fries";
-            name10lbl.Text = "Family Meal Meal A";
+            name10lbl.Text = "Family Meal A";
             name11lbl.Text = "Spag Meal 1";
             name12lbl.Text = "Jolly Shake";
             name13lbl.Text = "KFC Burger Combo Meal 1";
@@ -73,101 +73,121 @@ namespace Lesson1
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "95.00";
+            itemnametxtbox.Text = "Combo Meal A";
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "110.30";
+            itemnametxtbox.Text = "Breakfast Meal 1";
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "121.30";
+            itemnametxtbox.Text = "Breakfast Meal 2";
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "130.00";
+            itemnametxtbox.Text = "Chicken Meal A";
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "165.45";
+            itemnametxtbox.Text = "Combo Meal B";
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "280.00";
+            itemnametxtbox.Text = "Group Meal A";
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "280.00";
+            itemnametxtbox.Text = "Group Meal B";
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "190.00";
+            itemnametxtbox.Text = "Chicken Spag Meal A";
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "110.60";
+            itemnametxtbox.Text = "Twin Fries";
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "495.90";
+            itemnametxtbox.Text = "Family Meal A";
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "99.99";
+            itemnametxtbox.Text = "Spag Meal 1";
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "45.00";
+            itemnametxtbox.Text = "Jolly Shake";
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "365.50";
+            itemnametxtbox.Text = "KFC Burger Combo Meal 1";
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "465.50";
+            itemnametxtbox.Text = "Chicken Group Meal";
         }
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "767.50";
+            itemnametxtbox.Text = "KFC Family Meal A";
         }
 
         private void pictureBox16_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "230.30";
+            itemnametxtbox.Text = "KFC Chicken Strips Meal";
         }
 
         private void pictureBox17_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "85.00";
+            itemnametxtbox.Text = "KFC Chaofun Meal";
         }
 
         private void pictureBox18_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "285.60";
+            itemnametxtbox.Text = "Burger and Chicken Meal C";
         }
 
         private void pictureBox19_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "185.60";
+            itemnametxtbox.Text = "KFC Combo Meal A";
         }
 
         private void pictureBox20_Click(object sender, EventArgs e)
         {
             pricetextbox.Text = "599.99";
+            itemnametxtbox.Text = "KFC Family Meal B";
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -71,32 +71,32 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.unit_lab_box = new System.Windows.Forms.TextBox();
+            this.unit_lecture_box = new System.Windows.Forms.TextBox();
+            this.course_desc_box = new System.Windows.Forms.TextBox();
+            this.course_code_box = new System.Windows.Forms.TextBox();
+            this.course_num_box = new System.Windows.Forms.TextBox();
+            this.time_box = new System.Windows.Forms.TextBox();
+            this.day_box = new System.Windows.Forms.TextBox();
             this.total_misc_box1 = new System.Windows.Forms.TextBox();
             this.total_tuition_box1 = new System.Windows.Forms.TextBox();
             this.lab_fee_box1 = new System.Windows.Forms.TextBox();
             this.total_num_units_box1 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.credit_units_box = new System.Windows.Forms.TextBox();
             this.cisco_box1 = new System.Windows.Forms.TextBox();
             this.booklet_box1 = new System.Windows.Forms.TextBox();
             this.total_fee_box1 = new System.Windows.Forms.TextBox();
             this.total_tuition_box2 = new System.Windows.Forms.TextBox();
             this.total_misc_box2 = new System.Windows.Forms.TextBox();
-            this.lab_fee_box2 = new System.Windows.Forms.TextBox();
+            this.comp_lab_fee_box2 = new System.Windows.Forms.TextBox();
             this.cisco_box2 = new System.Windows.Forms.TextBox();
             this.booklet_box2 = new System.Windows.Forms.TextBox();
             this.textBox91 = new System.Windows.Forms.TextBox();
             this.total_num_units_box2 = new System.Windows.Forms.TextBox();
             this.total_fee_box2 = new System.Windows.Forms.TextBox();
             this.browse_button = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.submit_button = new System.Windows.Forms.Button();
+            this.new_button = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
@@ -107,6 +107,7 @@
             this.listBox7 = new System.Windows.Forms.ListBox();
             this.listBox8 = new System.Windows.Forms.ListBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.calculate_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -532,61 +533,61 @@
             this.textBox6.Size = new System.Drawing.Size(314, 23);
             this.textBox6.TabIndex = 45;
             // 
-            // textBox7
+            // unit_lab_box
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(125, 383);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(229, 23);
-            this.textBox7.TabIndex = 46;
+            this.unit_lab_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unit_lab_box.Location = new System.Drawing.Point(125, 383);
+            this.unit_lab_box.Name = "unit_lab_box";
+            this.unit_lab_box.Size = new System.Drawing.Size(229, 23);
+            this.unit_lab_box.TabIndex = 46;
             // 
-            // textBox8
+            // unit_lecture_box
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(125, 352);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(229, 23);
-            this.textBox8.TabIndex = 47;
+            this.unit_lecture_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unit_lecture_box.Location = new System.Drawing.Point(125, 352);
+            this.unit_lecture_box.Name = "unit_lecture_box";
+            this.unit_lecture_box.Size = new System.Drawing.Size(229, 23);
+            this.unit_lecture_box.TabIndex = 47;
             // 
-            // textBox9
+            // course_desc_box
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(125, 320);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(229, 23);
-            this.textBox9.TabIndex = 48;
+            this.course_desc_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.course_desc_box.Location = new System.Drawing.Point(125, 320);
+            this.course_desc_box.Name = "course_desc_box";
+            this.course_desc_box.Size = new System.Drawing.Size(229, 23);
+            this.course_desc_box.TabIndex = 48;
             // 
-            // textBox10
+            // course_code_box
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(125, 285);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(229, 23);
-            this.textBox10.TabIndex = 49;
+            this.course_code_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.course_code_box.Location = new System.Drawing.Point(125, 285);
+            this.course_code_box.Name = "course_code_box";
+            this.course_code_box.Size = new System.Drawing.Size(229, 23);
+            this.course_code_box.TabIndex = 49;
             // 
-            // textBox11
+            // course_num_box
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(125, 256);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(229, 23);
-            this.textBox11.TabIndex = 50;
+            this.course_num_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.course_num_box.Location = new System.Drawing.Point(125, 256);
+            this.course_num_box.Name = "course_num_box";
+            this.course_num_box.Size = new System.Drawing.Size(229, 23);
+            this.course_num_box.TabIndex = 50;
             // 
-            // textBox12
+            // time_box
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(125, 416);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(229, 23);
-            this.textBox12.TabIndex = 51;
+            this.time_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time_box.Location = new System.Drawing.Point(125, 416);
+            this.time_box.Name = "time_box";
+            this.time_box.Size = new System.Drawing.Size(229, 23);
+            this.time_box.TabIndex = 51;
             // 
-            // textBox13
+            // day_box
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(125, 445);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(229, 23);
-            this.textBox13.TabIndex = 52;
+            this.day_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day_box.Location = new System.Drawing.Point(125, 445);
+            this.day_box.Name = "day_box";
+            this.day_box.Size = new System.Drawing.Size(229, 23);
+            this.day_box.TabIndex = 52;
             // 
             // total_misc_box1
             // 
@@ -620,13 +621,13 @@
             this.total_num_units_box1.Size = new System.Drawing.Size(229, 23);
             this.total_num_units_box1.TabIndex = 56;
             // 
-            // textBox18
+            // credit_units_box
             // 
-            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(536, 216);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(229, 23);
-            this.textBox18.TabIndex = 57;
+            this.credit_units_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.credit_units_box.Location = new System.Drawing.Point(536, 216);
+            this.credit_units_box.Name = "credit_units_box";
+            this.credit_units_box.Size = new System.Drawing.Size(229, 23);
+            this.credit_units_box.TabIndex = 57;
             // 
             // cisco_box1
             // 
@@ -668,13 +669,13 @@
             this.total_misc_box2.Size = new System.Drawing.Size(179, 23);
             this.total_misc_box2.TabIndex = 126;
             // 
-            // lab_fee_box2
+            // comp_lab_fee_box2
             // 
-            this.lab_fee_box2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_fee_box2.Location = new System.Drawing.Point(227, 806);
-            this.lab_fee_box2.Name = "lab_fee_box2";
-            this.lab_fee_box2.Size = new System.Drawing.Size(128, 23);
-            this.lab_fee_box2.TabIndex = 127;
+            this.comp_lab_fee_box2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comp_lab_fee_box2.Location = new System.Drawing.Point(227, 806);
+            this.comp_lab_fee_box2.Name = "comp_lab_fee_box2";
+            this.comp_lab_fee_box2.Size = new System.Drawing.Size(128, 23);
+            this.comp_lab_fee_box2.TabIndex = 127;
             // 
             // cisco_box2
             // 
@@ -727,29 +728,29 @@
             this.browse_button.UseVisualStyleBackColor = true;
             this.browse_button.Click += new System.EventHandler(this.browse_button_Click);
             // 
-            // button2
+            // submit_button
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(661, 21);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 43);
-            this.button2.TabIndex = 134;
-            this.button2.Text = "Submit";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.submit_button.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.submit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submit_button.Location = new System.Drawing.Point(661, 21);
+            this.submit_button.Name = "submit_button";
+            this.submit_button.Size = new System.Drawing.Size(143, 43);
+            this.submit_button.TabIndex = 134;
+            this.submit_button.Text = "Submit";
+            this.submit_button.UseVisualStyleBackColor = false;
+            this.submit_button.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // new_button
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(661, 70);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(143, 37);
-            this.button3.TabIndex = 135;
-            this.button3.Text = "New / Cancel";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.new_button.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.new_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.new_button.Location = new System.Drawing.Point(661, 113);
+            this.new_button.Name = "new_button";
+            this.new_button.Size = new System.Drawing.Size(143, 37);
+            this.new_button.TabIndex = 135;
+            this.new_button.Text = "New / Cancel";
+            this.new_button.UseVisualStyleBackColor = false;
+            this.new_button.Click += new System.EventHandler(this.button3_Click);
             // 
             // comboBox1
             // 
@@ -791,6 +792,7 @@
             this.listBox4.Name = "listBox4";
             this.listBox4.Size = new System.Drawing.Size(81, 160);
             this.listBox4.TabIndex = 140;
+            this.listBox4.SelectedIndexChanged += new System.EventHandler(this.listBox4_SelectedIndexChanged);
             // 
             // listBox5
             // 
@@ -831,11 +833,24 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(314, 20);
             this.dateTimePicker1.TabIndex = 145;
             // 
+            // calculate_button
+            // 
+            this.calculate_button.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.calculate_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculate_button.Location = new System.Drawing.Point(661, 70);
+            this.calculate_button.Name = "calculate_button";
+            this.calculate_button.Size = new System.Drawing.Size(143, 37);
+            this.calculate_button.TabIndex = 146;
+            this.calculate_button.Text = "Calculate";
+            this.calculate_button.UseVisualStyleBackColor = false;
+            this.calculate_button.Click += new System.EventHandler(this.calculate_button_Click);
+            // 
             // Activity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 947);
+            this.Controls.Add(this.calculate_button);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.listBox8);
             this.Controls.Add(this.listBox7);
@@ -846,32 +861,32 @@
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.new_button);
+            this.Controls.Add(this.submit_button);
             this.Controls.Add(this.browse_button);
             this.Controls.Add(this.total_fee_box2);
             this.Controls.Add(this.total_num_units_box2);
             this.Controls.Add(this.textBox91);
             this.Controls.Add(this.booklet_box2);
             this.Controls.Add(this.cisco_box2);
-            this.Controls.Add(this.lab_fee_box2);
+            this.Controls.Add(this.comp_lab_fee_box2);
             this.Controls.Add(this.total_misc_box2);
             this.Controls.Add(this.total_tuition_box2);
             this.Controls.Add(this.total_fee_box1);
             this.Controls.Add(this.booklet_box1);
             this.Controls.Add(this.cisco_box1);
-            this.Controls.Add(this.textBox18);
+            this.Controls.Add(this.credit_units_box);
             this.Controls.Add(this.total_num_units_box1);
             this.Controls.Add(this.lab_fee_box1);
             this.Controls.Add(this.total_tuition_box1);
             this.Controls.Add(this.total_misc_box1);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.day_box);
+            this.Controls.Add(this.time_box);
+            this.Controls.Add(this.course_num_box);
+            this.Controls.Add(this.course_code_box);
+            this.Controls.Add(this.course_desc_box);
+            this.Controls.Add(this.unit_lecture_box);
+            this.Controls.Add(this.unit_lab_box);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -969,32 +984,32 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox unit_lab_box;
+        private System.Windows.Forms.TextBox unit_lecture_box;
+        private System.Windows.Forms.TextBox course_desc_box;
+        private System.Windows.Forms.TextBox course_code_box;
+        private System.Windows.Forms.TextBox course_num_box;
+        private System.Windows.Forms.TextBox time_box;
+        private System.Windows.Forms.TextBox day_box;
         private System.Windows.Forms.TextBox total_misc_box1;
         private System.Windows.Forms.TextBox total_tuition_box1;
         private System.Windows.Forms.TextBox lab_fee_box1;
         private System.Windows.Forms.TextBox total_num_units_box1;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox credit_units_box;
         private System.Windows.Forms.TextBox cisco_box1;
         private System.Windows.Forms.TextBox booklet_box1;
         private System.Windows.Forms.TextBox total_fee_box1;
         private System.Windows.Forms.TextBox total_tuition_box2;
         private System.Windows.Forms.TextBox total_misc_box2;
-        private System.Windows.Forms.TextBox lab_fee_box2;
+        private System.Windows.Forms.TextBox comp_lab_fee_box2;
         private System.Windows.Forms.TextBox cisco_box2;
         private System.Windows.Forms.TextBox booklet_box2;
         private System.Windows.Forms.TextBox textBox91;
         private System.Windows.Forms.TextBox total_num_units_box2;
         private System.Windows.Forms.TextBox total_fee_box2;
         private System.Windows.Forms.Button browse_button;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button submit_button;
+        private System.Windows.Forms.Button new_button;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
@@ -1005,6 +1020,7 @@
         private System.Windows.Forms.ListBox listBox7;
         private System.Windows.Forms.ListBox listBox8;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button calculate_button;
     }
 }
 
