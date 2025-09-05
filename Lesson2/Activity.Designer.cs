@@ -88,10 +88,10 @@
             this.total_fee_box1 = new System.Windows.Forms.TextBox();
             this.total_tuition_box2 = new System.Windows.Forms.TextBox();
             this.total_misc_box2 = new System.Windows.Forms.TextBox();
-            this.comp_lab_fee_box2 = new System.Windows.Forms.TextBox();
+            this.lab_fee_box2 = new System.Windows.Forms.TextBox();
             this.cisco_box2 = new System.Windows.Forms.TextBox();
             this.booklet_box2 = new System.Windows.Forms.TextBox();
-            this.textBox91 = new System.Windows.Forms.TextBox();
+            this.other_fees_box = new System.Windows.Forms.TextBox();
             this.total_num_units_box2 = new System.Windows.Forms.TextBox();
             this.total_fee_box2 = new System.Windows.Forms.TextBox();
             this.browse_button = new System.Windows.Forms.Button();
@@ -113,13 +113,14 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(155, 153);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -669,13 +670,13 @@
             this.total_misc_box2.Size = new System.Drawing.Size(179, 23);
             this.total_misc_box2.TabIndex = 126;
             // 
-            // comp_lab_fee_box2
+            // lab_fee_box2
             // 
-            this.comp_lab_fee_box2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comp_lab_fee_box2.Location = new System.Drawing.Point(227, 806);
-            this.comp_lab_fee_box2.Name = "comp_lab_fee_box2";
-            this.comp_lab_fee_box2.Size = new System.Drawing.Size(128, 23);
-            this.comp_lab_fee_box2.TabIndex = 127;
+            this.lab_fee_box2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_fee_box2.Location = new System.Drawing.Point(227, 806);
+            this.lab_fee_box2.Name = "lab_fee_box2";
+            this.lab_fee_box2.Size = new System.Drawing.Size(128, 23);
+            this.lab_fee_box2.TabIndex = 127;
             // 
             // cisco_box2
             // 
@@ -693,13 +694,13 @@
             this.booklet_box2.Size = new System.Drawing.Size(128, 23);
             this.booklet_box2.TabIndex = 129;
             // 
-            // textBox91
+            // other_fees_box
             // 
-            this.textBox91.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox91.Location = new System.Drawing.Point(226, 894);
-            this.textBox91.Name = "textBox91";
-            this.textBox91.Size = new System.Drawing.Size(128, 23);
-            this.textBox91.TabIndex = 130;
+            this.other_fees_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_fees_box.Location = new System.Drawing.Point(226, 894);
+            this.other_fees_box.Name = "other_fees_box";
+            this.other_fees_box.Size = new System.Drawing.Size(128, 23);
+            this.other_fees_box.TabIndex = 130;
             // 
             // total_num_units_box2
             // 
@@ -792,7 +793,6 @@
             this.listBox4.Name = "listBox4";
             this.listBox4.Size = new System.Drawing.Size(81, 160);
             this.listBox4.TabIndex = 140;
-            this.listBox4.SelectedIndexChanged += new System.EventHandler(this.listBox4_SelectedIndexChanged);
             // 
             // listBox5
             // 
@@ -849,6 +849,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(816, 947);
             this.Controls.Add(this.calculate_button);
             this.Controls.Add(this.dateTimePicker1);
@@ -866,10 +867,10 @@
             this.Controls.Add(this.browse_button);
             this.Controls.Add(this.total_fee_box2);
             this.Controls.Add(this.total_num_units_box2);
-            this.Controls.Add(this.textBox91);
+            this.Controls.Add(this.other_fees_box);
             this.Controls.Add(this.booklet_box2);
             this.Controls.Add(this.cisco_box2);
-            this.Controls.Add(this.comp_lab_fee_box2);
+            this.Controls.Add(this.lab_fee_box2);
             this.Controls.Add(this.total_misc_box2);
             this.Controls.Add(this.total_tuition_box2);
             this.Controls.Add(this.total_fee_box1);
@@ -1001,10 +1002,10 @@
         private System.Windows.Forms.TextBox total_fee_box1;
         private System.Windows.Forms.TextBox total_tuition_box2;
         private System.Windows.Forms.TextBox total_misc_box2;
-        private System.Windows.Forms.TextBox comp_lab_fee_box2;
+        private System.Windows.Forms.TextBox lab_fee_box2;
         private System.Windows.Forms.TextBox cisco_box2;
         private System.Windows.Forms.TextBox booklet_box2;
-        private System.Windows.Forms.TextBox textBox91;
+        private System.Windows.Forms.TextBox other_fees_box;
         private System.Windows.Forms.TextBox total_num_units_box2;
         private System.Windows.Forms.TextBox total_fee_box2;
         private System.Windows.Forms.Button browse_button;
