@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Lesson1
+namespace Lesson2
 {
     public partial class Activity1 : Form
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lesson1
+namespace Lesson2
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace Lesson1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Activity2());
+            Application.Run(new Activity());
         }
     }
 }

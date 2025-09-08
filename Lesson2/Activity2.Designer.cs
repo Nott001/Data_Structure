@@ -1,4 +1,4 @@
-﻿namespace Lesson2
+﻿namespace Lesson3
 {
     partial class Activity2
     {

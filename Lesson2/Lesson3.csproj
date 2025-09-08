@@ -52,10 +52,28 @@
     <Compile Include="Activity.Designer.cs">
       <DependentUpon>Activity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Activity2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity2.Designer.cs">
+      <DependentUpon>Activity2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activity5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity5.Designer.cs">
+      <DependentUpon>Activity5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Activity.resx">
       <DependentUpon>Activity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity2.resx">
+      <DependentUpon>Activity2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity5.resx">
+      <DependentUpon>Activity5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
