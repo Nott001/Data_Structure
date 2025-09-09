@@ -137,3 +137,15 @@ namespace Lesson2
         }
     }
 }
+
+//decimal sum = 0;
+
+//foreach (var item in listBox1.Items)
+//{
+    //if (decimal.TryParse(item.ToString(), out decimal value))
+    //{
+     //   sum += value;
+   // }
+//}
+
+//label1.Text = "Total: " + sum.ToString();

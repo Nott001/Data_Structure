@@ -351,30 +351,30 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton_bundleB;
-        private System.Windows.Forms.RadioButton radioButton_bundleA;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox discountTxtbox;
-        private System.Windows.Forms.TextBox priceTxtbox;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button Exit_button;
-        private System.Windows.Forms.Button Clear_button;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.GroupBox groupBox1;
+        public System.Windows.Forms.RadioButton radioButton_bundleB;
+        public System.Windows.Forms.RadioButton radioButton_bundleA;
+        public System.Windows.Forms.CheckBox checkBox1;
+        public System.Windows.Forms.GroupBox groupBox2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox discountTxtbox;
+        public System.Windows.Forms.TextBox priceTxtbox;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Button Exit_button;
+        public System.Windows.Forms.Button Clear_button;
+        public System.Windows.Forms.GroupBox groupBox3;
+        public System.Windows.Forms.CheckBox checkBox2;
+        public System.Windows.Forms.CheckBox checkBox3;
+        public System.Windows.Forms.GroupBox groupBox4;
+        public System.Windows.Forms.CheckBox checkBox5;
+        public System.Windows.Forms.CheckBox checkBox4;
+        public System.Windows.Forms.CheckBox checkBox10;
+        public System.Windows.Forms.CheckBox checkBox9;
+        public System.Windows.Forms.CheckBox checkBox8;
+        public System.Windows.Forms.CheckBox checkBox7;
+        public System.Windows.Forms.CheckBox checkBox6;
     }
 }

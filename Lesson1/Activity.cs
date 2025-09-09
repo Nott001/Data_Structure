@@ -96,6 +96,31 @@ namespace Lesson2
             listBox7.Items.Add(time_box.Text);
             listBox8.Items.Add(day_box.Text);
 
+            //
+            Activity_Print print = new Activity_Print();
+
+            print.course_num_box.Text = this.course_num_box.Text;
+            print.course_code_box.Text = this.course_code_box.Text;
+            print.course_desc_box.Text = this.course_desc_box.Text;
+            print.unit_lecture_box.Text = this.unit_lecture_box.Text;
+            print.unit_lab_box.Text = this.unit_lab_box.Text;
+            print.credit_units_box.Text = this.credit_units_box.Text;
+            print.time_box.Text = this.time_box.Text;
+            print.day_box.Text = this.day_box.Text;
+
+
+            print.listBox1.Items.AddRange(this.listBox1.Items);
+            print.listBox2.Items.AddRange(this.listBox2.Items);
+            print.listBox3.Items.AddRange(this.listBox3.Items);
+            print.listBox4.Items.AddRange(this.listBox4.Items);
+            print.listBox5.Items.AddRange(this.listBox5.Items);
+            print.listBox6.Items.AddRange(this.listBox6.Items);
+            print.listBox6.Items.AddRange(this.listBox6.Items);
+            print.listBox8.Items.AddRange(this.listBox8.Items);
+
+            print.Show();
+
+
         }
 
         private void calculate_button_Click(object sender, EventArgs e)
