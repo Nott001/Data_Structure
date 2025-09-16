@@ -70,6 +70,10 @@
             this.name2lbl = new System.Windows.Forms.Label();
             this.name1lbl = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.notaxRbtn = new System.Windows.Forms.RadioButton();
+            this.employeeRbtn = new System.Windows.Forms.RadioButton();
+            this.regularRbtn = new System.Windows.Forms.RadioButton();
+            this.seniorRbtn = new System.Windows.Forms.RadioButton();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -115,10 +119,6 @@
             this.button21 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.seniorRbtn = new System.Windows.Forms.RadioButton();
-            this.regularRbtn = new System.Windows.Forms.RadioButton();
-            this.employeeRbtn = new System.Windows.Forms.RadioButton();
-            this.notaxRbtn = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -603,6 +603,62 @@
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
             // 
+            // notaxRbtn
+            // 
+            this.notaxRbtn.AutoSize = true;
+            this.notaxRbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notaxRbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.notaxRbtn.Location = new System.Drawing.Point(284, 133);
+            this.notaxRbtn.Name = "notaxRbtn";
+            this.notaxRbtn.Size = new System.Drawing.Size(82, 17);
+            this.notaxRbtn.TabIndex = 17;
+            this.notaxRbtn.TabStop = true;
+            this.notaxRbtn.Text = "No Discount";
+            this.notaxRbtn.UseVisualStyleBackColor = true;
+            this.notaxRbtn.CheckedChanged += new System.EventHandler(this.notaxRbtn_CheckedChanged);
+            // 
+            // employeeRbtn
+            // 
+            this.employeeRbtn.AutoSize = true;
+            this.employeeRbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employeeRbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.employeeRbtn.Location = new System.Drawing.Point(284, 107);
+            this.employeeRbtn.Name = "employeeRbtn";
+            this.employeeRbtn.Size = new System.Drawing.Size(97, 17);
+            this.employeeRbtn.TabIndex = 16;
+            this.employeeRbtn.TabStop = true;
+            this.employeeRbtn.Text = "Employee Disc.";
+            this.employeeRbtn.UseVisualStyleBackColor = true;
+            this.employeeRbtn.CheckedChanged += new System.EventHandler(this.employeeRbtn_CheckedChanged);
+            // 
+            // regularRbtn
+            // 
+            this.regularRbtn.AutoSize = true;
+            this.regularRbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regularRbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.regularRbtn.Location = new System.Drawing.Point(284, 81);
+            this.regularRbtn.Name = "regularRbtn";
+            this.regularRbtn.Size = new System.Drawing.Size(96, 17);
+            this.regularRbtn.TabIndex = 15;
+            this.regularRbtn.TabStop = true;
+            this.regularRbtn.Text = "With Disc. Card";
+            this.regularRbtn.UseVisualStyleBackColor = true;
+            this.regularRbtn.CheckedChanged += new System.EventHandler(this.regularRbtn_CheckedChanged);
+            // 
+            // seniorRbtn
+            // 
+            this.seniorRbtn.AutoSize = true;
+            this.seniorRbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.seniorRbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.seniorRbtn.Location = new System.Drawing.Point(284, 57);
+            this.seniorRbtn.Name = "seniorRbtn";
+            this.seniorRbtn.Size = new System.Drawing.Size(89, 17);
+            this.seniorRbtn.TabIndex = 14;
+            this.seniorRbtn.TabStop = true;
+            this.seniorRbtn.Text = "Senior-Citizen";
+            this.seniorRbtn.UseVisualStyleBackColor = true;
+            this.seniorRbtn.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -1042,62 +1098,6 @@
             this.label13.Size = new System.Drawing.Size(72, 13);
             this.label13.TabIndex = 43;
             this.label13.Text = "Terminal # 21";
-            // 
-            // seniorRbtn
-            // 
-            this.seniorRbtn.AutoSize = true;
-            this.seniorRbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.seniorRbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.seniorRbtn.Location = new System.Drawing.Point(284, 57);
-            this.seniorRbtn.Name = "seniorRbtn";
-            this.seniorRbtn.Size = new System.Drawing.Size(89, 17);
-            this.seniorRbtn.TabIndex = 14;
-            this.seniorRbtn.TabStop = true;
-            this.seniorRbtn.Text = "Senior-Citizen";
-            this.seniorRbtn.UseVisualStyleBackColor = true;
-            this.seniorRbtn.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // regularRbtn
-            // 
-            this.regularRbtn.AutoSize = true;
-            this.regularRbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.regularRbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.regularRbtn.Location = new System.Drawing.Point(284, 81);
-            this.regularRbtn.Name = "regularRbtn";
-            this.regularRbtn.Size = new System.Drawing.Size(96, 17);
-            this.regularRbtn.TabIndex = 15;
-            this.regularRbtn.TabStop = true;
-            this.regularRbtn.Text = "With Disc. Card";
-            this.regularRbtn.UseVisualStyleBackColor = true;
-            this.regularRbtn.CheckedChanged += new System.EventHandler(this.regularRbtn_CheckedChanged);
-            // 
-            // employeeRbtn
-            // 
-            this.employeeRbtn.AutoSize = true;
-            this.employeeRbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employeeRbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.employeeRbtn.Location = new System.Drawing.Point(284, 107);
-            this.employeeRbtn.Name = "employeeRbtn";
-            this.employeeRbtn.Size = new System.Drawing.Size(97, 17);
-            this.employeeRbtn.TabIndex = 16;
-            this.employeeRbtn.TabStop = true;
-            this.employeeRbtn.Text = "Employee Disc.";
-            this.employeeRbtn.UseVisualStyleBackColor = true;
-            this.employeeRbtn.CheckedChanged += new System.EventHandler(this.employeeRbtn_CheckedChanged);
-            // 
-            // notaxRbtn
-            // 
-            this.notaxRbtn.AutoSize = true;
-            this.notaxRbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.notaxRbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.notaxRbtn.Location = new System.Drawing.Point(284, 133);
-            this.notaxRbtn.Name = "notaxRbtn";
-            this.notaxRbtn.Size = new System.Drawing.Size(82, 17);
-            this.notaxRbtn.TabIndex = 17;
-            this.notaxRbtn.TabStop = true;
-            this.notaxRbtn.Text = "No Discount";
-            this.notaxRbtn.UseVisualStyleBackColor = true;
-            this.notaxRbtn.CheckedChanged += new System.EventHandler(this.notaxRbtn_CheckedChanged);
             // 
             // Activity2
             // 

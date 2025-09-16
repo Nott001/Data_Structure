@@ -64,6 +64,12 @@
     <Compile Include="Activity5.Designer.cs">
       <DependentUpon>Activity5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lesson_5_Activity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson_5_Activity.Designer.cs">
+      <DependentUpon>Lesson_5_Activity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Activity.resx">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Activity5.resx">
       <DependentUpon>Activity5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson_5_Activity.resx">
+      <DependentUpon>Lesson_5_Activity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
