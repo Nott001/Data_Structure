@@ -26,6 +26,14 @@ namespace Lesson5
 
         private void Activity_Load(object sender, EventArgs e)
         {
+            basic_income_box.Enabled = false;
+            honorarium_income_box.Enabled = false;
+            other_income_box.Enabled = false;
+            sss_contri_box.Enabled = false;
+            philhealth_contri_box.Enabled = false;
+            tax_contri_box.Enabled = false;
+            total_deduction_box.Enabled = false;
+            pagibig_contri_box.Enabled = false;
 
         }
 
@@ -71,10 +79,11 @@ namespace Lesson5
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double sss_contri = 0;
-            double philhealth_contri = 0;
-            double income_tax = 0;
+            double sss_contri = 0.00;
+            double philhealth_contri = 0.00;
+            double income_tax = 0.00;
             double pagibig_contri = 200.00;
+            double sss_wisp = 750.00;
 
             double sss_loan = 0.00;
             double pagibig_loan = 0.00;
@@ -86,7 +95,7 @@ namespace Lesson5
             //Calculating for income tax
             if (gross_income <= 250000.00)
             {
-                 income_tax = 0.00;
+                income_tax = 0.00;
             }
             else if (gross_income > 250000.00 && gross_income <= 400000.00)
             {
@@ -109,34 +118,41 @@ namespace Lesson5
                 income_tax = 2202500 + ((gross_income - 8000000.00) * 0.35);
             }
 
-            //Calculating for Philhealth contribution
+            // Calculating for PhilHealth contribution
             if (gross_income <= 10000.00)
             {
-                philhealth_contri = 0.00;
+                philhealth_contri = 500.00;
             }
-            else if (gross_income >= 10000.00)
+            else if (gross_income >= 100000.00)
+            {
+                philhealth_contri = 5000.00;
+            }
+            else
             {
                 philhealth_contri = gross_income * 0.05;
-
             }
+
 
             //Calculating for SSS contribution
             if (gross_income < 5250.00)
             {
                 sss_contri = 760.00;
             }
-            else if (gross_income >= 5250.00 && gross_income <= 5749.99)
+            else if (gross_income >= 34750.00)
             {
-                sss_contri = 835.00;
+                sss_contri = 5280.00;
             }
-            else if (gross_income >= 6250.00 && gross_income <= 6249.99)
+            else
             {
-                sss_contri = 910.00;
+                // Each 500 step increases contribution by 75
+                int step = (int)((gross_income - 5250.00) / 500.00);
+                sss_contri = 835.00 + (step * 75.00);
             }
+
+
 
 
             //Calculating for total deductions
-            pagibig_contri = Convert.ToDouble(pagibig_contri_box.Text);
             sss_loan = Convert.ToDouble(sss_loan_box.Text);
             pagibig_loan = Convert.ToDouble(pagibig_loan_box.Text);
             faculty_savings_deposit = Convert.ToDouble(faculty_savings_deposit_box.Text);
@@ -145,14 +161,59 @@ namespace Lesson5
             other_loan = Convert.ToDouble(other_loan_box.Text);
 
             total_deductions = sss_contri + philhealth_contri + income_tax + pagibig_contri + sss_loan +
-                pagibig_loan + faculty_savings_deposit + faculty_savings_loan + salary_loan + other_loan;
+                pagibig_loan + faculty_savings_deposit + faculty_savings_loan + salary_loan + other_loan + sss_wisp;
 
             net_income = gross_income - total_deductions;
 
+            //Displaying outputs
+            philhealth_contri_box.Text = philhealth_contri.ToString("n");
+            tax_contri_box.Text = income_tax.ToString("n");
+            pagibig_contri_box.Text = pagibig_contri.ToString("n");
+            sss_contri_box.Text = sss_contri.ToString("n");
             total_deduction_box.Text = total_deductions.ToString("n");
             net_income_box.Text = net_income.ToString("n");
 
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is TextBox)
+                    ((TextBox)ctrl).Clear();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Activity_save_print print = new Activity_save_print();
+
+            string combined = surname_box.Text + "," + firstname_box.Text + middlename_box.Text;
+            print.CombinedText = combined;
+
+            print.emp_num_box.Text = this.emp_num_box.Text;
+            print.department_box.Text = this.department_box.Text;
+            print.paydate_box.Text = this.paydate_box.Text;
+            print.cut_off_box.Text = this.paydate_box.Text;
+            print.basic_hrs_box.Text = this.basic_hrs_box.Text;
+            print.honorarium_hrs_box.Text = this.honorarium_hrs_box.Text;
+            print.other_hrs_box.Text = this.other_hrs_box.Text;
+            print.basic_income_box.Text = this.basic_income_box.Text;
+            print.honorarium_income_box.Text = this.honorarium_income_box.Text;
+            print.other_income_box.Text = this.other_income_box.Text;
+            print.gross_income_box.Text = this.gross_income_box.Text;
+            print.total_deduction_box.Text = this.total_deduction_box.Text;
+            print.tax_contri_box.Text = this.tax_contri_box.Text;
+            print.sss_contri_box.Text = this.sss_contri_box.Text;
+            print.philhealth_contri_box.Text = this.philhealth_contri_box.Text;
+            print.pagibig_contri_box.Text = this.pagibig_contri_box.Text;
+            print.net_income_box.Text = this.net_income_box.Text;
+
+
+
+
+            print.Show();
         }
     }
 }

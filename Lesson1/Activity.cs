@@ -161,5 +161,10 @@ namespace Lesson2
             total_fee_box2.Text = total_fee_box1.Text;
             other_fees_box = total_misc_box1;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
