@@ -85,7 +85,6 @@
             middlename_box = new TextBox();
             surname_box = new TextBox();
             qualified_box = new TextBox();
-            paydate_box = new TextBox();
             emp_status_box = new TextBox();
             designation_box = new TextBox();
             sss_contri_box = new TextBox();
@@ -107,6 +106,7 @@
             emp_num_box = new TextBox();
             department_box = new TextBox();
             civil_status_box = new TextBox();
+            dateTimePicker1 = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -124,7 +124,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label2.Location = new Point(25, 62);
+            label2.Location = new Point(28, 62);
             label2.Name = "label2";
             label2.Size = new Size(130, 13);
             label2.TabIndex = 1;
@@ -153,12 +153,15 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = SystemColors.ControlLight;
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox1.Image = Properties.Resources.Default_pfp;
             pictureBox1.Location = new Point(38, 87);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(114, 120);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // label5
             // 
@@ -650,14 +653,6 @@
             qualified_box.Size = new Size(169, 22);
             qualified_box.TabIndex = 56;
             // 
-            // paydate_box
-            // 
-            paydate_box.Font = new Font("Segoe UI", 8F);
-            paydate_box.Location = new Point(582, 194);
-            paydate_box.Name = "paydate_box";
-            paydate_box.Size = new Size(169, 22);
-            paydate_box.TabIndex = 57;
-            // 
             // emp_status_box
             // 
             emp_status_box.Font = new Font("Segoe UI", 8F);
@@ -764,56 +759,76 @@
             // 
             // button1
             // 
+            button1.BackColor = SystemColors.ControlDarkDark;
+            button1.Cursor = Cursors.Cross;
+            button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 8F);
+            button1.ForeColor = SystemColors.ControlLightLight;
             button1.Location = new Point(383, 701);
             button1.Name = "button1";
-            button1.Size = new Size(107, 23);
+            button1.Size = new Size(107, 25);
             button1.TabIndex = 71;
             button1.Text = "GROSS INCOME";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.BackColor = SystemColors.ControlDarkDark;
+            button2.Cursor = Cursors.Cross;
+            button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 8F);
+            button2.ForeColor = SystemColors.ControlLightLight;
             button2.Location = new Point(496, 701);
             button2.Name = "button2";
-            button2.Size = new Size(81, 23);
+            button2.Size = new Size(86, 25);
             button2.TabIndex = 72;
             button2.Text = "NET INCOME";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
+            button3.BackColor = SystemColors.ControlDarkDark;
+            button3.Cursor = Cursors.Cross;
+            button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 8F);
-            button3.Location = new Point(583, 701);
+            button3.ForeColor = SystemColors.ControlLightLight;
+            button3.Location = new Point(588, 701);
             button3.Name = "button3";
-            button3.Size = new Size(57, 23);
+            button3.Size = new Size(57, 25);
             button3.TabIndex = 73;
             button3.Text = "SAVE";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // button4
             // 
+            button4.BackColor = SystemColors.ControlDarkDark;
+            button4.Cursor = Cursors.Cross;
+            button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 8F);
-            button4.Location = new Point(646, 701);
+            button4.ForeColor = SystemColors.ControlLightLight;
+            button4.Location = new Point(651, 701);
             button4.Name = "button4";
-            button4.Size = new Size(66, 23);
+            button4.Size = new Size(66, 25);
             button4.TabIndex = 74;
             button4.Text = "UPDATE";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
+            button5.BackColor = SystemColors.ControlDarkDark;
+            button5.Cursor = Cursors.Cross;
+            button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 8F);
-            button5.Location = new Point(718, 701);
+            button5.ForeColor = SystemColors.ControlLightLight;
+            button5.Location = new Point(723, 701);
             button5.Name = "button5";
-            button5.Size = new Size(50, 23);
+            button5.Size = new Size(50, 25);
             button5.TabIndex = 75;
             button5.Text = "NEW";
-            button5.UseVisualStyleBackColor = true;
+            button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
             // emp_num_box
@@ -840,12 +855,20 @@
             civil_status_box.Size = new Size(169, 22);
             civil_status_box.TabIndex = 78;
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(582, 193);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(169, 23);
+            dateTimePicker1.TabIndex = 79;
+            // 
             // Activity
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(793, 778);
+            ClientSize = new Size(800, 760);
+            Controls.Add(dateTimePicker1);
             Controls.Add(civil_status_box);
             Controls.Add(department_box);
             Controls.Add(emp_num_box);
@@ -867,7 +890,6 @@
             Controls.Add(sss_contri_box);
             Controls.Add(designation_box);
             Controls.Add(emp_status_box);
-            Controls.Add(paydate_box);
             Controls.Add(qualified_box);
             Controls.Add(surname_box);
             Controls.Add(middlename_box);
@@ -997,7 +1019,6 @@
         public TextBox middlename_box;
         public TextBox surname_box;
         public TextBox qualified_box;
-        public TextBox paydate_box;
         public TextBox emp_status_box;
         public TextBox designation_box;
         public TextBox sss_contri_box;
@@ -1014,5 +1035,6 @@
         public TextBox emp_num_box;
         public TextBox department_box;
         public TextBox civil_status_box;
+        private DateTimePicker dateTimePicker1;
     }
 }

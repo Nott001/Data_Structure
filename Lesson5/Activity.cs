@@ -93,29 +93,29 @@ namespace Lesson5
             double other_loan = 0.00;
 
             //Calculating for income tax
-            if (gross_income <= 250000.00)
+            if (gross_income <= ((250000.00) / 12))
             {
                 income_tax = 0.00;
             }
-            else if (gross_income > 250000.00 && gross_income <= 400000.00)
+            else if (gross_income > ((250000.00) / 12) && gross_income <= ((400000.00) / 12))
             {
-                income_tax = (gross_income - 250000.00) * 0.15;
+                income_tax = (gross_income - ((250000.00) / 12)) * 0.15;
             }
-            else if (gross_income > 400000.00 && gross_income <= 800000.00)
+            else if (gross_income > ((400000.00) / 12) && gross_income <= ((800000.00) / 12))
             {
-                income_tax = 22500.00 + ((gross_income - 400000.00) * 0.20);
+                income_tax = ((22500.00) / 12) + ((gross_income - ((400000.00) / 12)) * 0.20);
             }
-            else if (gross_income > 800000.00 && gross_income <= 2000000.00)
+            else if (gross_income > ((800000.00) / 12) && gross_income <= ((2000000.00) / 12))
             {
-                income_tax = 102500.00 + ((gross_income - 800000.00) * 0.25);
+                income_tax = ((102500.00) / 12) + ((gross_income - ((800000.00) / 12)) * 0.25);
             }
-            else if (gross_income > 2000000.00 && gross_income <= 8000000.00)
+            else if (gross_income > ((2000000.00) / 12) && gross_income <= ((8000000.00) / 12))
             {
-                income_tax = 402500.00 + ((gross_income - 2000000.00) * 0.30);
+                income_tax = ((402500.00) / 12) + ((gross_income - ((2000000.00) / 12)) * 0.30);
             }
-            else if (gross_income > 8000000.00)
+            else if (gross_income > ((8000000.00) / 12))
             {
-                income_tax = 2202500 + ((gross_income - 8000000.00) * 0.35);
+                income_tax = ((2202500) / 12) + ((gross_income - ((8000000.00) / 12)) * 0.35);
             }
 
             // Calculating for PhilHealth contribution
@@ -132,25 +132,21 @@ namespace Lesson5
                 philhealth_contri = gross_income * 0.05;
             }
 
-
             //Calculating for SSS contribution
             if (gross_income < 5250.00)
             {
-                sss_contri = 760.00;
+                sss_contri = 250.00;
             }
             else if (gross_income >= 34750.00)
             {
-                sss_contri = 5280.00;
+                sss_contri = 1750.00;
             }
             else
             {
                 // Each 500 step increases contribution by 75
                 int step = (int)((gross_income - 5250.00) / 500.00);
-                sss_contri = 835.00 + (step * 75.00);
+                sss_contri = 275.00 + (step * 25.00);
             }
-
-
-
 
             //Calculating for total deductions
             sss_loan = Convert.ToDouble(sss_loan_box.Text);
@@ -194,8 +190,8 @@ namespace Lesson5
 
             print.emp_num_box.Text = this.emp_num_box.Text;
             print.department_box.Text = this.department_box.Text;
-            print.paydate_box.Text = this.paydate_box.Text;
-            print.cut_off_box.Text = this.paydate_box.Text;
+            print.paydate_box.Text = this.dateTimePicker1.Text;
+            print.cut_off_box.Text = this.dateTimePicker1.Text;
             print.basic_hrs_box.Text = this.basic_hrs_box.Text;
             print.honorarium_hrs_box.Text = this.honorarium_hrs_box.Text;
             print.other_hrs_box.Text = this.other_hrs_box.Text;
@@ -210,10 +206,25 @@ namespace Lesson5
             print.pagibig_contri_box.Text = this.pagibig_contri_box.Text;
             print.net_income_box.Text = this.net_income_box.Text;
 
-
-
-
             print.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // Code to browse file explorer using browse button
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                // Code to allow only images
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+                openFileDialog.Title = "Select a Picture";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Set the picturebox image to the selected photo
+                    pictureBox1.Image = new Bitmap(openFileDialog.FileName);
+                    pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                }
+            }
         }
     }
 }
