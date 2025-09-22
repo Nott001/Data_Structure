@@ -5,14 +5,14 @@ using System.Windows.Forms;
 namespace Lesson2
 {
 
-    public partial class Activity : Form
+    public partial class Activity_lesson2 : Form
     {
         double tuition_fee = 1700.00;
         double total_tuition_fee = 0;
         double total_tuition = 0;
         int total_units = 0;
 
-        public Activity()
+        public Activity_lesson2()
         {
             InitializeComponent();
         }
@@ -97,7 +97,7 @@ namespace Lesson2
             listBox8.Items.Add(day_box.Text);
 
             //
-            Activity_Print print = new Activity_Print();
+            Activity_lesson2_Print print = new Activity_lesson2_Print();
 
             print.course_num_box.Text = this.course_num_box.Text;
             print.course_code_box.Text = this.course_code_box.Text;

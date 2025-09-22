@@ -1,6 +1,6 @@
 ﻿namespace Lesson2
 {
-    partial class Activity_Print
+    partial class Activity_lesson2_Print
     {
         /// <summary>
         /// Required designer variable.

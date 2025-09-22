@@ -3,10 +3,10 @@ using System.Windows.Forms;
 
 namespace Lesson2
 {
-    public partial class Activity_Print : Form
+    public partial class Activity_lesson2_Print : Form
     {
 
-        public Activity_Print()
+        public Activity_lesson2_Print()
         {
             InitializeComponent();
 

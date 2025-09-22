@@ -4,10 +4,10 @@ using System.Windows.Forms;
 
 namespace Lesson2
 {
-    public partial class Activity2 : Form
+    public partial class Activity2_lesson2 : Form
     {
         // Initializes the components
-        public Activity2()
+        public Activity2_lesson2()
         {
             InitializeComponent();
         }

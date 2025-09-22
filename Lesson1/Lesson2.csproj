@@ -46,52 +46,88 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activity.cs">
+    <Compile Include="Activity_lesson3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity.Designer.cs">
-      <DependentUpon>Activity.cs</DependentUpon>
+    <Compile Include="Activity_lesson3.Designer.cs">
+      <DependentUpon>Activity_lesson3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Activity1.cs">
+    <Compile Include="Activity5_lesson3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity1.Designer.cs">
-      <DependentUpon>Activity1.cs</DependentUpon>
+    <Compile Include="Activity5_lesson3.Designer.cs">
+      <DependentUpon>Activity5_lesson3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Activity2.cs">
+    <Compile Include="Activity_lesson5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity2.Designer.cs">
-      <DependentUpon>Activity2.cs</DependentUpon>
+    <Compile Include="Activity_lesson5.Designer.cs">
+      <DependentUpon>Activity_lesson5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Activity3.cs">
+    <Compile Include="Activity_lesson2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity3.Designer.cs">
-      <DependentUpon>Activity3.cs</DependentUpon>
+    <Compile Include="Activity_lesson2.Designer.cs">
+      <DependentUpon>Activity_lesson2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Activity_Print.cs">
+    <Compile Include="Activity1_lesson2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity_Print.Designer.cs">
-      <DependentUpon>Activity_Print.cs</DependentUpon>
+    <Compile Include="Activity1_lesson2.Designer.cs">
+      <DependentUpon>Activity1_lesson2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activity2_lesson2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity2_lesson2.Designer.cs">
+      <DependentUpon>Activity2_lesson2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activity3_lesson2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity3_lesson2.Designer.cs">
+      <DependentUpon>Activity3_lesson2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activity_lesson2_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity_lesson2_Print.Designer.cs">
+      <DependentUpon>Activity_lesson2_Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activity_lesson5_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity_lesson5_Print.Designer.cs">
+      <DependentUpon>Activity_lesson5_Print.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Activity.resx">
-      <DependentUpon>Activity.cs</DependentUpon>
+    <EmbeddedResource Include="Activity_lesson3.resx">
+      <DependentUpon>Activity_lesson3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Activity1.resx">
-      <DependentUpon>Activity1.cs</DependentUpon>
+    <EmbeddedResource Include="Activity5_lesson3.resx">
+      <DependentUpon>Activity5_lesson3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Activity2.resx">
-      <DependentUpon>Activity2.cs</DependentUpon>
+    <EmbeddedResource Include="Activity_lesson5.resx">
+      <DependentUpon>Activity_lesson5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Activity3.resx">
-      <DependentUpon>Activity3.cs</DependentUpon>
+    <EmbeddedResource Include="Activity_lesson2.resx">
+      <DependentUpon>Activity_lesson2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Activity_Print.resx">
-      <DependentUpon>Activity_Print.cs</DependentUpon>
+    <EmbeddedResource Include="Activity1_lesson2.resx">
+      <DependentUpon>Activity1_lesson2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity2_lesson2.resx">
+      <DependentUpon>Activity2_lesson2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity3_lesson2.resx">
+      <DependentUpon>Activity3_lesson2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity_lesson2_Print.resx">
+      <DependentUpon>Activity_lesson2_Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity_lesson5_Print.resx">
+      <DependentUpon>Activity_lesson5_Print.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,6 +137,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -143,6 +180,7 @@
     <Content Include="pictures\pandesal egg.jpg" />
     <Content Include="pictures\spag_chicken.jpg" />
     <Content Include="pictures\two meal.jpg" />
+    <None Include="Resources\Default_pfp.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

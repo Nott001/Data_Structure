@@ -1,6 +1,6 @@
 ﻿namespace Lesson2
 {
-    partial class Activity
+    partial class Activity_lesson2
     {
         /// <summary>
         /// Required designer variable.
