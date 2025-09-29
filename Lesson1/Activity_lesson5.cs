@@ -223,5 +223,10 @@ namespace Lesson2
                     ((TextBox)ctrl).Clear();
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

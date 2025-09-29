@@ -27,35 +27,39 @@ namespace Lesson2
             string username, password;
             if (username_box.Text == "admin" && passwordbox.Text == "Villamor12345")
             {
-                MessageBox.Show("Welcome!!!");
+                MessageBox.Show("Welcome Admin Page!!!");
                 Main_form adminfrm = new Main_form();
                 adminfrm.Show();
+                username_box.Clear();
+                passwordbox.Clear();
                 this.Hide();
             }
             else if (username_box.Text == "cashier1" && passwordbox.Text == "Villamor12345")
             {
-                MessageBox.Show("Welcome!!!");
+                MessageBox.Show("Welcome Cashier Point of Sale Page!!!");
                 Activity2_lesson2 adminfrm = new Activity2_lesson2();
                 adminfrm.Show();
+                username_box.Clear();
+                passwordbox.Clear();
                 this.Hide();
             }
             else if (username_box.Text == "cashier2" && passwordbox.Text == "Villamor12345")
             {
-                MessageBox.Show("Welcome!!!");
-                Activity2_lesson2 adminfrm = new Activity2_lesson2();
+                MessageBox.Show("Welcome Cashier Ordering POS Page!!!");
+                Activity4_lesson2 adminfrm = new Activity4_lesson2();
                 adminfrm.Show();
                 this.Hide();
             }
             else if (username_box.Text == "payroll1" && passwordbox.Text == "Villamor12345")
             {
-                MessageBox.Show("Welcome!!!");
+                MessageBox.Show("Welcome Payroll Page!!!");
                 Activity_lesson5 adminfrm = new Activity_lesson5();
                 adminfrm.Show();
                 this.Hide();
             }
             else if (username_box.Text == "payroll2" && passwordbox.Text == "Villamor12345")
             {
-                MessageBox.Show("Welcome!!!");
+                MessageBox.Show("Welcome Payroll2 Page!!!");
                 Activity5_lesson3 adminfrm = new Activity5_lesson3();
                 adminfrm.Show();
                 this.Hide();

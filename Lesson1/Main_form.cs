@@ -26,7 +26,7 @@ namespace Lesson2
 
         private void pOS2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Activity3_lesson2 pos2 = new Activity3_lesson2();
+            Activity4_lesson2 pos2 = new Activity4_lesson2();
           pos2.Show();
         }
 

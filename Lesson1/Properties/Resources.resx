@@ -118,7 +118,73 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="kfc_double_bucket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\kfc_double_bucket.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="two meal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\two meal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="family double bucket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\family double bucket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burger large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\burger large.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kfc_meal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\kfc_meal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Default_pfp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\Default_pfp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spag_chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\spag_chicken.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carbonara" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\carbonara.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Default_pfp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Default_pfp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Corned-Beef-With-Drink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\Corned-Beef-With-Drink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spag_chicken1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\spag_chicken.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jollibee_sausage_pancake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\jollibee_sausage_pancake.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jollibee-Crispy-Flavored-Fries" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\Jollibee-Crispy-Flavored-Fries.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kfc_combo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\kfc_combo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 bucket 2 sundae" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\1 bucket 2 sundae.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1-pc.-Chickenjoy-With-Coke-Float" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\1-pc.-Chickenjoy-With-Coke-Float.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="double_steak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\double_steak.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="palabok meal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\palabok meal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1 meal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\1 meal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10_chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\10_chicken.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kfc_chaofun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\kfc_chaofun.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jabee_spag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\jabee_spag.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jolli_shake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\jolli_shake.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

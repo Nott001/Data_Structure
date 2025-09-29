@@ -993,7 +993,7 @@
             this.Payslip_view_listbox.Size = new System.Drawing.Size(393, 679);
             this.Payslip_view_listbox.TabIndex = 0;
             // 
-            // Activity5
+            // Activity5_lesson3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1013,7 +1013,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Activity5";
+            this.Name = "Activity5_lesson3";
             this.Text = "Activity5";
             this.Load += new System.EventHandler(this.Activity5_Load);
             this.groupBox1.ResumeLayout(false);
