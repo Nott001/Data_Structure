@@ -41,12 +41,12 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.change_box = new System.Windows.Forms.TextBox();
+            this.cash_given_box = new System.Windows.Forms.TextBox();
+            this.total_quantity_box = new System.Windows.Forms.TextBox();
+            this.total_bills_box = new System.Windows.Forms.TextBox();
+            this.discounted_amount_box = new System.Windows.Forms.TextBox();
+            this.quantity_box = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -57,8 +57,8 @@
             this.priceTxtbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Exit_button = new System.Windows.Forms.Button();
-            this.Clear_button = new System.Windows.Forms.Button();
+            this.Print_button = new System.Windows.Forms.Button();
+            this.Calculate_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -106,10 +106,10 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Remove_button = new System.Windows.Forms.Button();
+            this.New_button = new System.Windows.Forms.Button();
+            this.Exit_button = new System.Windows.Forms.Button();
+            this.display_picturebox = new System.Windows.Forms.PictureBox();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -135,7 +135,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.display_picturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox4
@@ -292,12 +292,12 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.change_box);
+            this.groupBox2.Controls.Add(this.cash_given_box);
+            this.groupBox2.Controls.Add(this.total_quantity_box);
+            this.groupBox2.Controls.Add(this.total_bills_box);
+            this.groupBox2.Controls.Add(this.discounted_amount_box);
+            this.groupBox2.Controls.Add(this.quantity_box);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
@@ -316,53 +316,53 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Total bills:";
             // 
-            // textBox6
+            // change_box
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(135, 399);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(237, 24);
-            this.textBox6.TabIndex = 46;
+            this.change_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.change_box.Location = new System.Drawing.Point(135, 399);
+            this.change_box.Name = "change_box";
+            this.change_box.Size = new System.Drawing.Size(237, 24);
+            this.change_box.TabIndex = 46;
             // 
-            // textBox5
+            // cash_given_box
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(135, 355);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(237, 24);
-            this.textBox5.TabIndex = 45;
+            this.cash_given_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cash_given_box.Location = new System.Drawing.Point(135, 355);
+            this.cash_given_box.Name = "cash_given_box";
+            this.cash_given_box.Size = new System.Drawing.Size(237, 24);
+            this.cash_given_box.TabIndex = 45;
             // 
-            // textBox4
+            // total_quantity_box
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(135, 307);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(237, 24);
-            this.textBox4.TabIndex = 44;
+            this.total_quantity_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_quantity_box.Location = new System.Drawing.Point(135, 307);
+            this.total_quantity_box.Name = "total_quantity_box";
+            this.total_quantity_box.Size = new System.Drawing.Size(237, 24);
+            this.total_quantity_box.TabIndex = 44;
             // 
-            // textBox3
+            // total_bills_box
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(135, 260);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(237, 24);
-            this.textBox3.TabIndex = 43;
+            this.total_bills_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_bills_box.Location = new System.Drawing.Point(135, 260);
+            this.total_bills_box.Name = "total_bills_box";
+            this.total_bills_box.Size = new System.Drawing.Size(237, 24);
+            this.total_bills_box.TabIndex = 43;
             // 
-            // textBox2
+            // discounted_amount_box
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(135, 215);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(237, 24);
-            this.textBox2.TabIndex = 42;
+            this.discounted_amount_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.discounted_amount_box.Location = new System.Drawing.Point(135, 215);
+            this.discounted_amount_box.Name = "discounted_amount_box";
+            this.discounted_amount_box.Size = new System.Drawing.Size(237, 24);
+            this.discounted_amount_box.TabIndex = 42;
             // 
-            // textBox1
+            // quantity_box
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(135, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 24);
-            this.textBox1.TabIndex = 41;
+            this.quantity_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantity_box.Location = new System.Drawing.Point(135, 92);
+            this.quantity_box.Name = "quantity_box";
+            this.quantity_box.Size = new System.Drawing.Size(237, 24);
+            this.quantity_box.TabIndex = 41;
             // 
             // label10
             // 
@@ -427,7 +427,7 @@
             // discountTxtbox
             // 
             this.discountTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.discountTxtbox.Location = new System.Drawing.Point(135, 92);
+            this.discountTxtbox.Location = new System.Drawing.Point(135, 154);
             this.discountTxtbox.Name = "discountTxtbox";
             this.discountTxtbox.Size = new System.Drawing.Size(237, 24);
             this.discountTxtbox.TabIndex = 34;
@@ -460,25 +460,27 @@
             this.label2.TabIndex = 31;
             this.label2.Text = "Price:";
             // 
-            // Exit_button
+            // Print_button
             // 
-            this.Exit_button.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Exit_button.Location = new System.Drawing.Point(1200, 992);
-            this.Exit_button.Name = "Exit_button";
-            this.Exit_button.Size = new System.Drawing.Size(236, 37);
-            this.Exit_button.TabIndex = 38;
-            this.Exit_button.Text = "PRINT TRANSACTION";
-            this.Exit_button.UseVisualStyleBackColor = false;
+            this.Print_button.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Print_button.Location = new System.Drawing.Point(1200, 992);
+            this.Print_button.Name = "Print_button";
+            this.Print_button.Size = new System.Drawing.Size(236, 37);
+            this.Print_button.TabIndex = 38;
+            this.Print_button.Text = "PRINT TRANSACTION";
+            this.Print_button.UseVisualStyleBackColor = false;
+            this.Print_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
-            // Clear_button
+            // Calculate_button
             // 
-            this.Clear_button.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Clear_button.Location = new System.Drawing.Point(979, 994);
-            this.Clear_button.Name = "Clear_button";
-            this.Clear_button.Size = new System.Drawing.Size(215, 37);
-            this.Clear_button.TabIndex = 37;
-            this.Clear_button.Text = "CALCULATE BILLS";
-            this.Clear_button.UseVisualStyleBackColor = false;
+            this.Calculate_button.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Calculate_button.Location = new System.Drawing.Point(979, 994);
+            this.Calculate_button.Name = "Calculate_button";
+            this.Calculate_button.Size = new System.Drawing.Size(215, 37);
+            this.Calculate_button.TabIndex = 37;
+            this.Calculate_button.Text = "CALCULATE BILLS";
+            this.Calculate_button.UseVisualStyleBackColor = false;
+            this.Calculate_button.Click += new System.EventHandler(this.Clear_button_Click);
             // 
             // label4
             // 
@@ -523,6 +525,7 @@
             this.radioButton_bundleB.TabIndex = 31;
             this.radioButton_bundleB.Text = "Food Bundle B";
             this.radioButton_bundleB.UseVisualStyleBackColor = true;
+            this.radioButton_bundleB.CheckedChanged += new System.EventHandler(this.radioButton_bundleB_CheckedChanged);
             // 
             // radioButton_bundleA
             // 
@@ -534,6 +537,7 @@
             this.radioButton_bundleA.TabIndex = 30;
             this.radioButton_bundleA.Text = "Food Bundle A";
             this.radioButton_bundleA.UseVisualStyleBackColor = true;
+            this.radioButton_bundleA.CheckedChanged += new System.EventHandler(this.radioButton_bundleA_CheckedChanged);
             // 
             // listBox1
             // 
@@ -1034,59 +1038,61 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // Remove_button
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button1.Location = new System.Drawing.Point(1442, 992);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 37);
-            this.button1.TabIndex = 43;
-            this.button1.Text = "REMOVE ORDER";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Remove_button.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Remove_button.Location = new System.Drawing.Point(1442, 992);
+            this.Remove_button.Name = "Remove_button";
+            this.Remove_button.Size = new System.Drawing.Size(203, 37);
+            this.Remove_button.TabIndex = 43;
+            this.Remove_button.Text = "REMOVE ORDER";
+            this.Remove_button.UseVisualStyleBackColor = false;
+            this.Remove_button.Click += new System.EventHandler(this.Remove_button_Click);
             // 
-            // button2
+            // New_button
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button2.Location = new System.Drawing.Point(1651, 992);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 37);
-            this.button2.TabIndex = 44;
-            this.button2.Text = "NEW";
-            this.button2.UseVisualStyleBackColor = false;
+            this.New_button.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.New_button.Location = new System.Drawing.Point(1651, 992);
+            this.New_button.Name = "New_button";
+            this.New_button.Size = new System.Drawing.Size(126, 37);
+            this.New_button.TabIndex = 44;
+            this.New_button.Text = "NEW";
+            this.New_button.UseVisualStyleBackColor = false;
+            this.New_button.Click += new System.EventHandler(this.New_button_Click);
             // 
-            // button3
+            // Exit_button
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button3.Location = new System.Drawing.Point(1783, 992);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(129, 37);
-            this.button3.TabIndex = 44;
-            this.button3.Text = "EXIT";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Exit_button.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Exit_button.Location = new System.Drawing.Point(1783, 992);
+            this.Exit_button.Name = "Exit_button";
+            this.Exit_button.Size = new System.Drawing.Size(129, 37);
+            this.Exit_button.TabIndex = 44;
+            this.Exit_button.Text = "EXIT";
+            this.Exit_button.UseVisualStyleBackColor = false;
             // 
-            // pictureBox2
+            // display_picturebox
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(441, 663);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(411, 323);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 38;
-            this.pictureBox2.TabStop = false;
+            this.display_picturebox.Location = new System.Drawing.Point(441, 663);
+            this.display_picturebox.Name = "display_picturebox";
+            this.display_picturebox.Size = new System.Drawing.Size(411, 323);
+            this.display_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.display_picturebox.TabIndex = 38;
+            this.display_picturebox.TabStop = false;
             // 
             // Activity4_lesson2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Exit_button);
+            this.Controls.Add(this.New_button);
+            this.Controls.Add(this.Remove_button);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.Clear_button);
+            this.Controls.Add(this.Calculate_button);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.Exit_button);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.Print_button);
+            this.Controls.Add(this.display_picturebox);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -1125,7 +1131,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.display_picturebox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1146,8 +1152,8 @@
         public System.Windows.Forms.CheckBox checkBox3;
         public System.Windows.Forms.CheckBox checkBox1;
         public System.Windows.Forms.GroupBox groupBox2;
-        public System.Windows.Forms.Button Exit_button;
-        public System.Windows.Forms.Button Clear_button;
+        public System.Windows.Forms.Button Print_button;
+        public System.Windows.Forms.Button Calculate_button;
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox discountTxtbox;
         public System.Windows.Forms.TextBox priceTxtbox;
@@ -1158,19 +1164,18 @@
         public System.Windows.Forms.RadioButton radioButton_bundleB;
         public System.Windows.Forms.RadioButton radioButton_bundleA;
         public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.PictureBox pictureBox2;
-        public System.Windows.Forms.TextBox textBox3;
-        public System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.PictureBox display_picturebox;
+        public System.Windows.Forms.TextBox total_bills_box;
+        public System.Windows.Forms.TextBox discounted_amount_box;
+        public System.Windows.Forms.TextBox quantity_box;
         public System.Windows.Forms.Label label10;
         public System.Windows.Forms.Label label9;
         public System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ListBox listBox1;
-        public System.Windows.Forms.TextBox textBox6;
-        public System.Windows.Forms.TextBox textBox5;
-        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox change_box;
+        public System.Windows.Forms.TextBox cash_given_box;
+        public System.Windows.Forms.TextBox total_quantity_box;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox21;
@@ -1208,12 +1213,13 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        public System.Windows.Forms.Button button1;
-        public System.Windows.Forms.Button button2;
-        public System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button Remove_button;
+        public System.Windows.Forms.Button New_button;
+        public System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.RadioButton radioButton20;
         private System.Windows.Forms.RadioButton radioButton19;
         private System.Windows.Forms.RadioButton radioButton18;
         private System.Windows.Forms.RadioButton radioButton17;
+        public System.Windows.Forms.ListBox listBox1;
     }
 }

@@ -88,7 +88,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.Others_other_deduc = new System.Windows.Forms.TextBox();
             this.faculty_savings_loan_box = new System.Windows.Forms.TextBox();
             this.salary_loan_box = new System.Windows.Forms.TextBox();
             this.faculty_savings_dep_box = new System.Windows.Forms.TextBox();
@@ -111,6 +110,8 @@
             this.exit_button = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.Payslip_view_listbox = new System.Windows.Forms.ListBox();
+            this.Others_combobox = new System.Windows.Forms.ComboBox();
+            this.Others_other_deduc_box = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -739,7 +740,8 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.Others_other_deduc);
+            this.groupBox7.Controls.Add(this.Others_other_deduc_box);
+            this.groupBox7.Controls.Add(this.Others_combobox);
             this.groupBox7.Controls.Add(this.faculty_savings_loan_box);
             this.groupBox7.Controls.Add(this.faculty_savings_dep_box);
             this.groupBox7.Controls.Add(this.salary_loan_box);
@@ -754,18 +756,10 @@
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(744, 561);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(673, 313);
+            this.groupBox7.Size = new System.Drawing.Size(673, 339);
             this.groupBox7.TabIndex = 14;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "OTHER DEDUCTIONS";
-            // 
-            // Others_other_deduc
-            // 
-            this.Others_other_deduc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Others_other_deduc.Location = new System.Drawing.Point(240, 261);
-            this.Others_other_deduc.Name = "Others_other_deduc";
-            this.Others_other_deduc.Size = new System.Drawing.Size(379, 24);
-            this.Others_other_deduc.TabIndex = 37;
             // 
             // faculty_savings_loan_box
             // 
@@ -878,9 +872,9 @@
             this.groupBox8.Controls.Add(this.Total_deductions);
             this.groupBox8.Controls.Add(this.label29);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(744, 880);
+            this.groupBox8.Location = new System.Drawing.Point(744, 906);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(673, 94);
+            this.groupBox8.Size = new System.Drawing.Size(673, 68);
             this.groupBox8.TabIndex = 15;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "DEDUCTION SUMMARY";
@@ -888,7 +882,7 @@
             // Total_deductions
             // 
             this.Total_deductions.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total_deductions.Location = new System.Drawing.Point(161, 34);
+            this.Total_deductions.Location = new System.Drawing.Point(187, 31);
             this.Total_deductions.Name = "Total_deductions";
             this.Total_deductions.Size = new System.Drawing.Size(373, 24);
             this.Total_deductions.TabIndex = 38;
@@ -898,7 +892,7 @@
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label29.Location = new System.Drawing.Point(29, 37);
+            this.label29.Location = new System.Drawing.Point(45, 34);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(116, 18);
             this.label29.TabIndex = 7;
@@ -985,6 +979,23 @@
             this.Payslip_view_listbox.Name = "Payslip_view_listbox";
             this.Payslip_view_listbox.Size = new System.Drawing.Size(477, 994);
             this.Payslip_view_listbox.TabIndex = 0;
+            // 
+            // Others_combobox
+            // 
+            this.Others_combobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Others_combobox.FormattingEnabled = true;
+            this.Others_combobox.Location = new System.Drawing.Point(240, 264);
+            this.Others_combobox.Name = "Others_combobox";
+            this.Others_combobox.Size = new System.Drawing.Size(379, 26);
+            this.Others_combobox.TabIndex = 38;
+            // 
+            // Others_other_deduc_box
+            // 
+            this.Others_other_deduc_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Others_other_deduc_box.Location = new System.Drawing.Point(240, 299);
+            this.Others_other_deduc_box.Name = "Others_other_deduc_box";
+            this.Others_other_deduc_box.Size = new System.Drawing.Size(379, 24);
+            this.Others_other_deduc_box.TabIndex = 39;
             // 
             // Activity5_lesson3
             // 
@@ -1108,7 +1119,6 @@
         private System.Windows.Forms.TextBox Pagibig_contri_box;
         private System.Windows.Forms.TextBox Phil_health_contri_box;
         private System.Windows.Forms.TextBox Sss_contri_box;
-        private System.Windows.Forms.TextBox Others_other_deduc;
         private System.Windows.Forms.TextBox faculty_savings_loan_box;
         private System.Windows.Forms.TextBox salary_loan_box;
         private System.Windows.Forms.TextBox faculty_savings_dep_box;
@@ -1117,5 +1127,7 @@
         private System.Windows.Forms.TextBox Total_deductions;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.ListBox Payslip_view_listbox;
+        private System.Windows.Forms.ComboBox Others_combobox;
+        private System.Windows.Forms.TextBox Others_other_deduc_box;
     }
 }

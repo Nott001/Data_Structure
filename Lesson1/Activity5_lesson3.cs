@@ -60,7 +60,7 @@ namespace Lesson2
             Pagibig_loan.Text = "0.00";
             Faculty_Savings_deposit.Text = "0.00";
             Faculty_savings_loan.Text = "0.00";
-            Others_other_deduc.Text = "0.00";
+            Others_other_deduc_box.Text = "0.00";
             Others_combobox.Text = "Select other deduction";
             Others_combobox.Items.Add("Other 1");
             Others_combobox.Items.Add("Other 2");
@@ -81,7 +81,7 @@ namespace Lesson2
             salary_loan = Convert.ToDouble(Salary_loan.Text);
             faculty_savings_loan = Convert.ToDouble(Faculty_savings_loan.Text);
             salary_savings = Convert.ToDouble(Faculty_Savings_deposit.Text);
-            other_deduction = Convert.ToDouble(Others_other_deduc.Text);
+            other_deduction = Convert.ToDouble(Others_other_deduc_box.Text);
 
             //Formula to compute the desired data to be computed
             total_contrib = sss_contrib + pagibig_contrib + philhealth_contrib + tax_contrib;

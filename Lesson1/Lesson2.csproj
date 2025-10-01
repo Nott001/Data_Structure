@@ -52,6 +52,12 @@
     <Compile Include="Activity4_lesson2.Designer.cs">
       <DependentUpon>Activity4_lesson2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Activity_4_lesson2_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity_4_lesson2_Print.Designer.cs">
+      <DependentUpon>Activity_4_lesson2_Print.cs</DependentUpon>
+    </Compile>
     <Compile Include="Activity_lesson3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     <EmbeddedResource Include="Activity4_lesson2.resx">
       <DependentUpon>Activity4_lesson2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Activity_4_lesson2_Print.resx">
+      <DependentUpon>Activity_4_lesson2_Print.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Activity_lesson3.resx">
       <DependentUpon>Activity_lesson3.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +198,7 @@
     <Content Include="pictures\chicken_burger.jpg" />
     <Content Include="pictures\Corned-Beef-With-Drink.png" />
     <Content Include="pictures\default.png" />
+    <Content Include="pictures\Default_food.png" />
     <Content Include="pictures\Default_pfp.jpg" />
     <Content Include="pictures\double meal.jpg" />
     <Content Include="pictures\double_chicken_rice.jpg" />
