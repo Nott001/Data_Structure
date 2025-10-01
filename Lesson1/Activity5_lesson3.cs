@@ -47,14 +47,14 @@ namespace Lesson2
         {
             // Codes for disabling
             Income_per_cutoff.Enabled = false;
-            Total_honor_pay.Enabled = false;
-            total_other_income_pay.Enabled = false;
+            Total_honor_pay_box.Enabled = false;
+            total_other_income_pay_box.Enabled = false;
             Net_income.Enabled = false;
             Gross_income.Enabled = false;
             Total_deductions.Enabled = false;
-            Sss_contri.Text = "0.00";
-            Pagibig_contri.Text = "0.00";
-            Phil_health_contri.Text = "0.00";
+            Sss_contri_box.Text = "0.00";
+            Pagibig_contri_box.Text = "0.00";
+            Phil_health_contri_box.Text = "0.00";
             Tax_box.Text = "0.00";
             Sss_loan.Text = "0.00";
             Pagibig_loan.Text = "0.00";
@@ -72,9 +72,9 @@ namespace Lesson2
         private void calculate_button_Click(object sender, EventArgs e)
         {
             //Codes for putting data from textboxes to variables
-            sss_contrib = Convert.ToDouble(Sss_contri.Text);
-            pagibig_contrib = Convert.ToDouble(Pagibig_contri.Text);
-            philhealth_contrib = Convert.ToDouble(Phil_health_contri);
+            sss_contrib = Convert.ToDouble(Sss_contri_box.Text);
+            pagibig_contrib = Convert.ToDouble(Pagibig_contri_box.Text);
+            philhealth_contrib = Convert.ToDouble(Phil_health_contri_box);
             tax_contrib = Convert.ToDouble(Tax_box.Text);
             sss_loan = Convert.ToDouble(Sss_loan.Text);
             pagibig_loan = Convert.ToDouble(Pagibig_loan.Text);
@@ -92,6 +92,21 @@ namespace Lesson2
             Total_deductions.Text = total_deduction.ToString("n");
             netincome = grossincome - total_deduction;
             Net_income.Text = netincome.ToString("n");
+        }
+
+        private void Others_combobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void total_other_income_pay_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Num_hrs_basic_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

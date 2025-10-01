@@ -56,7 +56,7 @@
             this.windowToolStripMenuItem});
             this.cashier_strip.Location = new System.Drawing.Point(0, 0);
             this.cashier_strip.Name = "cashier_strip";
-            this.cashier_strip.Size = new System.Drawing.Size(1572, 27);
+            this.cashier_strip.Size = new System.Drawing.Size(1924, 27);
             this.cashier_strip.TabIndex = 1;
             this.cashier_strip.Text = "POS Cashier";
             // 
@@ -72,14 +72,14 @@
             // pOS1ToolStripMenuItem
             // 
             this.pOS1ToolStripMenuItem.Name = "pOS1ToolStripMenuItem";
-            this.pOS1ToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.pOS1ToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
             this.pOS1ToolStripMenuItem.Text = "POS 1";
             this.pOS1ToolStripMenuItem.Click += new System.EventHandler(this.pOS1ToolStripMenuItem_Click);
             // 
             // pOS2ToolStripMenuItem
             // 
             this.pOS2ToolStripMenuItem.Name = "pOS2ToolStripMenuItem";
-            this.pOS2ToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.pOS2ToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
             this.pOS2ToolStripMenuItem.Text = "POS 2";
             this.pOS2ToolStripMenuItem.Click += new System.EventHandler(this.pOS2ToolStripMenuItem_Click);
             // 
@@ -141,12 +141,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1572, 748);
+            this.ClientSize = new System.Drawing.Size(1924, 1041);
             this.Controls.Add(this.cashier_strip);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.cashier_strip;
             this.Name = "Main_form";
             this.Text = " ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Main_form_Load);
             this.cashier_strip.ResumeLayout(false);
             this.cashier_strip.PerformLayout();
