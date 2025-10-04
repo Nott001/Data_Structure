@@ -108,5 +108,20 @@ namespace Lesson2
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void print_payslip_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void preview_button_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

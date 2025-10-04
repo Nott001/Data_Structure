@@ -146,6 +146,7 @@ namespace Lesson2
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1035, 141);
             this.tableLayoutPanel1.TabIndex = 4;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // paydate_box
             // 
@@ -921,7 +922,7 @@ namespace Lesson2
             this.label36.TabIndex = 84;
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Activity_save_print
+            // Activity_lesson5_Print
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -987,7 +988,7 @@ namespace Lesson2
             this.Controls.Add(this.label35);
             this.Controls.Add(this.label36);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Name = "Activity_save_print";
+            this.Name = "Activity_lesson5_Print";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Activity_save_print";
             this.Load += new System.EventHandler(this.Activity_save_print_Load_1);

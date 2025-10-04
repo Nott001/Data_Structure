@@ -57,8 +57,6 @@
             this.priceTxtbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Print_button = new System.Windows.Forms.Button();
-            this.Calculate_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -66,26 +64,26 @@
             this.radioButton_bundleA = new System.Windows.Forms.RadioButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.radioButton20 = new System.Windows.Forms.RadioButton();
-            this.radioButton19 = new System.Windows.Forms.RadioButton();
-            this.radioButton18 = new System.Windows.Forms.RadioButton();
-            this.radioButton17 = new System.Windows.Forms.RadioButton();
-            this.radioButton16 = new System.Windows.Forms.RadioButton();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.checkBox30 = new System.Windows.Forms.CheckBox();
+            this.checkBox29 = new System.Windows.Forms.CheckBox();
+            this.checkBox28 = new System.Windows.Forms.CheckBox();
+            this.checkBox27 = new System.Windows.Forms.CheckBox();
+            this.checkBox26 = new System.Windows.Forms.CheckBox();
+            this.checkBox25 = new System.Windows.Forms.CheckBox();
+            this.checkBox24 = new System.Windows.Forms.CheckBox();
+            this.checkBox23 = new System.Windows.Forms.CheckBox();
+            this.checkBox22 = new System.Windows.Forms.CheckBox();
+            this.checkBox21 = new System.Windows.Forms.CheckBox();
+            this.checkBox20 = new System.Windows.Forms.CheckBox();
+            this.checkBox19 = new System.Windows.Forms.CheckBox();
+            this.checkBox18 = new System.Windows.Forms.CheckBox();
+            this.checkBox17 = new System.Windows.Forms.CheckBox();
+            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
@@ -106,10 +104,12 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Remove_button = new System.Windows.Forms.Button();
-            this.New_button = new System.Windows.Forms.Button();
-            this.Exit_button = new System.Windows.Forms.Button();
             this.display_picturebox = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -152,7 +152,6 @@
             this.groupBox4.TabIndex = 37;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Food Bundles B";
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // checkBox10
             // 
@@ -164,7 +163,6 @@
             this.checkBox10.TabIndex = 37;
             this.checkBox10.Text = "1 Medium Hawaiian Pizza";
             this.checkBox10.UseVisualStyleBackColor = true;
-            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
             // 
             // checkBox9
             // 
@@ -176,7 +174,6 @@
             this.checkBox9.TabIndex = 36;
             this.checkBox9.Text = "1 Family Pack Fries";
             this.checkBox9.UseVisualStyleBackColor = true;
-            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
             // checkBox8
             // 
@@ -188,7 +185,6 @@
             this.checkBox8.TabIndex = 35;
             this.checkBox8.Text = "1 Family Pack Carbonara";
             this.checkBox8.UseVisualStyleBackColor = true;
-            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // checkBox7
             // 
@@ -200,7 +196,6 @@
             this.checkBox7.TabIndex = 34;
             this.checkBox7.Text = "6 pcs. Delicious Fried Chicken";
             this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
             // checkBox6
             // 
@@ -212,7 +207,6 @@
             this.checkBox6.TabIndex = 33;
             this.checkBox6.Text = "4 cups Special Halo Halo Regular";
             this.checkBox6.UseVisualStyleBackColor = true;
-            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // groupBox3
             // 
@@ -228,7 +222,6 @@
             this.groupBox3.TabIndex = 36;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Food Bundles A";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // checkBox5
             // 
@@ -240,7 +233,6 @@
             this.checkBox5.TabIndex = 32;
             this.checkBox5.Text = "Special Pizza Delights";
             this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -252,7 +244,6 @@
             this.checkBox4.TabIndex = 31;
             this.checkBox4.Text = "4 Side Dishes";
             this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -264,7 +255,6 @@
             this.checkBox2.TabIndex = 29;
             this.checkBox2.Text = "2 Large Fries";
             this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -276,7 +266,6 @@
             this.checkBox3.TabIndex = 30;
             this.checkBox3.Text = "1.5 Coke";
             this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -288,7 +277,6 @@
             this.checkBox1.TabIndex = 29;
             this.checkBox1.Text = "10 pcs. Delicious Fried Chicken";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -363,6 +351,7 @@
             this.quantity_box.Name = "quantity_box";
             this.quantity_box.Size = new System.Drawing.Size(237, 24);
             this.quantity_box.TabIndex = 41;
+            this.quantity_box.TextChanged += new System.EventHandler(this.quantity_box_TextChanged);
             // 
             // label10
             // 
@@ -460,33 +449,11 @@
             this.label2.TabIndex = 31;
             this.label2.Text = "Price:";
             // 
-            // Print_button
-            // 
-            this.Print_button.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Print_button.Location = new System.Drawing.Point(1200, 992);
-            this.Print_button.Name = "Print_button";
-            this.Print_button.Size = new System.Drawing.Size(236, 37);
-            this.Print_button.TabIndex = 38;
-            this.Print_button.Text = "PRINT TRANSACTION";
-            this.Print_button.UseVisualStyleBackColor = false;
-            this.Print_button.Click += new System.EventHandler(this.Exit_button_Click);
-            // 
-            // Calculate_button
-            // 
-            this.Calculate_button.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Calculate_button.Location = new System.Drawing.Point(979, 994);
-            this.Calculate_button.Name = "Calculate_button";
-            this.Calculate_button.Size = new System.Drawing.Size(215, 37);
-            this.Calculate_button.TabIndex = 37;
-            this.Calculate_button.Text = "CALCULATE BILLS";
-            this.Calculate_button.UseVisualStyleBackColor = false;
-            this.Calculate_button.Click += new System.EventHandler(this.Clear_button_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(598, 992);
+            this.label4.Location = new System.Drawing.Point(598, 940);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(94, 18);
             this.label4.TabIndex = 35;
@@ -544,31 +511,31 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(12, 622);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(423, 407);
+            this.listBox1.Size = new System.Drawing.Size(423, 342);
             this.listBox1.TabIndex = 41;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.radioButton20);
-            this.groupBox5.Controls.Add(this.radioButton19);
-            this.groupBox5.Controls.Add(this.radioButton18);
-            this.groupBox5.Controls.Add(this.radioButton17);
-            this.groupBox5.Controls.Add(this.radioButton16);
-            this.groupBox5.Controls.Add(this.radioButton15);
-            this.groupBox5.Controls.Add(this.radioButton14);
-            this.groupBox5.Controls.Add(this.radioButton13);
-            this.groupBox5.Controls.Add(this.radioButton12);
-            this.groupBox5.Controls.Add(this.radioButton11);
-            this.groupBox5.Controls.Add(this.radioButton10);
-            this.groupBox5.Controls.Add(this.radioButton9);
-            this.groupBox5.Controls.Add(this.radioButton8);
-            this.groupBox5.Controls.Add(this.radioButton7);
-            this.groupBox5.Controls.Add(this.radioButton6);
-            this.groupBox5.Controls.Add(this.radioButton5);
-            this.groupBox5.Controls.Add(this.radioButton4);
-            this.groupBox5.Controls.Add(this.radioButton3);
-            this.groupBox5.Controls.Add(this.radioButton2);
-            this.groupBox5.Controls.Add(this.radioButton1);
+            this.groupBox5.Controls.Add(this.checkBox30);
+            this.groupBox5.Controls.Add(this.checkBox29);
+            this.groupBox5.Controls.Add(this.checkBox28);
+            this.groupBox5.Controls.Add(this.checkBox27);
+            this.groupBox5.Controls.Add(this.checkBox26);
+            this.groupBox5.Controls.Add(this.checkBox25);
+            this.groupBox5.Controls.Add(this.checkBox24);
+            this.groupBox5.Controls.Add(this.checkBox23);
+            this.groupBox5.Controls.Add(this.checkBox22);
+            this.groupBox5.Controls.Add(this.checkBox21);
+            this.groupBox5.Controls.Add(this.checkBox20);
+            this.groupBox5.Controls.Add(this.checkBox19);
+            this.groupBox5.Controls.Add(this.checkBox18);
+            this.groupBox5.Controls.Add(this.checkBox17);
+            this.groupBox5.Controls.Add(this.checkBox16);
+            this.groupBox5.Controls.Add(this.checkBox15);
+            this.groupBox5.Controls.Add(this.checkBox14);
+            this.groupBox5.Controls.Add(this.checkBox13);
+            this.groupBox5.Controls.Add(this.checkBox12);
+            this.groupBox5.Controls.Add(this.checkBox11);
             this.groupBox5.Controls.Add(this.pictureBox21);
             this.groupBox5.Controls.Add(this.pictureBox20);
             this.groupBox5.Controls.Add(this.pictureBox19);
@@ -592,256 +559,234 @@
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(858, 56);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1054, 930);
+            this.groupBox5.Size = new System.Drawing.Size(1054, 878);
             this.groupBox5.TabIndex = 42;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "FOOD CHOICES";
-            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
-            // radioButton20
+            // checkBox30
             // 
-            this.radioButton20.AutoSize = true;
-            this.radioButton20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton20.Location = new System.Drawing.Point(894, 898);
-            this.radioButton20.Name = "radioButton20";
-            this.radioButton20.Size = new System.Drawing.Size(94, 21);
-            this.radioButton20.TabIndex = 39;
-            this.radioButton20.TabStop = true;
-            this.radioButton20.Text = "Jolli Shake";
-            this.radioButton20.UseVisualStyleBackColor = true;
+            this.checkBox30.AutoSize = true;
+            this.checkBox30.Location = new System.Drawing.Point(894, 843);
+            this.checkBox30.Name = "checkBox30";
+            this.checkBox30.Size = new System.Drawing.Size(95, 21);
+            this.checkBox30.TabIndex = 59;
+            this.checkBox30.Text = "Jolli Shake";
+            this.checkBox30.UseVisualStyleBackColor = true;
+            this.checkBox30.CheckedChanged += new System.EventHandler(this.checkBox30_CheckedChanged);
             // 
-            // radioButton19
+            // checkBox29
             // 
-            this.radioButton19.AutoSize = true;
-            this.radioButton19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton19.Location = new System.Drawing.Point(697, 898);
-            this.radioButton19.Name = "radioButton19";
-            this.radioButton19.Size = new System.Drawing.Size(57, 21);
-            this.radioButton19.TabIndex = 38;
-            this.radioButton19.TabStop = true;
-            this.radioButton19.Text = "Fries";
-            this.radioButton19.UseVisualStyleBackColor = true;
+            this.checkBox29.AutoSize = true;
+            this.checkBox29.Location = new System.Drawing.Point(701, 843);
+            this.checkBox29.Name = "checkBox29";
+            this.checkBox29.Size = new System.Drawing.Size(86, 21);
+            this.checkBox29.TabIndex = 58;
+            this.checkBox29.Text = "Jolli Fries";
+            this.checkBox29.UseVisualStyleBackColor = true;
             // 
-            // radioButton18
+            // checkBox28
             // 
-            this.radioButton18.AutoSize = true;
-            this.radioButton18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton18.Location = new System.Drawing.Point(470, 898);
-            this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(116, 21);
-            this.radioButton18.TabIndex = 37;
-            this.radioButton18.TabStop = true;
-            this.radioButton18.Text = "Combo Meal 2";
-            this.radioButton18.UseVisualStyleBackColor = true;
+            this.checkBox28.AutoSize = true;
+            this.checkBox28.Location = new System.Drawing.Point(477, 843);
+            this.checkBox28.Name = "checkBox28";
+            this.checkBox28.Size = new System.Drawing.Size(117, 21);
+            this.checkBox28.TabIndex = 57;
+            this.checkBox28.Text = "Combo Meal 2";
+            this.checkBox28.UseVisualStyleBackColor = true;
+            this.checkBox28.CheckedChanged += new System.EventHandler(this.checkBox28_CheckedChanged);
             // 
-            // radioButton17
+            // checkBox27
             // 
-            this.radioButton17.AutoSize = true;
-            this.radioButton17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton17.Location = new System.Drawing.Point(266, 898);
-            this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(116, 21);
-            this.radioButton17.TabIndex = 36;
-            this.radioButton17.TabStop = true;
-            this.radioButton17.Text = "Combo Meal 1";
-            this.radioButton17.UseVisualStyleBackColor = true;
+            this.checkBox27.AutoSize = true;
+            this.checkBox27.Location = new System.Drawing.Point(271, 843);
+            this.checkBox27.Name = "checkBox27";
+            this.checkBox27.Size = new System.Drawing.Size(117, 21);
+            this.checkBox27.TabIndex = 56;
+            this.checkBox27.Text = "Combo Meal 1";
+            this.checkBox27.UseVisualStyleBackColor = true;
+            this.checkBox27.CheckedChanged += new System.EventHandler(this.checkBox27_CheckedChanged);
             // 
-            // radioButton16
+            // checkBox26
             // 
-            this.radioButton16.AutoSize = true;
-            this.radioButton16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton16.Location = new System.Drawing.Point(78, 898);
-            this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(112, 21);
-            this.radioButton16.TabIndex = 35;
-            this.radioButton16.TabStop = true;
-            this.radioButton16.Text = "Family Meal 5";
-            this.radioButton16.UseVisualStyleBackColor = true;
+            this.checkBox26.AutoSize = true;
+            this.checkBox26.Location = new System.Drawing.Point(62, 843);
+            this.checkBox26.Name = "checkBox26";
+            this.checkBox26.Size = new System.Drawing.Size(114, 21);
+            this.checkBox26.TabIndex = 55;
+            this.checkBox26.Text = "Family Meal E";
+            this.checkBox26.UseVisualStyleBackColor = true;
+            this.checkBox26.CheckedChanged += new System.EventHandler(this.checkBox26_CheckedChanged);
             // 
-            // radioButton15
+            // checkBox25
             // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton15.Location = new System.Drawing.Point(894, 668);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(112, 21);
-            this.radioButton15.TabIndex = 34;
-            this.radioButton15.TabStop = true;
-            this.radioButton15.Text = "Family Meal 4";
-            this.radioButton15.UseVisualStyleBackColor = true;
+            this.checkBox25.AutoSize = true;
+            this.checkBox25.Location = new System.Drawing.Point(892, 630);
+            this.checkBox25.Name = "checkBox25";
+            this.checkBox25.Size = new System.Drawing.Size(115, 21);
+            this.checkBox25.TabIndex = 54;
+            this.checkBox25.Text = "Family Meal D";
+            this.checkBox25.UseVisualStyleBackColor = true;
+            this.checkBox25.CheckedChanged += new System.EventHandler(this.checkBox25_CheckedChanged);
             // 
-            // radioButton14
+            // checkBox24
             // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton14.Location = new System.Drawing.Point(680, 668);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(112, 21);
-            this.radioButton14.TabIndex = 33;
-            this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "Family Meal 3";
-            this.radioButton14.UseVisualStyleBackColor = true;
+            this.checkBox24.AutoSize = true;
+            this.checkBox24.Location = new System.Drawing.Point(690, 630);
+            this.checkBox24.Name = "checkBox24";
+            this.checkBox24.Size = new System.Drawing.Size(114, 21);
+            this.checkBox24.TabIndex = 53;
+            this.checkBox24.Text = "Family Meal C";
+            this.checkBox24.UseVisualStyleBackColor = true;
+            this.checkBox24.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
-            // radioButton13
+            // checkBox23
             // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton13.Location = new System.Drawing.Point(470, 668);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(112, 21);
-            this.radioButton13.TabIndex = 32;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "Family Meal 2";
-            this.radioButton13.UseVisualStyleBackColor = true;
+            this.checkBox23.AutoSize = true;
+            this.checkBox23.Location = new System.Drawing.Point(472, 630);
+            this.checkBox23.Name = "checkBox23";
+            this.checkBox23.Size = new System.Drawing.Size(114, 21);
+            this.checkBox23.TabIndex = 52;
+            this.checkBox23.Text = "Family Meal B";
+            this.checkBox23.UseVisualStyleBackColor = true;
+            this.checkBox23.CheckedChanged += new System.EventHandler(this.checkBox23_CheckedChanged);
             // 
-            // radioButton12
+            // checkBox22
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton12.Location = new System.Drawing.Point(266, 668);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(112, 21);
-            this.radioButton12.TabIndex = 31;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Family Meal 1";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.checkBox22.AutoSize = true;
+            this.checkBox22.Location = new System.Drawing.Point(274, 630);
+            this.checkBox22.Name = "checkBox22";
+            this.checkBox22.Size = new System.Drawing.Size(114, 21);
+            this.checkBox22.TabIndex = 51;
+            this.checkBox22.Text = "Family Meal A";
+            this.checkBox22.UseVisualStyleBackColor = true;
+            this.checkBox22.CheckedChanged += new System.EventHandler(this.checkBox22_CheckedChanged);
             // 
-            // radioButton11
+            // checkBox21
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton11.Location = new System.Drawing.Point(78, 668);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(113, 21);
-            this.radioButton11.TabIndex = 30;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Chaofun Meal";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.checkBox21.AutoSize = true;
+            this.checkBox21.Location = new System.Drawing.Point(66, 630);
+            this.checkBox21.Name = "checkBox21";
+            this.checkBox21.Size = new System.Drawing.Size(114, 21);
+            this.checkBox21.TabIndex = 50;
+            this.checkBox21.Text = "Chaofun Meal";
+            this.checkBox21.UseVisualStyleBackColor = true;
+            this.checkBox21.CheckedChanged += new System.EventHandler(this.checkBox21_CheckedChanged);
             // 
-            // radioButton10
+            // checkBox20
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton10.Location = new System.Drawing.Point(78, 434);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(109, 21);
-            this.radioButton10.TabIndex = 29;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Burger Steak";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.checkBox20.AutoSize = true;
+            this.checkBox20.Location = new System.Drawing.Point(894, 416);
+            this.checkBox20.Name = "checkBox20";
+            this.checkBox20.Size = new System.Drawing.Size(95, 21);
+            this.checkBox20.TabIndex = 49;
+            this.checkBox20.Text = "Pizza Meal";
+            this.checkBox20.UseVisualStyleBackColor = true;
+            this.checkBox20.CheckedChanged += new System.EventHandler(this.checkBox20_CheckedChanged);
             // 
-            // radioButton9
+            // checkBox19
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(894, 434);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(94, 21);
-            this.radioButton9.TabIndex = 28;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Pizza Meal";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.checkBox19.AutoSize = true;
+            this.checkBox19.Location = new System.Drawing.Point(690, 416);
+            this.checkBox19.Name = "checkBox19";
+            this.checkBox19.Size = new System.Drawing.Size(133, 21);
+            this.checkBox19.TabIndex = 48;
+            this.checkBox19.Text = "Breakfast Meal 2";
+            this.checkBox19.UseVisualStyleBackColor = true;
+            this.checkBox19.CheckedChanged += new System.EventHandler(this.checkBox19_CheckedChanged);
             // 
-            // radioButton8
+            // checkBox18
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(680, 434);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(132, 21);
-            this.radioButton8.TabIndex = 27;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Breakfast Meal 2";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.checkBox18.AutoSize = true;
+            this.checkBox18.Location = new System.Drawing.Point(470, 416);
+            this.checkBox18.Name = "checkBox18";
+            this.checkBox18.Size = new System.Drawing.Size(133, 21);
+            this.checkBox18.TabIndex = 47;
+            this.checkBox18.Text = "Breakfast Meal 1";
+            this.checkBox18.UseVisualStyleBackColor = true;
+            this.checkBox18.CheckedChanged += new System.EventHandler(this.checkBox18_CheckedChanged);
             // 
-            // radioButton7
+            // checkBox17
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(470, 434);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(132, 21);
-            this.radioButton7.TabIndex = 26;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Breakfast Meal 1";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.checkBox17.AutoSize = true;
+            this.checkBox17.Location = new System.Drawing.Point(266, 416);
+            this.checkBox17.Name = "checkBox17";
+            this.checkBox17.Size = new System.Drawing.Size(133, 21);
+            this.checkBox17.TabIndex = 46;
+            this.checkBox17.Text = "Spaghetti Meal 2";
+            this.checkBox17.UseVisualStyleBackColor = true;
+            this.checkBox17.CheckedChanged += new System.EventHandler(this.checkBox17_CheckedChanged);
             // 
-            // radioButton6
+            // checkBox16
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(266, 434);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(132, 21);
-            this.radioButton6.TabIndex = 25;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Spaghetti Meal 2";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.checkBox16.AutoSize = true;
+            this.checkBox16.Location = new System.Drawing.Point(66, 416);
+            this.checkBox16.Name = "checkBox16";
+            this.checkBox16.Size = new System.Drawing.Size(110, 21);
+            this.checkBox16.TabIndex = 45;
+            this.checkBox16.Text = "Burger Steak";
+            this.checkBox16.UseVisualStyleBackColor = true;
+            this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
             // 
-            // radioButton5
+            // checkBox15
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(55, 203);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(132, 21);
-            this.radioButton5.TabIndex = 24;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Spaghetti Meal 1";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.checkBox15.AutoSize = true;
+            this.checkBox15.Location = new System.Drawing.Point(894, 203);
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.Size = new System.Drawing.Size(112, 21);
+            this.checkBox15.TabIndex = 44;
+            this.checkBox15.Text = "Palabok Meal";
+            this.checkBox15.UseVisualStyleBackColor = true;
+            this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
             // 
-            // radioButton4
+            // checkBox14
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(894, 205);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(111, 21);
-            this.radioButton4.TabIndex = 23;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Palabok Meal";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.checkBox14.AutoSize = true;
+            this.checkBox14.Location = new System.Drawing.Point(690, 203);
+            this.checkBox14.Name = "checkBox14";
+            this.checkBox14.Size = new System.Drawing.Size(102, 21);
+            this.checkBox14.TabIndex = 43;
+            this.checkBox14.Text = "Rice Meal B";
+            this.checkBox14.UseVisualStyleBackColor = true;
+            this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
             // 
-            // radioButton3
+            // checkBox13
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(697, 204);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(101, 21);
-            this.radioButton3.TabIndex = 22;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Rice Meal B";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.Location = new System.Drawing.Point(489, 203);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(102, 21);
+            this.checkBox13.TabIndex = 42;
+            this.checkBox13.Text = "Rice Meal A";
+            this.checkBox13.UseVisualStyleBackColor = true;
+            this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
             // 
-            // radioButton2
+            // checkBox12
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(487, 205);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(101, 21);
-            this.radioButton2.TabIndex = 21;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Rice Meal A";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Location = new System.Drawing.Point(274, 203);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(104, 21);
+            this.checkBox12.TabIndex = 41;
+            this.checkBox12.Text = "Burger Meal";
+            this.checkBox12.UseVisualStyleBackColor = true;
+            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
             // 
-            // radioButton1
+            // checkBox11
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(281, 203);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(103, 21);
-            this.radioButton1.TabIndex = 20;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Burger Meal";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(54, 203);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(133, 21);
+            this.checkBox11.TabIndex = 40;
+            this.checkBox11.Text = "Spaghetti Meal 1";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
             // pictureBox21
             // 
-            this.pictureBox21.Image = global::Activity1.cs.Properties.Resources.jolli_shake;
-            this.pictureBox21.Location = new System.Drawing.Point(847, 712);
+            this.pictureBox21.Image = global::Lesson2.Properties.Resources.jolli_shake;
+            this.pictureBox21.Location = new System.Drawing.Point(847, 657);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(201, 180);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -850,18 +795,19 @@
             // 
             // pictureBox20
             // 
-            this.pictureBox20.Image = global::Activity1.cs.Properties.Resources.Jollibee_Crispy_Flavored_Fries;
-            this.pictureBox20.Location = new System.Drawing.Point(640, 712);
+            this.pictureBox20.Image = global::Lesson2.Properties.Resources.Jollibee_Crispy_Flavored_Fries;
+            this.pictureBox20.Location = new System.Drawing.Point(640, 657);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(201, 180);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox20.TabIndex = 18;
             this.pictureBox20.TabStop = false;
+            this.pictureBox20.Click += new System.EventHandler(this.pictureBox20_Click);
             // 
             // pictureBox19
             // 
-            this.pictureBox19.Image = global::Activity1.cs.Properties.Resources.kfc_combo;
-            this.pictureBox19.Location = new System.Drawing.Point(433, 712);
+            this.pictureBox19.Image = global::Lesson2.Properties.Resources.kfc_combo;
+            this.pictureBox19.Location = new System.Drawing.Point(433, 657);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(201, 180);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -870,8 +816,8 @@
             // 
             // pictureBox18
             // 
-            this.pictureBox18.Image = global::Activity1.cs.Properties.Resources.two_meal;
-            this.pictureBox18.Location = new System.Drawing.Point(226, 712);
+            this.pictureBox18.Image = global::Lesson2.Properties.Resources.two_meal;
+            this.pictureBox18.Location = new System.Drawing.Point(226, 657);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(201, 180);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -880,8 +826,8 @@
             // 
             // pictureBox17
             // 
-            this.pictureBox17.Image = global::Activity1.cs.Properties.Resources.family_double_bucket;
-            this.pictureBox17.Location = new System.Drawing.Point(847, 482);
+            this.pictureBox17.Image = global::Lesson2.Properties.Resources.family_double_bucket;
+            this.pictureBox17.Location = new System.Drawing.Point(847, 444);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(201, 180);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -890,8 +836,8 @@
             // 
             // pictureBox16
             // 
-            this.pictureBox16.Image = global::Activity1.cs.Properties.Resources._10_chicken;
-            this.pictureBox16.Location = new System.Drawing.Point(640, 482);
+            this.pictureBox16.Image = global::Lesson2.Properties.Resources._10_chicken;
+            this.pictureBox16.Location = new System.Drawing.Point(640, 444);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(201, 180);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -900,8 +846,8 @@
             // 
             // pictureBox15
             // 
-            this.pictureBox15.Image = global::Activity1.cs.Properties.Resources.kfc_double_bucket;
-            this.pictureBox15.Location = new System.Drawing.Point(433, 482);
+            this.pictureBox15.Image = global::Lesson2.Properties.Resources.kfc_double_bucket;
+            this.pictureBox15.Location = new System.Drawing.Point(433, 444);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(201, 180);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -910,8 +856,8 @@
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = global::Activity1.cs.Properties.Resources._1_bucket_2_sundae;
-            this.pictureBox14.Location = new System.Drawing.Point(226, 482);
+            this.pictureBox14.Image = global::Lesson2.Properties.Resources._1_bucket_2_sundae;
+            this.pictureBox14.Location = new System.Drawing.Point(226, 444);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(201, 180);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -920,8 +866,8 @@
             // 
             // pictureBox13
             // 
-            this.pictureBox13.Image = global::Activity1.cs.Properties.Resources.double_steak;
-            this.pictureBox13.Location = new System.Drawing.Point(19, 248);
+            this.pictureBox13.Image = global::Lesson2.Properties.Resources.double_steak;
+            this.pictureBox13.Location = new System.Drawing.Point(19, 230);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(201, 180);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -930,8 +876,8 @@
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = global::Activity1.cs.Properties.Resources.carbonara;
-            this.pictureBox12.Location = new System.Drawing.Point(847, 248);
+            this.pictureBox12.Image = global::Lesson2.Properties.Resources.carbonara;
+            this.pictureBox12.Location = new System.Drawing.Point(847, 230);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(201, 180);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -940,8 +886,8 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::Activity1.cs.Properties.Resources.jollibee_sausage_pancake;
-            this.pictureBox11.Location = new System.Drawing.Point(640, 248);
+            this.pictureBox11.Image = global::Lesson2.Properties.Resources.jollibee_sausage_pancake;
+            this.pictureBox11.Location = new System.Drawing.Point(640, 230);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(201, 180);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -950,8 +896,8 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Image = global::Activity1.cs.Properties.Resources.Corned_Beef_With_Drink;
-            this.pictureBox10.Location = new System.Drawing.Point(433, 248);
+            this.pictureBox10.Image = global::Lesson2.Properties.Resources.Corned_Beef_With_Drink;
+            this.pictureBox10.Location = new System.Drawing.Point(433, 230);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(201, 180);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -960,8 +906,8 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::Activity1.cs.Properties.Resources.kfc_meal;
-            this.pictureBox9.Location = new System.Drawing.Point(19, 712);
+            this.pictureBox9.Image = global::Lesson2.Properties.Resources.kfc_meal;
+            this.pictureBox9.Location = new System.Drawing.Point(19, 657);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(201, 180);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -970,8 +916,8 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::Activity1.cs.Properties.Resources.kfc_chaofun;
-            this.pictureBox8.Location = new System.Drawing.Point(19, 482);
+            this.pictureBox8.Image = global::Lesson2.Properties.Resources.kfc_chaofun;
+            this.pictureBox8.Location = new System.Drawing.Point(19, 444);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(201, 180);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -980,8 +926,8 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::Activity1.cs.Properties.Resources.jabee_spag;
-            this.pictureBox7.Location = new System.Drawing.Point(226, 248);
+            this.pictureBox7.Image = global::Lesson2.Properties.Resources.jabee_spag;
+            this.pictureBox7.Location = new System.Drawing.Point(226, 230);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(201, 180);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -990,7 +936,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::Activity1.cs.Properties.Resources.spag_chicken1;
+            this.pictureBox6.Image = global::Lesson2.Properties.Resources.spag_chicken1;
             this.pictureBox6.Location = new System.Drawing.Point(19, 17);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(201, 180);
@@ -1000,7 +946,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Activity1.cs.Properties.Resources.palabok_meal;
+            this.pictureBox5.Image = global::Lesson2.Properties.Resources.palabok_meal;
             this.pictureBox5.Location = new System.Drawing.Point(847, 19);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(201, 180);
@@ -1010,7 +956,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Activity1.cs.Properties.Resources._1_pc__Chickenjoy_With_Coke_Float;
+            this.pictureBox4.Image = global::Lesson2.Properties.Resources._1_pc__Chickenjoy_With_Coke_Float;
             this.pictureBox4.Location = new System.Drawing.Point(640, 17);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(201, 181);
@@ -1020,7 +966,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Activity1.cs.Properties.Resources._1_meal;
+            this.pictureBox3.Image = global::Lesson2.Properties.Resources._1_meal;
             this.pictureBox3.Location = new System.Drawing.Point(433, 17);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(201, 181);
@@ -1030,7 +976,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Activity1.cs.Properties.Resources.burger_large;
+            this.pictureBox1.Image = global::Lesson2.Properties.Resources.burger_large;
             this.pictureBox1.Location = new System.Drawing.Point(226, 17);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(201, 181);
@@ -1038,60 +984,84 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Remove_button
-            // 
-            this.Remove_button.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Remove_button.Location = new System.Drawing.Point(1442, 992);
-            this.Remove_button.Name = "Remove_button";
-            this.Remove_button.Size = new System.Drawing.Size(203, 37);
-            this.Remove_button.TabIndex = 43;
-            this.Remove_button.Text = "REMOVE ORDER";
-            this.Remove_button.UseVisualStyleBackColor = false;
-            this.Remove_button.Click += new System.EventHandler(this.Remove_button_Click);
-            // 
-            // New_button
-            // 
-            this.New_button.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.New_button.Location = new System.Drawing.Point(1651, 992);
-            this.New_button.Name = "New_button";
-            this.New_button.Size = new System.Drawing.Size(126, 37);
-            this.New_button.TabIndex = 44;
-            this.New_button.Text = "NEW";
-            this.New_button.UseVisualStyleBackColor = false;
-            this.New_button.Click += new System.EventHandler(this.New_button_Click);
-            // 
-            // Exit_button
-            // 
-            this.Exit_button.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Exit_button.Location = new System.Drawing.Point(1783, 992);
-            this.Exit_button.Name = "Exit_button";
-            this.Exit_button.Size = new System.Drawing.Size(129, 37);
-            this.Exit_button.TabIndex = 44;
-            this.Exit_button.Text = "EXIT";
-            this.Exit_button.UseVisualStyleBackColor = false;
-            // 
             // display_picturebox
             // 
             this.display_picturebox.Location = new System.Drawing.Point(441, 663);
             this.display_picturebox.Name = "display_picturebox";
-            this.display_picturebox.Size = new System.Drawing.Size(411, 323);
+            this.display_picturebox.Size = new System.Drawing.Size(411, 271);
             this.display_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.display_picturebox.TabIndex = 38;
             this.display_picturebox.TabStop = false;
+            this.display_picturebox.Click += new System.EventHandler(this.display_picturebox_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.Location = new System.Drawing.Point(863, 940);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(228, 37);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "CALCULATE BILLS";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button2.Location = new System.Drawing.Point(1097, 940);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(264, 37);
+            this.button2.TabIndex = 46;
+            this.button2.Text = "PRINT TRANSACTION";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button3.Location = new System.Drawing.Point(1367, 940);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(219, 37);
+            this.button3.TabIndex = 47;
+            this.button3.Text = "REMOVE ORDER";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button4.Location = new System.Drawing.Point(1592, 940);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(160, 37);
+            this.button4.TabIndex = 48;
+            this.button4.Text = "NEW";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button6.Location = new System.Drawing.Point(1758, 940);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(154, 37);
+            this.button6.TabIndex = 50;
+            this.button6.Text = "EXIT";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Activity4_lesson2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
-            this.Controls.Add(this.Exit_button);
-            this.Controls.Add(this.New_button);
-            this.Controls.Add(this.Remove_button);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.Calculate_button);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.Print_button);
             this.Controls.Add(this.display_picturebox);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -1100,6 +1070,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Activity4_lesson2";
             this.Text = "Activity4_lesson2";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Activity4_lesson2_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -1152,8 +1123,6 @@
         public System.Windows.Forms.CheckBox checkBox3;
         public System.Windows.Forms.CheckBox checkBox1;
         public System.Windows.Forms.GroupBox groupBox2;
-        public System.Windows.Forms.Button Print_button;
-        public System.Windows.Forms.Button Calculate_button;
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox discountTxtbox;
         public System.Windows.Forms.TextBox priceTxtbox;
@@ -1197,29 +1166,31 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.RadioButton radioButton16;
-        private System.Windows.Forms.RadioButton radioButton15;
-        private System.Windows.Forms.RadioButton radioButton14;
-        private System.Windows.Forms.RadioButton radioButton13;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        public System.Windows.Forms.Button Remove_button;
-        public System.Windows.Forms.Button New_button;
-        public System.Windows.Forms.Button Exit_button;
-        private System.Windows.Forms.RadioButton radioButton20;
-        private System.Windows.Forms.RadioButton radioButton19;
-        private System.Windows.Forms.RadioButton radioButton18;
-        private System.Windows.Forms.RadioButton radioButton17;
         public System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.CheckBox checkBox25;
+        private System.Windows.Forms.CheckBox checkBox24;
+        private System.Windows.Forms.CheckBox checkBox23;
+        private System.Windows.Forms.CheckBox checkBox22;
+        private System.Windows.Forms.CheckBox checkBox21;
+        private System.Windows.Forms.CheckBox checkBox20;
+        private System.Windows.Forms.CheckBox checkBox19;
+        private System.Windows.Forms.CheckBox checkBox18;
+        private System.Windows.Forms.CheckBox checkBox17;
+        private System.Windows.Forms.CheckBox checkBox16;
+        private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.CheckBox checkBox14;
+        private System.Windows.Forms.CheckBox checkBox30;
+        private System.Windows.Forms.CheckBox checkBox29;
+        private System.Windows.Forms.CheckBox checkBox28;
+        private System.Windows.Forms.CheckBox checkBox27;
+        private System.Windows.Forms.CheckBox checkBox26;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button button4;
+        public System.Windows.Forms.Button button6;
     }
 }

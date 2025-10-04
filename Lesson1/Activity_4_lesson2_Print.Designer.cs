@@ -1,4 +1,4 @@
-﻿namespace Activity1.cs
+﻿namespace Lesson2
 {
     partial class Activity_4_lesson2_Print
     {

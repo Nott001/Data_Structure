@@ -88,9 +88,11 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.Others_other_deduc_box = new System.Windows.Forms.TextBox();
+            this.Others_combobox = new System.Windows.Forms.ComboBox();
             this.faculty_savings_loan_box = new System.Windows.Forms.TextBox();
-            this.salary_loan_box = new System.Windows.Forms.TextBox();
             this.faculty_savings_dep_box = new System.Windows.Forms.TextBox();
+            this.salary_loan_box = new System.Windows.Forms.TextBox();
             this.Pagibig_loan = new System.Windows.Forms.TextBox();
             this.Sss_loan = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
@@ -110,8 +112,6 @@
             this.exit_button = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.Payslip_view_listbox = new System.Windows.Forms.ListBox();
-            this.Others_combobox = new System.Windows.Forms.ComboBox();
-            this.Others_other_deduc_box = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -231,6 +231,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1405, 316);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // browse_button
             // 
@@ -761,6 +762,23 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "OTHER DEDUCTIONS";
             // 
+            // Others_other_deduc_box
+            // 
+            this.Others_other_deduc_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Others_other_deduc_box.Location = new System.Drawing.Point(240, 299);
+            this.Others_other_deduc_box.Name = "Others_other_deduc_box";
+            this.Others_other_deduc_box.Size = new System.Drawing.Size(379, 24);
+            this.Others_other_deduc_box.TabIndex = 39;
+            // 
+            // Others_combobox
+            // 
+            this.Others_combobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Others_combobox.FormattingEnabled = true;
+            this.Others_combobox.Location = new System.Drawing.Point(240, 264);
+            this.Others_combobox.Name = "Others_combobox";
+            this.Others_combobox.Size = new System.Drawing.Size(379, 26);
+            this.Others_combobox.TabIndex = 38;
+            // 
             // faculty_savings_loan_box
             // 
             this.faculty_savings_loan_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -769,14 +787,6 @@
             this.faculty_savings_loan_box.Size = new System.Drawing.Size(379, 24);
             this.faculty_savings_loan_box.TabIndex = 36;
             // 
-            // salary_loan_box
-            // 
-            this.salary_loan_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salary_loan_box.Location = new System.Drawing.Point(240, 216);
-            this.salary_loan_box.Name = "salary_loan_box";
-            this.salary_loan_box.Size = new System.Drawing.Size(379, 24);
-            this.salary_loan_box.TabIndex = 35;
-            // 
             // faculty_savings_dep_box
             // 
             this.faculty_savings_dep_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -784,6 +794,14 @@
             this.faculty_savings_dep_box.Name = "faculty_savings_dep_box";
             this.faculty_savings_dep_box.Size = new System.Drawing.Size(379, 24);
             this.faculty_savings_dep_box.TabIndex = 34;
+            // 
+            // salary_loan_box
+            // 
+            this.salary_loan_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salary_loan_box.Location = new System.Drawing.Point(240, 216);
+            this.salary_loan_box.Name = "salary_loan_box";
+            this.salary_loan_box.Size = new System.Drawing.Size(379, 24);
+            this.salary_loan_box.TabIndex = 35;
             // 
             // Pagibig_loan
             // 
@@ -938,6 +956,7 @@
             this.print_payslip_button.TabIndex = 27;
             this.print_payslip_button.Text = "PRINT PAYSLIP";
             this.print_payslip_button.UseVisualStyleBackColor = true;
+            this.print_payslip_button.Click += new System.EventHandler(this.print_payslip_button_Click);
             // 
             // preview_button
             // 
@@ -948,6 +967,7 @@
             this.preview_button.TabIndex = 28;
             this.preview_button.Text = "PREVIEW PAYSLIP DETAILS";
             this.preview_button.UseVisualStyleBackColor = true;
+            this.preview_button.Click += new System.EventHandler(this.preview_button_Click);
             // 
             // exit_button
             // 
@@ -979,23 +999,6 @@
             this.Payslip_view_listbox.Name = "Payslip_view_listbox";
             this.Payslip_view_listbox.Size = new System.Drawing.Size(477, 994);
             this.Payslip_view_listbox.TabIndex = 0;
-            // 
-            // Others_combobox
-            // 
-            this.Others_combobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Others_combobox.FormattingEnabled = true;
-            this.Others_combobox.Location = new System.Drawing.Point(240, 264);
-            this.Others_combobox.Name = "Others_combobox";
-            this.Others_combobox.Size = new System.Drawing.Size(379, 26);
-            this.Others_combobox.TabIndex = 38;
-            // 
-            // Others_other_deduc_box
-            // 
-            this.Others_other_deduc_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Others_other_deduc_box.Location = new System.Drawing.Point(240, 299);
-            this.Others_other_deduc_box.Name = "Others_other_deduc_box";
-            this.Others_other_deduc_box.Size = new System.Drawing.Size(379, 24);
-            this.Others_other_deduc_box.TabIndex = 39;
             // 
             // Activity5_lesson3
             // 

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Activity1.cs
+namespace Lesson2
 {
     public partial class Activity_4_lesson2_Print : Form
     {

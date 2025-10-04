@@ -132,7 +132,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::Activity1.cs.Properties.Resources.Default_pfp1;
+            this.pictureBox1.Image = global::Lesson2.Properties.Resources.Default_pfp1;
             this.pictureBox1.Location = new System.Drawing.Point(863, 177);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(185, 179);
