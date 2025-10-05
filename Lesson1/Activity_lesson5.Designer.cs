@@ -119,7 +119,7 @@ namespace Lesson2
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(815, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 32);
+            this.label1.Size = new System.Drawing.Size(298, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "SE-RI\'S CHOICE PAYROLL";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -970,6 +970,7 @@ namespace Lesson2
             this.Controls.Add(this.label1);
             this.Name = "Activity_lesson5";
             this.Text = "Activity";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Activity_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

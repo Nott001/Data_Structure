@@ -74,8 +74,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.Net_income = new System.Windows.Forms.TextBox();
-            this.Gross_income = new System.Windows.Forms.TextBox();
+            this.Net_income_box = new System.Windows.Forms.TextBox();
+            this.Gross_income_box = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -93,8 +93,8 @@
             this.faculty_savings_loan_box = new System.Windows.Forms.TextBox();
             this.faculty_savings_dep_box = new System.Windows.Forms.TextBox();
             this.salary_loan_box = new System.Windows.Forms.TextBox();
-            this.Pagibig_loan = new System.Windows.Forms.TextBox();
-            this.Sss_loan = new System.Windows.Forms.TextBox();
+            this.Pagibig_loan_box = new System.Windows.Forms.TextBox();
+            this.Sss_loan_box = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.Salary_loan = new System.Windows.Forms.Label();
             this.Faculty_savings_loan = new System.Windows.Forms.Label();
@@ -102,7 +102,7 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.Total_deductions = new System.Windows.Forms.TextBox();
+            this.Total_deductions_box = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.calculate_button = new System.Windows.Forms.Button();
             this.new_button = new System.Windows.Forms.Button();
@@ -129,7 +129,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(45, 34);
+            this.label2.Location = new System.Drawing.Point(45, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 18);
             this.label2.TabIndex = 1;
@@ -140,7 +140,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(45, 77);
+            this.label1.Location = new System.Drawing.Point(45, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 18);
             this.label1.TabIndex = 2;
@@ -151,7 +151,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(45, 122);
+            this.label3.Location = new System.Drawing.Point(45, 116);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 18);
             this.label3.TabIndex = 3;
@@ -162,7 +162,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(45, 170);
+            this.label4.Location = new System.Drawing.Point(45, 164);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 18);
             this.label4.TabIndex = 4;
@@ -173,7 +173,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(45, 219);
+            this.label5.Location = new System.Drawing.Point(45, 213);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 18);
             this.label5.TabIndex = 5;
@@ -184,7 +184,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(45, 264);
+            this.label6.Location = new System.Drawing.Point(45, 258);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 18);
             this.label6.TabIndex = 6;
@@ -195,11 +195,11 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(45, 39);
+            this.label7.Location = new System.Drawing.Point(45, 34);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 18);
+            this.label7.Size = new System.Drawing.Size(88, 18);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Rate 7 hour:";
+            this.label7.Text = "Rate / Hour:";
             // 
             // groupBox1
             // 
@@ -228,7 +228,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1405, 316);
+            this.groupBox1.Size = new System.Drawing.Size(1405, 292);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -242,6 +242,7 @@
             this.browse_button.TabIndex = 23;
             this.browse_button.Text = "Browse";
             this.browse_button.UseVisualStyleBackColor = true;
+            this.browse_button.Click += new System.EventHandler(this.browse_button_Click);
             // 
             // pic_path_textbox
             // 
@@ -262,7 +263,7 @@
             // emp_status_box
             // 
             this.emp_status_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emp_status_box.Location = new System.Drawing.Point(841, 116);
+            this.emp_status_box.Location = new System.Drawing.Point(841, 110);
             this.emp_status_box.Name = "emp_status_box";
             this.emp_status_box.Size = new System.Drawing.Size(293, 24);
             this.emp_status_box.TabIndex = 20;
@@ -270,7 +271,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(841, 77);
+            this.dateTimePicker1.Location = new System.Drawing.Point(841, 71);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(293, 24);
             this.dateTimePicker1.TabIndex = 19;
@@ -278,7 +279,7 @@
             // num_dependants_box
             // 
             this.num_dependants_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_dependants_box.Location = new System.Drawing.Point(841, 28);
+            this.num_dependants_box.Location = new System.Drawing.Point(841, 22);
             this.num_dependants_box.Name = "num_dependants_box";
             this.num_dependants_box.Size = new System.Drawing.Size(293, 24);
             this.num_dependants_box.TabIndex = 18;
@@ -286,7 +287,7 @@
             // department_box
             // 
             this.department_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.department_box.Location = new System.Drawing.Point(841, 164);
+            this.department_box.Location = new System.Drawing.Point(841, 158);
             this.department_box.Name = "department_box";
             this.department_box.Size = new System.Drawing.Size(293, 24);
             this.department_box.TabIndex = 17;
@@ -296,7 +297,7 @@
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label32.Location = new System.Drawing.Point(696, 170);
+            this.label32.Location = new System.Drawing.Point(696, 164);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(89, 18);
             this.label32.TabIndex = 16;
@@ -307,7 +308,7 @@
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label31.Location = new System.Drawing.Point(696, 122);
+            this.label31.Location = new System.Drawing.Point(696, 116);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(124, 18);
             this.label31.TabIndex = 15;
@@ -318,7 +319,7 @@
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label30.Location = new System.Drawing.Point(696, 77);
+            this.label30.Location = new System.Drawing.Point(696, 71);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(65, 18);
             this.label30.TabIndex = 14;
@@ -329,7 +330,7 @@
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label28.Location = new System.Drawing.Point(696, 28);
+            this.label28.Location = new System.Drawing.Point(696, 22);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(101, 36);
             this.label28.TabIndex = 13;
@@ -338,7 +339,7 @@
             // designation_box
             // 
             this.designation_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.designation_box.Location = new System.Drawing.Point(236, 258);
+            this.designation_box.Location = new System.Drawing.Point(236, 252);
             this.designation_box.Name = "designation_box";
             this.designation_box.Size = new System.Drawing.Size(371, 24);
             this.designation_box.TabIndex = 12;
@@ -346,7 +347,7 @@
             // civil_stat_box
             // 
             this.civil_stat_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.civil_stat_box.Location = new System.Drawing.Point(236, 213);
+            this.civil_stat_box.Location = new System.Drawing.Point(236, 207);
             this.civil_stat_box.Name = "civil_stat_box";
             this.civil_stat_box.Size = new System.Drawing.Size(371, 24);
             this.civil_stat_box.TabIndex = 11;
@@ -354,7 +355,7 @@
             // surname_box
             // 
             this.surname_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.surname_box.Location = new System.Drawing.Point(236, 164);
+            this.surname_box.Location = new System.Drawing.Point(236, 158);
             this.surname_box.Name = "surname_box";
             this.surname_box.Size = new System.Drawing.Size(371, 24);
             this.surname_box.TabIndex = 10;
@@ -362,7 +363,7 @@
             // middle_name_box
             // 
             this.middle_name_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.middle_name_box.Location = new System.Drawing.Point(236, 116);
+            this.middle_name_box.Location = new System.Drawing.Point(236, 110);
             this.middle_name_box.Name = "middle_name_box";
             this.middle_name_box.Size = new System.Drawing.Size(371, 24);
             this.middle_name_box.TabIndex = 9;
@@ -370,7 +371,7 @@
             // first_name_box
             // 
             this.first_name_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.first_name_box.Location = new System.Drawing.Point(236, 71);
+            this.first_name_box.Location = new System.Drawing.Point(236, 65);
             this.first_name_box.Name = "first_name_box";
             this.first_name_box.Size = new System.Drawing.Size(371, 24);
             this.first_name_box.TabIndex = 8;
@@ -378,7 +379,7 @@
             // emp_num_box
             // 
             this.emp_num_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emp_num_box.Location = new System.Drawing.Point(236, 28);
+            this.emp_num_box.Location = new System.Drawing.Point(236, 22);
             this.emp_num_box.Name = "emp_num_box";
             this.emp_num_box.Size = new System.Drawing.Size(371, 24);
             this.emp_num_box.TabIndex = 7;
@@ -392,9 +393,9 @@
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 334);
+            this.groupBox2.Location = new System.Drawing.Point(12, 310);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(726, 173);
+            this.groupBox2.Size = new System.Drawing.Size(726, 169);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "BASIC PAY";
@@ -402,7 +403,7 @@
             // Income_per_cutoff
             // 
             this.Income_per_cutoff.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Income_per_cutoff.Location = new System.Drawing.Point(236, 119);
+            this.Income_per_cutoff.Location = new System.Drawing.Point(236, 114);
             this.Income_per_cutoff.Name = "Income_per_cutoff";
             this.Income_per_cutoff.Size = new System.Drawing.Size(371, 24);
             this.Income_per_cutoff.TabIndex = 13;
@@ -410,7 +411,7 @@
             // Num_hrs_basic
             // 
             this.Num_hrs_basic.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Num_hrs_basic.Location = new System.Drawing.Point(236, 74);
+            this.Num_hrs_basic.Location = new System.Drawing.Point(236, 69);
             this.Num_hrs_basic.Name = "Num_hrs_basic";
             this.Num_hrs_basic.Size = new System.Drawing.Size(371, 24);
             this.Num_hrs_basic.TabIndex = 12;
@@ -419,7 +420,7 @@
             // rate_7_hr
             // 
             this.rate_7_hr.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rate_7_hr.Location = new System.Drawing.Point(236, 33);
+            this.rate_7_hr.Location = new System.Drawing.Point(236, 28);
             this.rate_7_hr.Name = "rate_7_hr";
             this.rate_7_hr.Size = new System.Drawing.Size(371, 24);
             this.rate_7_hr.TabIndex = 11;
@@ -429,7 +430,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(45, 125);
+            this.label9.Location = new System.Drawing.Point(45, 120);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(139, 18);
             this.label9.TabIndex = 10;
@@ -440,7 +441,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(45, 80);
+            this.label8.Location = new System.Drawing.Point(45, 75);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(151, 18);
             this.label8.TabIndex = 10;
@@ -455,9 +456,9 @@
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 513);
+            this.groupBox3.Location = new System.Drawing.Point(12, 485);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(726, 167);
+            this.groupBox3.Size = new System.Drawing.Size(726, 157);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "HONORARIUM";
@@ -465,7 +466,7 @@
             // Total_honor_pay_box
             // 
             this.Total_honor_pay_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total_honor_pay_box.Location = new System.Drawing.Point(236, 112);
+            this.Total_honor_pay_box.Location = new System.Drawing.Point(236, 105);
             this.Total_honor_pay_box.Name = "Total_honor_pay_box";
             this.Total_honor_pay_box.Size = new System.Drawing.Size(371, 24);
             this.Total_honor_pay_box.TabIndex = 16;
@@ -473,15 +474,16 @@
             // Num_hrs_honorarium_box
             // 
             this.Num_hrs_honorarium_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Num_hrs_honorarium_box.Location = new System.Drawing.Point(236, 72);
+            this.Num_hrs_honorarium_box.Location = new System.Drawing.Point(236, 65);
             this.Num_hrs_honorarium_box.Name = "Num_hrs_honorarium_box";
             this.Num_hrs_honorarium_box.Size = new System.Drawing.Size(371, 24);
             this.Num_hrs_honorarium_box.TabIndex = 15;
+            this.Num_hrs_honorarium_box.TextChanged += new System.EventHandler(this.Num_hrs_honorarium_box_TextChanged);
             // 
             // Rate_hr_honorarium_box
             // 
             this.Rate_hr_honorarium_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rate_hr_honorarium_box.Location = new System.Drawing.Point(236, 31);
+            this.Rate_hr_honorarium_box.Location = new System.Drawing.Point(236, 24);
             this.Rate_hr_honorarium_box.Name = "Rate_hr_honorarium_box";
             this.Rate_hr_honorarium_box.Size = new System.Drawing.Size(371, 24);
             this.Rate_hr_honorarium_box.TabIndex = 14;
@@ -491,7 +493,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(45, 118);
+            this.label10.Location = new System.Drawing.Point(45, 111);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(157, 18);
             this.label10.TabIndex = 10;
@@ -502,7 +504,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(45, 78);
+            this.label11.Location = new System.Drawing.Point(45, 71);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(151, 18);
             this.label11.TabIndex = 10;
@@ -513,7 +515,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(45, 37);
+            this.label12.Location = new System.Drawing.Point(45, 30);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(88, 18);
             this.label12.TabIndex = 7;
@@ -528,9 +530,9 @@
             this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(12, 686);
+            this.groupBox4.Location = new System.Drawing.Point(12, 648);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(726, 168);
+            this.groupBox4.Size = new System.Drawing.Size(726, 155);
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "OTHER INCOME";
@@ -538,7 +540,7 @@
             // total_other_income_pay_box
             // 
             this.total_other_income_pay_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.total_other_income_pay_box.Location = new System.Drawing.Point(236, 107);
+            this.total_other_income_pay_box.Location = new System.Drawing.Point(236, 104);
             this.total_other_income_pay_box.Name = "total_other_income_pay_box";
             this.total_other_income_pay_box.Size = new System.Drawing.Size(371, 24);
             this.total_other_income_pay_box.TabIndex = 17;
@@ -551,21 +553,23 @@
             this.Num_hrs_other_income_box.Name = "Num_hrs_other_income_box";
             this.Num_hrs_other_income_box.Size = new System.Drawing.Size(371, 24);
             this.Num_hrs_other_income_box.TabIndex = 16;
+            this.Num_hrs_other_income_box.TextChanged += new System.EventHandler(this.Num_hrs_other_income_box_TextChanged);
             // 
             // Rate_hr_other_income_box
             // 
             this.Rate_hr_other_income_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rate_hr_other_income_box.Location = new System.Drawing.Point(236, 29);
+            this.Rate_hr_other_income_box.Location = new System.Drawing.Point(236, 26);
             this.Rate_hr_other_income_box.Name = "Rate_hr_other_income_box";
             this.Rate_hr_other_income_box.Size = new System.Drawing.Size(371, 24);
             this.Rate_hr_other_income_box.TabIndex = 15;
+            this.Rate_hr_other_income_box.TextChanged += new System.EventHandler(this.Rate_hr_other_income_box_TextChanged);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(45, 113);
+            this.label13.Location = new System.Drawing.Point(45, 110);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(168, 18);
             this.label13.TabIndex = 10;
@@ -576,7 +580,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(45, 73);
+            this.label14.Location = new System.Drawing.Point(45, 70);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(151, 18);
             this.label14.TabIndex = 10;
@@ -587,7 +591,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label15.Location = new System.Drawing.Point(45, 35);
+            this.label15.Location = new System.Drawing.Point(45, 32);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(88, 18);
             this.label15.TabIndex = 7;
@@ -595,33 +599,33 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.Net_income);
-            this.groupBox5.Controls.Add(this.Gross_income);
+            this.groupBox5.Controls.Add(this.Net_income_box);
+            this.groupBox5.Controls.Add(this.Gross_income_box);
             this.groupBox5.Controls.Add(this.label17);
             this.groupBox5.Controls.Add(this.label18);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(12, 860);
+            this.groupBox5.Location = new System.Drawing.Point(12, 809);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(726, 114);
+            this.groupBox5.Size = new System.Drawing.Size(726, 116);
             this.groupBox5.TabIndex = 12;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "INCOME SUMMARY";
             // 
-            // Net_income
+            // Net_income_box
             // 
-            this.Net_income.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Net_income.Location = new System.Drawing.Point(210, 59);
-            this.Net_income.Name = "Net_income";
-            this.Net_income.Size = new System.Drawing.Size(373, 24);
-            this.Net_income.TabIndex = 19;
+            this.Net_income_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Net_income_box.Location = new System.Drawing.Point(210, 59);
+            this.Net_income_box.Name = "Net_income_box";
+            this.Net_income_box.Size = new System.Drawing.Size(373, 24);
+            this.Net_income_box.TabIndex = 19;
             // 
-            // Gross_income
+            // Gross_income_box
             // 
-            this.Gross_income.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Gross_income.Location = new System.Drawing.Point(210, 28);
-            this.Gross_income.Name = "Gross_income";
-            this.Gross_income.Size = new System.Drawing.Size(373, 24);
-            this.Gross_income.TabIndex = 18;
+            this.Gross_income_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Gross_income_box.Location = new System.Drawing.Point(210, 28);
+            this.Gross_income_box.Name = "Gross_income_box";
+            this.Gross_income_box.Size = new System.Drawing.Size(373, 24);
+            this.Gross_income_box.TabIndex = 18;
             // 
             // label17
             // 
@@ -656,9 +660,9 @@
             this.groupBox6.Controls.Add(this.label19);
             this.groupBox6.Controls.Add(this.label20);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(744, 334);
+            this.groupBox6.Location = new System.Drawing.Point(744, 310);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(673, 221);
+            this.groupBox6.Size = new System.Drawing.Size(673, 211);
             this.groupBox6.TabIndex = 13;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "REGULAR DEDUCTIONS";
@@ -746,8 +750,8 @@
             this.groupBox7.Controls.Add(this.faculty_savings_loan_box);
             this.groupBox7.Controls.Add(this.faculty_savings_dep_box);
             this.groupBox7.Controls.Add(this.salary_loan_box);
-            this.groupBox7.Controls.Add(this.Pagibig_loan);
-            this.groupBox7.Controls.Add(this.Sss_loan);
+            this.groupBox7.Controls.Add(this.Pagibig_loan_box);
+            this.groupBox7.Controls.Add(this.Sss_loan_box);
             this.groupBox7.Controls.Add(this.label27);
             this.groupBox7.Controls.Add(this.Salary_loan);
             this.groupBox7.Controls.Add(this.Faculty_savings_loan);
@@ -755,9 +759,9 @@
             this.groupBox7.Controls.Add(this.label23);
             this.groupBox7.Controls.Add(this.label24);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(744, 561);
+            this.groupBox7.Location = new System.Drawing.Point(744, 527);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(673, 339);
+            this.groupBox7.Size = new System.Drawing.Size(673, 318);
             this.groupBox7.TabIndex = 14;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "OTHER DEDUCTIONS";
@@ -765,7 +769,7 @@
             // Others_other_deduc_box
             // 
             this.Others_other_deduc_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Others_other_deduc_box.Location = new System.Drawing.Point(240, 299);
+            this.Others_other_deduc_box.Location = new System.Drawing.Point(240, 283);
             this.Others_other_deduc_box.Name = "Others_other_deduc_box";
             this.Others_other_deduc_box.Size = new System.Drawing.Size(379, 24);
             this.Others_other_deduc_box.TabIndex = 39;
@@ -774,7 +778,7 @@
             // 
             this.Others_combobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Others_combobox.FormattingEnabled = true;
-            this.Others_combobox.Location = new System.Drawing.Point(240, 264);
+            this.Others_combobox.Location = new System.Drawing.Point(240, 248);
             this.Others_combobox.Name = "Others_combobox";
             this.Others_combobox.Size = new System.Drawing.Size(379, 26);
             this.Others_combobox.TabIndex = 38;
@@ -782,7 +786,7 @@
             // faculty_savings_loan_box
             // 
             this.faculty_savings_loan_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.faculty_savings_loan_box.Location = new System.Drawing.Point(240, 175);
+            this.faculty_savings_loan_box.Location = new System.Drawing.Point(240, 159);
             this.faculty_savings_loan_box.Name = "faculty_savings_loan_box";
             this.faculty_savings_loan_box.Size = new System.Drawing.Size(379, 24);
             this.faculty_savings_loan_box.TabIndex = 36;
@@ -790,7 +794,7 @@
             // faculty_savings_dep_box
             // 
             this.faculty_savings_dep_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.faculty_savings_dep_box.Location = new System.Drawing.Point(240, 131);
+            this.faculty_savings_dep_box.Location = new System.Drawing.Point(240, 115);
             this.faculty_savings_dep_box.Name = "faculty_savings_dep_box";
             this.faculty_savings_dep_box.Size = new System.Drawing.Size(379, 24);
             this.faculty_savings_dep_box.TabIndex = 34;
@@ -798,33 +802,33 @@
             // salary_loan_box
             // 
             this.salary_loan_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salary_loan_box.Location = new System.Drawing.Point(240, 216);
+            this.salary_loan_box.Location = new System.Drawing.Point(240, 200);
             this.salary_loan_box.Name = "salary_loan_box";
             this.salary_loan_box.Size = new System.Drawing.Size(379, 24);
             this.salary_loan_box.TabIndex = 35;
             // 
-            // Pagibig_loan
+            // Pagibig_loan_box
             // 
-            this.Pagibig_loan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pagibig_loan.Location = new System.Drawing.Point(240, 85);
-            this.Pagibig_loan.Name = "Pagibig_loan";
-            this.Pagibig_loan.Size = new System.Drawing.Size(379, 24);
-            this.Pagibig_loan.TabIndex = 33;
+            this.Pagibig_loan_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pagibig_loan_box.Location = new System.Drawing.Point(240, 69);
+            this.Pagibig_loan_box.Name = "Pagibig_loan_box";
+            this.Pagibig_loan_box.Size = new System.Drawing.Size(379, 24);
+            this.Pagibig_loan_box.TabIndex = 33;
             // 
-            // Sss_loan
+            // Sss_loan_box
             // 
-            this.Sss_loan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sss_loan.Location = new System.Drawing.Point(240, 39);
-            this.Sss_loan.Name = "Sss_loan";
-            this.Sss_loan.Size = new System.Drawing.Size(379, 24);
-            this.Sss_loan.TabIndex = 32;
+            this.Sss_loan_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sss_loan_box.Location = new System.Drawing.Point(240, 23);
+            this.Sss_loan_box.Name = "Sss_loan_box";
+            this.Sss_loan_box.Size = new System.Drawing.Size(379, 24);
+            this.Sss_loan_box.TabIndex = 32;
             // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label27.Location = new System.Drawing.Point(45, 267);
+            this.label27.Location = new System.Drawing.Point(45, 251);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(57, 18);
             this.label27.TabIndex = 16;
@@ -835,7 +839,7 @@
             this.Salary_loan.AutoSize = true;
             this.Salary_loan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Salary_loan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Salary_loan.Location = new System.Drawing.Point(45, 222);
+            this.Salary_loan.Location = new System.Drawing.Point(45, 206);
             this.Salary_loan.Name = "Salary_loan";
             this.Salary_loan.Size = new System.Drawing.Size(90, 18);
             this.Salary_loan.TabIndex = 15;
@@ -846,7 +850,7 @@
             this.Faculty_savings_loan.AutoSize = true;
             this.Faculty_savings_loan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Faculty_savings_loan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Faculty_savings_loan.Location = new System.Drawing.Point(45, 181);
+            this.Faculty_savings_loan.Location = new System.Drawing.Point(45, 165);
             this.Faculty_savings_loan.Name = "Faculty_savings_loan";
             this.Faculty_savings_loan.Size = new System.Drawing.Size(152, 18);
             this.Faculty_savings_loan.TabIndex = 11;
@@ -857,7 +861,7 @@
             this.Faculty_Savings_deposit.AutoSize = true;
             this.Faculty_Savings_deposit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Faculty_Savings_deposit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Faculty_Savings_deposit.Location = new System.Drawing.Point(45, 137);
+            this.Faculty_Savings_deposit.Location = new System.Drawing.Point(45, 121);
             this.Faculty_Savings_deposit.Name = "Faculty_Savings_deposit";
             this.Faculty_Savings_deposit.Size = new System.Drawing.Size(170, 18);
             this.Faculty_Savings_deposit.TabIndex = 10;
@@ -868,7 +872,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label23.Location = new System.Drawing.Point(45, 91);
+            this.label23.Location = new System.Drawing.Point(45, 75);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(108, 18);
             this.label23.TabIndex = 10;
@@ -879,7 +883,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label24.Location = new System.Drawing.Point(45, 45);
+            this.label24.Location = new System.Drawing.Point(45, 29);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(79, 18);
             this.label24.TabIndex = 7;
@@ -887,30 +891,30 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.Total_deductions);
+            this.groupBox8.Controls.Add(this.Total_deductions_box);
             this.groupBox8.Controls.Add(this.label29);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(744, 906);
+            this.groupBox8.Location = new System.Drawing.Point(744, 863);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(673, 68);
+            this.groupBox8.Size = new System.Drawing.Size(673, 62);
             this.groupBox8.TabIndex = 15;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "DEDUCTION SUMMARY";
             // 
-            // Total_deductions
+            // Total_deductions_box
             // 
-            this.Total_deductions.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total_deductions.Location = new System.Drawing.Point(187, 31);
-            this.Total_deductions.Name = "Total_deductions";
-            this.Total_deductions.Size = new System.Drawing.Size(373, 24);
-            this.Total_deductions.TabIndex = 38;
+            this.Total_deductions_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Total_deductions_box.Location = new System.Drawing.Point(186, 22);
+            this.Total_deductions_box.Name = "Total_deductions_box";
+            this.Total_deductions_box.Size = new System.Drawing.Size(373, 24);
+            this.Total_deductions_box.TabIndex = 38;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label29.Location = new System.Drawing.Point(45, 34);
+            this.label29.Location = new System.Drawing.Point(44, 25);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(116, 18);
             this.label29.TabIndex = 7;
@@ -919,7 +923,7 @@
             // calculate_button
             // 
             this.calculate_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculate_button.Location = new System.Drawing.Point(12, 980);
+            this.calculate_button.Location = new System.Drawing.Point(13, 931);
             this.calculate_button.Name = "calculate_button";
             this.calculate_button.Size = new System.Drawing.Size(213, 42);
             this.calculate_button.TabIndex = 24;
@@ -930,27 +934,29 @@
             // new_button
             // 
             this.new_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.new_button.Location = new System.Drawing.Point(231, 980);
+            this.new_button.Location = new System.Drawing.Point(232, 931);
             this.new_button.Name = "new_button";
             this.new_button.Size = new System.Drawing.Size(172, 42);
             this.new_button.TabIndex = 25;
             this.new_button.Text = "NEW";
             this.new_button.UseVisualStyleBackColor = true;
+            this.new_button.Click += new System.EventHandler(this.new_button_Click);
             // 
             // cancel_button
             // 
             this.cancel_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel_button.Location = new System.Drawing.Point(409, 980);
+            this.cancel_button.Location = new System.Drawing.Point(410, 931);
             this.cancel_button.Name = "cancel_button";
             this.cancel_button.Size = new System.Drawing.Size(186, 42);
             this.cancel_button.TabIndex = 26;
             this.cancel_button.Text = "CANCEL";
             this.cancel_button.UseVisualStyleBackColor = true;
+            this.cancel_button.Click += new System.EventHandler(this.cancel_button_Click);
             // 
             // print_payslip_button
             // 
             this.print_payslip_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print_payslip_button.Location = new System.Drawing.Point(601, 980);
+            this.print_payslip_button.Location = new System.Drawing.Point(602, 931);
             this.print_payslip_button.Name = "print_payslip_button";
             this.print_payslip_button.Size = new System.Drawing.Size(264, 42);
             this.print_payslip_button.TabIndex = 27;
@@ -961,7 +967,7 @@
             // preview_button
             // 
             this.preview_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.preview_button.Location = new System.Drawing.Point(871, 980);
+            this.preview_button.Location = new System.Drawing.Point(872, 931);
             this.preview_button.Name = "preview_button";
             this.preview_button.Size = new System.Drawing.Size(353, 42);
             this.preview_button.TabIndex = 28;
@@ -972,12 +978,13 @@
             // exit_button
             // 
             this.exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit_button.Location = new System.Drawing.Point(1231, 980);
+            this.exit_button.Location = new System.Drawing.Point(1231, 931);
             this.exit_button.Name = "exit_button";
             this.exit_button.Size = new System.Drawing.Size(186, 42);
             this.exit_button.TabIndex = 29;
             this.exit_button.Text = "EXIT";
             this.exit_button.UseVisualStyleBackColor = true;
+            this.exit_button.Click += new System.EventHandler(this.exit_button_Click);
             // 
             // groupBox9
             // 
@@ -985,7 +992,7 @@
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(1423, 12);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(489, 1017);
+            this.groupBox9.Size = new System.Drawing.Size(489, 961);
             this.groupBox9.TabIndex = 30;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "PAYSLIP VIEW DETAILS";
@@ -997,7 +1004,7 @@
             this.Payslip_view_listbox.ItemHeight = 18;
             this.Payslip_view_listbox.Location = new System.Drawing.Point(6, 16);
             this.Payslip_view_listbox.Name = "Payslip_view_listbox";
-            this.Payslip_view_listbox.Size = new System.Drawing.Size(477, 994);
+            this.Payslip_view_listbox.Size = new System.Drawing.Size(477, 922);
             this.Payslip_view_listbox.TabIndex = 0;
             // 
             // Activity5_lesson3
@@ -1116,8 +1123,8 @@
         private System.Windows.Forms.TextBox total_other_income_pay_box;
         private System.Windows.Forms.TextBox Num_hrs_other_income_box;
         private System.Windows.Forms.TextBox Rate_hr_other_income_box;
-        private System.Windows.Forms.TextBox Net_income;
-        private System.Windows.Forms.TextBox Gross_income;
+        private System.Windows.Forms.TextBox Net_income_box;
+        private System.Windows.Forms.TextBox Gross_income_box;
         private System.Windows.Forms.TextBox Tax_box;
         private System.Windows.Forms.TextBox Pagibig_contri_box;
         private System.Windows.Forms.TextBox Phil_health_contri_box;
@@ -1125,12 +1132,12 @@
         private System.Windows.Forms.TextBox faculty_savings_loan_box;
         private System.Windows.Forms.TextBox salary_loan_box;
         private System.Windows.Forms.TextBox faculty_savings_dep_box;
-        private System.Windows.Forms.TextBox Pagibig_loan;
-        private System.Windows.Forms.TextBox Sss_loan;
-        private System.Windows.Forms.TextBox Total_deductions;
+        private System.Windows.Forms.TextBox Pagibig_loan_box;
+        private System.Windows.Forms.TextBox Sss_loan_box;
+        private System.Windows.Forms.TextBox Total_deductions_box;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.ListBox Payslip_view_listbox;
         private System.Windows.Forms.ComboBox Others_combobox;
         private System.Windows.Forms.TextBox Others_other_deduc_box;
+        public System.Windows.Forms.ListBox Payslip_view_listbox;
     }
 }

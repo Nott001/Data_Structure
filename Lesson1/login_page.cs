@@ -80,5 +80,10 @@ namespace Lesson2
             username_box.Clear();
             passwordbox.Clear();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
