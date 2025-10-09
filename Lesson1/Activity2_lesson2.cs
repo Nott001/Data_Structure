@@ -317,5 +317,35 @@ namespace Lesson2
             changetxtbox.Clear();
             cashrenderedtxtbox.Clear();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void itemnametxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void qty_totaltxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Clear();
+            pricetextbox.Clear();
+            qty_box.Clear();
+            discounttxtbox.Clear();
+            changetxtbox.Clear();
+            cashrenderedtxtbox.Clear();
+        }
     }
 }

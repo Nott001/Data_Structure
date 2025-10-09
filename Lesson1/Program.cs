@@ -16,7 +16,7 @@ namespace Lesson2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Activity5_lesson3());
+            Application.Run(new POS2_shortened());
         }
     }
 }

@@ -615,5 +615,25 @@ namespace Lesson2
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
