@@ -534,6 +534,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(314, 23);
             this.textBox6.TabIndex = 45;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // unit_lab_box
             // 
@@ -846,7 +847,7 @@
             this.calculate_button.UseVisualStyleBackColor = false;
             this.calculate_button.Click += new System.EventHandler(this.calculate_button_Click);
             // 
-            // Activity
+            // Activity_lesson2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -932,7 +933,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Activity";
+            this.Name = "Activity_lesson2";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Activity_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

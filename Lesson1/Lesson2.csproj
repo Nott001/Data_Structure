@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activity1_lesson13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity1_lesson13.Designer.cs">
+      <DependentUpon>Activity1_lesson13.cs</DependentUpon>
+    </Compile>
     <Compile Include="Activity4_lesson2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
       <DependentUpon>Simple_POS.cs</DependentUpon>
     </Compile>
     <Compile Include="Payroll_helper_class.cs" />
+    <EmbeddedResource Include="Activity1_lesson13.resx">
+      <DependentUpon>Activity1_lesson13.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Activity4_lesson2.resx">
       <DependentUpon>Activity4_lesson2.cs</DependentUpon>
     </EmbeddedResource>
@@ -295,6 +304,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="lesson_2\" />
+    <Folder Include="lesson_3\" />
+    <Folder Include="lesson_4\" />
+    <Folder Include="lesson_5\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

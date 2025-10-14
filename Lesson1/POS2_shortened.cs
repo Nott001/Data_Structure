@@ -12,9 +12,6 @@ namespace Lesson2
 {
     public partial class POS2_shortened : Form
     {
-        int total_qty = 0;
-        double total_amount = 0;
-        double total_price = 0;
 
         Price_Item_Value helper = new Price_Item_Value();
 
