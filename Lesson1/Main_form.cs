@@ -56,5 +56,45 @@ namespace Lesson2
             payroll2.MdiParent = this;
             payroll2.Show();
         }
+
+        private void humanResourcesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pOSCashierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pOSAdminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            POS_Admin posAdmin = new POS_Admin();
+            posAdmin.MdiParent = this;
+            posAdmin.Show();
+        }
+
+        private void tileVerticalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Tile all child forms in vertical display
+            this.LayoutMdi(MdiLayout.TileVertical);
+        }
+
+        private void tileHorizontalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Tile all child forms horizontally
+            this.LayoutMdi(MdiLayout.TileHorizontal);
+        }
+
+        private void cascadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Tile all child forms in cascade display
+            this.LayoutMdi(MdiLayout.Cascade);
+        }
     }
 }

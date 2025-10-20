@@ -124,9 +124,6 @@
   <data name="two meal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pictures\two meal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="family double bucket" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\pictures\family double bucket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="burger large" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pictures\burger large.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,11 +157,17 @@
   <data name="kfc_combo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pictures\kfc_combo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="family double bucket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\family double bucket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1 bucket 2 sundae" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pictures\1 bucket 2 sundae.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1-pc.-Chickenjoy-With-Coke-Float" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pictures\1-pc.-Chickenjoy-With-Coke-Float.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jolli_shake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\jolli_shake.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="double_steak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pictures\double_steak.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,7 +187,7 @@
   <data name="jabee_spag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pictures\jabee_spag.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jolli_shake" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\pictures\jolli_shake.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="no_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\no_image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

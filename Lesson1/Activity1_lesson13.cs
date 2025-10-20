@@ -129,5 +129,10 @@ namespace Lesson2
             // mssql query to modify the contents of student table located inside the database
         
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

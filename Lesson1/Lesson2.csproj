@@ -87,10 +87,10 @@
     <Compile Include="Activity_4_lesson2_Print.Designer.cs">
       <DependentUpon>Activity_4_lesson2_Print.cs</DependentUpon>
     </Compile>
-    <Compile Include="Activity_lesson3.cs">
+    <Compile Include="lesson_3\Activity_lesson3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity_lesson3.Designer.cs">
+    <Compile Include="lesson_3\Activity_lesson3.Designer.cs">
       <DependentUpon>Activity_lesson3.cs</DependentUpon>
     </Compile>
     <Compile Include="Activity5_lesson3.cs">
@@ -99,22 +99,22 @@
     <Compile Include="Activity5_lesson3.Designer.cs">
       <DependentUpon>Activity5_lesson3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Activity_lesson5.cs">
+    <Compile Include="lesson_5\Activity_lesson5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity_lesson5.Designer.cs">
+    <Compile Include="lesson_5\Activity_lesson5.Designer.cs">
       <DependentUpon>Activity_lesson5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Activity_lesson2.cs">
+    <Compile Include="lesson_2\Activity_lesson2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity_lesson2.Designer.cs">
+    <Compile Include="lesson_2\Activity_lesson2.Designer.cs">
       <DependentUpon>Activity_lesson2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Activity1_lesson2.cs">
+    <Compile Include="lesson_2\Activity1_lesson2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity1_lesson2.Designer.cs">
+    <Compile Include="lesson_2\Activity1_lesson2.Designer.cs">
       <DependentUpon>Activity1_lesson2.cs</DependentUpon>
     </Compile>
     <Compile Include="Activity2_lesson2.cs">
@@ -123,22 +123,22 @@
     <Compile Include="Activity2_lesson2.Designer.cs">
       <DependentUpon>Activity2_lesson2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Activity3_lesson2.cs">
+    <Compile Include="lesson_2\Activity3_lesson2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity3_lesson2.Designer.cs">
+    <Compile Include="lesson_2\Activity3_lesson2.Designer.cs">
       <DependentUpon>Activity3_lesson2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Activity_lesson2_Print.cs">
+    <Compile Include="lesson_2\Activity_lesson2_Print.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity_lesson2_Print.Designer.cs">
+    <Compile Include="lesson_2\Activity_lesson2_Print.Designer.cs">
       <DependentUpon>Activity_lesson2_Print.cs</DependentUpon>
     </Compile>
-    <Compile Include="Activity_lesson5_Print.cs">
+    <Compile Include="lesson_5\Activity_lesson5_Print.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity_lesson5_Print.Designer.cs">
+    <Compile Include="lesson_5\Activity_lesson5_Print.Designer.cs">
       <DependentUpon>Activity_lesson5_Print.cs</DependentUpon>
     </Compile>
     <Compile Include="login_page.cs">
@@ -171,6 +171,13 @@
     <Compile Include="POS2_shortened.Designer.cs">
       <DependentUpon>POS2_shortened.cs</DependentUpon>
     </Compile>
+    <Compile Include="POS_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS_Admin.Designer.cs">
+      <DependentUpon>POS_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbconnection.cs" />
     <Compile Include="Price_Item_Value.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -193,31 +200,31 @@
     <EmbeddedResource Include="Activity_4_lesson2_Print.resx">
       <DependentUpon>Activity_4_lesson2_Print.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Activity_lesson3.resx">
+    <EmbeddedResource Include="lesson_3\Activity_lesson3.resx">
       <DependentUpon>Activity_lesson3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Activity5_lesson3.resx">
       <DependentUpon>Activity5_lesson3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Activity_lesson5.resx">
+    <EmbeddedResource Include="lesson_5\Activity_lesson5.resx">
       <DependentUpon>Activity_lesson5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Activity_lesson2.resx">
+    <EmbeddedResource Include="lesson_2\Activity_lesson2.resx">
       <DependentUpon>Activity_lesson2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Activity1_lesson2.resx">
+    <EmbeddedResource Include="lesson_2\Activity1_lesson2.resx">
       <DependentUpon>Activity1_lesson2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Activity2_lesson2.resx">
       <DependentUpon>Activity2_lesson2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Activity3_lesson2.resx">
+    <EmbeddedResource Include="lesson_2\Activity3_lesson2.resx">
       <DependentUpon>Activity3_lesson2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Activity_lesson2_Print.resx">
+    <EmbeddedResource Include="lesson_2\Activity_lesson2_Print.resx">
       <DependentUpon>Activity_lesson2_Print.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Activity_lesson5_Print.resx">
+    <EmbeddedResource Include="lesson_5\Activity_lesson5_Print.resx">
       <DependentUpon>Activity_lesson5_Print.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login_page.resx">
@@ -234,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="POS2_shortened.resx">
       <DependentUpon>POS2_shortened.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS_Admin.resx">
+      <DependentUpon>POS_Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -286,6 +296,7 @@
     <Content Include="pictures\kfc_combo.jpg" />
     <Content Include="pictures\kfc_double_bucket.jpg" />
     <Content Include="pictures\kfc_meal.jpg" />
+    <Content Include="pictures\no_image.jpg" />
     <Content Include="pictures\palabok meal.jpg" />
     <Content Include="pictures\pandesal egg.jpg" />
     <Content Include="pictures\spag_chicken.jpg" />
@@ -305,10 +316,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="lesson_2\" />
-    <Folder Include="lesson_3\" />
     <Folder Include="lesson_4\" />
-    <Folder Include="lesson_5\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
