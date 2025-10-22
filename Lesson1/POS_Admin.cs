@@ -25,7 +25,7 @@ namespace Lesson2
         {
             try
             {
-                pic = Image.FromFile("D:\\files\\ana\\Documents\\Visual Studio 2015\\Projects\\ExceptionHandling_WithDatabase\\images\\defaultimage.png");
+                pic = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\no_image.jpg");
 
                 picpathTxtbox1.Clear(); picpathTxtbox2.Clear(); picpathTxtbox3.Clear();
                 picpathTxtbox4.Clear(); picpathTxtbox5.Clear(); picpathTxtbox6.Clear();
@@ -51,17 +51,17 @@ namespace Lesson2
                 priceTxtbox16.Clear(); priceTxtbox17.Clear(); priceTxtbox18.Clear();
                 priceTxtbox19.Clear(); priceTxtbox20.Clear();
 
-                nameTxtbox7.Clear(); nameTxtbox8.Clear(); nameTxtbox3.Clear();
+                nameTxtbox1.Clear(); nameTxtbox2.Clear(); nameTxtbox3.Clear();
                 nameTxtbox4.Clear(); nameTxtbox5.Clear(); nameTxtbox6.Clear();
                 nameTxtbox7.Clear(); nameTxtbox8.Clear(); nameTxtbox9.Clear();
-                nameTxtbox7.Clear(); nameTxtbox11.Clear(); nameTxtbox12.Clear();
+                nameTxtbox10.Clear(); nameTxtbox11.Clear(); nameTxtbox12.Clear();
                 nameTxtbox13.Clear(); nameTxtbox14.Clear(); nameTxtbox15.Clear();
                 nameTxtbox16.Clear(); nameTxtbox17.Clear(); nameTxtbox18.Clear();
                 nameTxtbox19.Clear(); nameTxtbox20.Clear();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error occurs in this area. Please contact your administrator!");
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
@@ -71,6 +71,44 @@ namespace Lesson2
             openFileDialog1.Filter = "Image File | *.gif; *.jpg; *.png; *.bmp";
             // Filtering of image display using specific file extensions
             openFileDialog1.ShowDialog(); // Displaying the file dialog where the possible image is located
+        }
+
+        // Helper method to safely load pictures
+        private void LoadPictureBox(PictureBox pictureBox, TextBox pathTextBox, string imagePath)
+        {
+            try
+            {
+                pathTextBox.Text = imagePath;
+
+                // Check if path is valid and not empty
+                if (!string.IsNullOrWhiteSpace(imagePath) && System.IO.File.Exists(imagePath))
+                {
+                    pictureBox.Image = Image.FromFile(imagePath);
+                }
+                else
+                {
+                    // Load default "no image" picture
+                    string defaultPath = "C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\no_image.jpg";
+                    if (System.IO.File.Exists(defaultPath))
+                    {
+                        pictureBox.Image = Image.FromFile(defaultPath);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading image: {imagePath}\nError: {ex.Message}");
+                // Load default image on error
+                try
+                {
+                    string defaultPath = "C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\no_image.jpg";
+                    if (System.IO.File.Exists(defaultPath))
+                    {
+                        pictureBox.Image = Image.FromFile(defaultPath);
+                    }
+                }
+                catch { }
+            }
         }
 
         private void POS_Admin_Load(object sender, EventArgs e)
@@ -91,9 +129,9 @@ namespace Lesson2
 
                 dataGridDisplay.DataSource = posdb_connect.pos_sql_dataset.Tables[0];
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error occurs in this area. Please contact your administrator!");
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
@@ -125,14 +163,14 @@ namespace Lesson2
                 posdb_connect.pos_cmd();
                 posdb_connect.pos_sqladapterInsert();
 
-                posdb_connect.pos_sql = "INSERT INTO pos_picTbl (pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, " +
-                                        "pic14, pic15, pic16, pic17, pic18, pic19, pic20, pos_id) VALUES ('" +
-                                        picpathTxtbox1.Text + "', '" + picpathTxtbox2.Text + "', '" + picpathTxtbox3.Text + "', '" + picpathTxtbox4.Text + "', '" +
-                                        picpathTxtbox5.Text + "', '" + picpathTxtbox6.Text + "', '" + picpathTxtbox7.Text + "', '" + picpathTxtbox8.Text + "', '" +
-                                        picpathTxtbox9.Text + "', '" + picpathTxtbox10.Text + "', '" + picpathTxtbox11.Text + "', '" + picpathTxtbox12.Text + "', '" +
-                                        picpathTxtbox13.Text + "', '" + picpathTxtbox14.Text + "', '" + picpathTxtbox15.Text + "', '" + picpathTxtbox16.Text + "', '" +
-                                        picpathTxtbox17.Text + "', '" + picpathTxtbox18.Text + "', '" + picpathTxtbox19.Text + "', '" + picpathTxtbox20.Text + "', '" +
-                                        pos_id_comboBox.Text + "')";
+                posdb_connect.pos_sql = "INSERT INTO pos_picTbl (pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, " + "pic14, " +
+                    "pic15, pic16, pic17, pic18, pic19, pic20, pos_id) VALUES ('" + picpathTxtbox1.Text + "', '" + picpathTxtbox2.Text + "', '" + picpathTxtbox3.Text 
+                    + "', '" + picpathTxtbox4.Text + "', '" + picpathTxtbox5.Text + "', '" + picpathTxtbox6.Text + "', '" + picpathTxtbox7.Text + "', '" 
+                    + picpathTxtbox8.Text + "', '" + picpathTxtbox9.Text + "', '" + picpathTxtbox10.Text + "', '" + picpathTxtbox11.Text + "', '" + picpathTxtbox12.Text 
+                    + "', '" + picpathTxtbox13.Text + "', '" + picpathTxtbox14.Text + "', '" + picpathTxtbox15.Text + "', '" + picpathTxtbox16.Text + "', '" 
+                    + picpathTxtbox17.Text + "', '" + picpathTxtbox18.Text + "', '" + picpathTxtbox19.Text + "', '" + picpathTxtbox20.Text + "', '" 
+                    + pos_id_comboBox.Text + "')";
+
 
                 posdb_connect.pos_cmd();
                 posdb_connect.pos_sqladapterInsert();
@@ -145,14 +183,16 @@ namespace Lesson2
                 dataGridDisplay.DataSource = posdb_connect.pos_sql_dataset.Tables[0];
                 cleartextboxes();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error occurs in this area. Please contact your administrator!");
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
+
         private void search_button_Click(object sender, EventArgs e)
         {
+            cleartextboxes();
             try
             {
                 posdb_connect.pos_sql = "SELECT * FROM pos_nameTbl " +
@@ -166,114 +206,85 @@ namespace Lesson2
 
                 dataGridDisplay.DataSource = posdb_connect.pos_sql_dataset.Tables[0];
 
-                nameTxtbox1.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][2].ToString();
-                nameTxtbox2.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][3].ToString();
-                nameTxtbox3.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][4].ToString();
-                nameTxtbox4.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][5].ToString();
-                nameTxtbox5.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][6].ToString();
-                nameTxtbox6.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][7].ToString();
-                nameTxtbox7.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][8].ToString();
-                nameTxtbox8.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][9].ToString();
-                nameTxtbox9.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][10].ToString();
-                nameTxtbox10.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][11].ToString();
-                nameTxtbox11.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][12].ToString();
-                nameTxtbox12.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][13].ToString();
-                nameTxtbox13.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][14].ToString();
-                nameTxtbox14.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][15].ToString();
-                nameTxtbox15.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][16].ToString();
-                nameTxtbox16.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][17].ToString();
-                nameTxtbox17.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][18].ToString();
-                nameTxtbox18.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][19].ToString();
-                nameTxtbox19.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][20].ToString();
-                nameTxtbox20.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][21].ToString();
+                if (posdb_connect.pos_sql_dataset.Tables[0].Rows.Count == 0)
+                {
+                    MessageBox.Show("No records found for the selected POS ID.");
+                    return;
+                }
 
-                picpathTxtbox1.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][24].ToString();
-                pictureBox1.Image = Image.FromFile(picpathTxtbox1.Text);
+                DataRow row = posdb_connect.pos_sql_dataset.Tables[0].Rows[0];
 
-                picpathTxtbox2.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][25].ToString();
-                pictureBox2.Image = Image.FromFile(picpathTxtbox2.Text);
+                // Load names using column names instead of indices
+                nameTxtbox1.Text = row["name1"].ToString();
+                nameTxtbox2.Text = row["name2"].ToString();
+                nameTxtbox3.Text = row["name3"].ToString();
+                nameTxtbox4.Text = row["name4"].ToString();
+                nameTxtbox5.Text = row["name5"].ToString();
+                nameTxtbox6.Text = row["name6"].ToString();
+                nameTxtbox7.Text = row["name7"].ToString();
+                nameTxtbox8.Text = row["name8"].ToString();
+                nameTxtbox9.Text = row["name9"].ToString();
+                nameTxtbox10.Text = row["name10"].ToString();
+                nameTxtbox11.Text = row["name11"].ToString();
+                nameTxtbox12.Text = row["name12"].ToString();
+                nameTxtbox13.Text = row["name13"].ToString();
+                nameTxtbox14.Text = row["name14"].ToString();
+                nameTxtbox15.Text = row["name15"].ToString();
+                nameTxtbox16.Text = row["name16"].ToString();
+                nameTxtbox17.Text = row["name17"].ToString();
+                nameTxtbox18.Text = row["name18"].ToString();
+                nameTxtbox19.Text = row["name19"].ToString();
+                nameTxtbox20.Text = row["name20"].ToString();
 
-                picpathTxtbox3.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][26].ToString();
-                pictureBox3.Image = Image.FromFile(picpathTxtbox3.Text);
+                // Load pictures with validation
+                LoadPictureBox(pictureBox1, picpathTxtbox1, row["pic1"].ToString());
+                LoadPictureBox(pictureBox2, picpathTxtbox2, row["pic2"].ToString());
+                LoadPictureBox(pictureBox3, picpathTxtbox3, row["pic3"].ToString());
+                LoadPictureBox(pictureBox4, picpathTxtbox4, row["pic4"].ToString());
+                LoadPictureBox(pictureBox5, picpathTxtbox5, row["pic5"].ToString());
+                LoadPictureBox(pictureBox6, picpathTxtbox6, row["pic6"].ToString());
+                LoadPictureBox(pictureBox7, picpathTxtbox7, row["pic7"].ToString());
+                LoadPictureBox(pictureBox8, picpathTxtbox8, row["pic8"].ToString());
+                LoadPictureBox(pictureBox9, picpathTxtbox9, row["pic9"].ToString());
+                LoadPictureBox(pictureBox10, picpathTxtbox10, row["pic10"].ToString());
+                LoadPictureBox(pictureBox11, picpathTxtbox11, row["pic11"].ToString());
+                LoadPictureBox(pictureBox12, picpathTxtbox12, row["pic12"].ToString());
+                LoadPictureBox(pictureBox13, picpathTxtbox13, row["pic13"].ToString());
+                LoadPictureBox(pictureBox14, picpathTxtbox14, row["pic14"].ToString());
+                LoadPictureBox(pictureBox15, picpathTxtbox15, row["pic15"].ToString());
+                LoadPictureBox(pictureBox16, picpathTxtbox16, row["pic16"].ToString());
+                LoadPictureBox(pictureBox17, picpathTxtbox17, row["pic17"].ToString());
+                LoadPictureBox(pictureBox18, picpathTxtbox18, row["pic18"].ToString());
+                LoadPictureBox(pictureBox19, picpathTxtbox19, row["pic19"].ToString());
+                LoadPictureBox(pictureBox20, picpathTxtbox20, row["pic20"].ToString());
 
-                picpathTxtbox4.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][27].ToString();
-                pictureBox4.Image = Image.FromFile(picpathTxtbox4.Text);
-
-                picpathTxtbox5.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][28].ToString();
-                pictureBox5.Image = Image.FromFile(picpathTxtbox5.Text);
-
-                picpathTxtbox6.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][29].ToString();
-                pictureBox6.Image = Image.FromFile(picpathTxtbox6.Text);
-
-                picpathTxtbox7.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][30].ToString();
-                pictureBox7.Image = Image.FromFile(picpathTxtbox7.Text);
-
-                picpathTxtbox8.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][31].ToString();
-                pictureBox8.Image = Image.FromFile(picpathTxtbox8.Text);
-
-                picpathTxtbox9.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][32].ToString();
-                pictureBox9.Image = Image.FromFile(picpathTxtbox9.Text);
-
-                picpathTxtbox10.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][33].ToString();
-                pictureBox10.Image = Image.FromFile(picpathTxtbox10.Text);
-
-                picpathTxtbox11.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][34].ToString();
-                pictureBox11.Image = Image.FromFile(picpathTxtbox11.Text);
-
-                picpathTxtbox12.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][35].ToString();
-                pictureBox12.Image = Image.FromFile(picpathTxtbox12.Text);
-
-                picpathTxtbox13.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][36].ToString();
-                pictureBox13.Image = Image.FromFile(picpathTxtbox13.Text);
-
-                picpathTxtbox14.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][37].ToString();
-                pictureBox14.Image = Image.FromFile(picpathTxtbox14.Text);
-
-                picpathTxtbox15.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][38].ToString();
-                pictureBox15.Image = Image.FromFile(picpathTxtbox15.Text);
-
-                picpathTxtbox16.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][39].ToString();
-                pictureBox16.Image = Image.FromFile(picpathTxtbox16.Text);
-
-                picpathTxtbox17.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][40].ToString();
-                pictureBox17.Image = Image.FromFile(picpathTxtbox17.Text);
-
-                picpathTxtbox18.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][41].ToString();
-                pictureBox18.Image = Image.FromFile(picpathTxtbox18.Text);
-
-                picpathTxtbox19.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][42].ToString();
-                pictureBox19.Image = Image.FromFile(picpathTxtbox19.Text);
-
-                picpathTxtbox20.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][43].ToString();
-                pictureBox20.Image = Image.FromFile(picpathTxtbox20.Text);
-
-                priceTxtbox1.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][44].ToString();
-                priceTxtbox2.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][45].ToString();
-                priceTxtbox3.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][46].ToString();
-                priceTxtbox4.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][47].ToString();
-                priceTxtbox5.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][48].ToString();
-                priceTxtbox6.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][49].ToString();
-                priceTxtbox7.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][50].ToString();
-                priceTxtbox8.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][51].ToString();
-                priceTxtbox9.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][52].ToString();
-                priceTxtbox10.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][53].ToString();
-                priceTxtbox11.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][54].ToString();
-                priceTxtbox12.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][55].ToString();
-                priceTxtbox13.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][56].ToString();
-                priceTxtbox14.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][57].ToString();
-                priceTxtbox15.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][58].ToString();
-                priceTxtbox16.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][59].ToString();
-                priceTxtbox17.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][60].ToString();
-                priceTxtbox18.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][61].ToString();
-                priceTxtbox19.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][62].ToString();
-                priceTxtbox20.Text = posdb_connect.pos_sql_dataset.Tables[0].Rows[0][63].ToString();
+                // Load prices using column names
+                priceTxtbox1.Text = row["price1"].ToString();
+                priceTxtbox2.Text = row["price2"].ToString();
+                priceTxtbox3.Text = row["price3"].ToString();
+                priceTxtbox4.Text = row["price4"].ToString();
+                priceTxtbox5.Text = row["price5"].ToString();
+                priceTxtbox6.Text = row["price6"].ToString();
+                priceTxtbox7.Text = row["price7"].ToString();
+                priceTxtbox8.Text = row["price8"].ToString();
+                priceTxtbox9.Text = row["price9"].ToString();
+                priceTxtbox10.Text = row["price10"].ToString();
+                priceTxtbox11.Text = row["price11"].ToString();
+                priceTxtbox12.Text = row["price12"].ToString();
+                priceTxtbox13.Text = row["price13"].ToString();
+                priceTxtbox14.Text = row["price14"].ToString();
+                priceTxtbox15.Text = row["price15"].ToString();
+                priceTxtbox16.Text = row["price16"].ToString();
+                priceTxtbox17.Text = row["price17"].ToString();
+                priceTxtbox18.Text = row["price18"].ToString();
+                priceTxtbox19.Text = row["price19"].ToString();
+                priceTxtbox20.Text = row["price20"].ToString();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error occurs in this area. Please contact your administrator!");
+                MessageBox.Show("Error: " + ex.Message + "\n\nStack Trace: " + ex.StackTrace);
             }
         }
-
         private void update_button_Click(object sender, EventArgs e)
         {
             try
@@ -304,28 +315,28 @@ namespace Lesson2
                 posdb_connect.pos_cmd();
                 posdb_connect.pos_sqldataadapterUpdate();
 
-                posdb_connect.pos_sql =
-                    "UPDATE pos_picTbl SET pic1='" + picpathTxtbox1.Text +
-                    "', pic2='" + picpathTxtbox2.Text +
-                    "', pic3='" + picpathTxtbox3.Text +
-                    "', pic4='" + picpathTxtbox4.Text +
-                    "', pic5='" + picpathTxtbox5.Text +
-                    "', pic6='" + picpathTxtbox6.Text +
-                    "', pic7='" + picpathTxtbox7.Text +
-                    "', pic8='" + picpathTxtbox8.Text +
-                    "', pic9='" + picpathTxtbox9.Text +
-                    "', pic10='" + picpathTxtbox10.Text +
-                    "', pic11='" + picpathTxtbox11.Text +
-                    "', pic12='" + picpathTxtbox12.Text +
-                    "', pic13='" + picpathTxtbox13.Text +
-                    "', pic14='" + picpathTxtbox14.Text +
-                    "', pic15='" + picpathTxtbox15.Text +
-                    "', pic16='" + picpathTxtbox16.Text +
-                    "', pic17='" + picpathTxtbox17.Text +
-                    "', pic18='" + picpathTxtbox18.Text +
-                    "', pic19='" + picpathTxtbox19.Text +
-                    "', pic20='" + picpathTxtbox20.Text +
-                    "' WHERE pos_id='" + pos_id_comboBox.Text + "'";
+                posdb_connect.pos_sql = "UPDATE pos_picTbl SET pic1='" + 
+                    picpathTxtbox1.Text + "', pic2='" + 
+                    picpathTxtbox2.Text + "', pic3='" + 
+                    picpathTxtbox3.Text + "', pic4='" + 
+                    picpathTxtbox4.Text + "', pic5='" + 
+                    picpathTxtbox5.Text + "', pic6='" + 
+                    picpathTxtbox6.Text + "', pic7='" + 
+                    picpathTxtbox7.Text + "', pic8='" + 
+                    picpathTxtbox8.Text + "', pic9='" + 
+                    picpathTxtbox9.Text + "', pic10='" + 
+                    picpathTxtbox10.Text + "', pic11='" + 
+                    picpathTxtbox11.Text + "', pic12='" + 
+                    picpathTxtbox12.Text + "', pic13='" + 
+                    picpathTxtbox13.Text + "', pic14='" + 
+                    picpathTxtbox14.Text + "', pic15='" + 
+                    picpathTxtbox15.Text + "', pic16='" + 
+                    picpathTxtbox16.Text + "', pic17='" + 
+                    picpathTxtbox17.Text + "', pic18='" + 
+                    picpathTxtbox18.Text + "', pic19='" + 
+                    picpathTxtbox19.Text + "', pic20='" + 
+                    picpathTxtbox20.Text + "' WHERE pos_id='" + pos_id_comboBox.Text + "'";
+
 
                 posdb_connect.pos_cmd();
                 posdb_connect.pos_sqldataadapterUpdate();
@@ -364,9 +375,9 @@ namespace Lesson2
                 dataGridDisplay.DataSource = posdb_connect.pos_sql_dataset.Tables[0];
                 cleartextboxes();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error occurs in this area. Please contact your administrator!");
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
@@ -389,14 +400,14 @@ namespace Lesson2
                 posdb_connect.pos_select();
                 posdb_connect.pos_cmd();
                 posdb_connect.pos_sqladapterSelect();
-                posdb_connect.pos_sqldataadapterDelete();
+                posdb_connect.pos_sqldatasetSELECT();
 
                 dataGridDisplay.DataSource = posdb_connect.pos_sql_dataset.Tables[0];
                 cleartextboxes();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error occurs in this area. Please contact your administrator!");
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
@@ -419,9 +430,9 @@ namespace Lesson2
                 picpath = openFileDialog1.FileName;//storing the file location of the selected image inserted in picturebox to a variable
                 picpathTxtbox1.Text = picpath;//displaying the file location of the image stored in a variable to the textbox
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("No image selected!");
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
@@ -708,6 +719,11 @@ namespace Lesson2
             {
                 MessageBox.Show("No image selected!");
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
