@@ -6,15 +6,16 @@ namespace Lesson2
 {
     public partial class POS1_shortened : Form
     {
+        pos_dbconnection posdb_connect = new pos_dbconnection();
+        Price_Item_Value helper = new Price_Item_Value();
         int qty = 0;
         double price = 0.00;
         double discount_amt = 0.00;
         double discounted_amt = 0.00;
 
-        Price_Item_Value helper = new Price_Item_Value();
-
         public POS1_shortened()
         {
+            posdb_connect.pos_connString();
             InitializeComponent();
         }
 
@@ -48,6 +49,32 @@ namespace Lesson2
             discounttxtbox.Text = "0";
             discountedtxtbox.Text = "0";
             cashrenderedtxtbox.Text = "0";
+        }
+
+        private void Example2_DatabaseApp_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                itemnametxtbox.Enabled = false;
+                pricetextbox.Enabled = false;
+                discountedtxtbox.Enabled = false;
+                qty_totaltxtbox.Enabled = false;
+                discount_totaltxtbox.Enabled = false;
+                discounted_totaltxtbox.Enabled = false;
+                changetxtbox.Enabled = false;
+                discounttxtbox.Enabled = false;
+
+                picpathTxtbox1.Hide(); picpathTxtbox2.Hide(); picpathTxtbox3.Hide(); picpathTxtbox4.Hide(); picpathTxtbox5.Hide();
+                picpathTxtbox6.Hide(); picpathTxtbox7.Hide(); picpathTxtbox8.Hide(); picpathTxtbox9.Hide(); picpathTxtbox10.Hide();
+                picpathTxtbox11.Hide(); picpathTxtbox12.Hide(); picpathTxtbox13.Hide(); picpathTxtbox14.Hide(); picpathTxtbox15.Hide();
+                picpathTxtbox16.Hide(); picpathTxtbox17.Hide(); picpathTxtbox18.Hide(); picpathTxtbox19.Hide(); picpathTxtbox20.Hide();
+
+                posdb_connect.pos_select_cashier();
+                posdb_connect.pos_cmd();
+                posdb_connect.pos_sqladapterSelect();
+                posdb_connect.pos_sqldatasetSELECT();
+
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -313,6 +340,11 @@ namespace Lesson2
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picpathTxtbox1_TextChanged(object sender, EventArgs e)
         {
 
         }

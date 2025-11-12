@@ -102,7 +102,7 @@
             this.name1lbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
@@ -119,14 +119,34 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.picpathTxtbox1 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox2 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox3 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox4 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox5 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox6 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox7 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox18 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox9 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox10 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox11 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox12 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox13 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox14 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox15 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox16 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox17 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox8 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox19 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox20 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
@@ -143,7 +163,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -698,6 +718,26 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.picpathTxtbox20);
+            this.groupBox2.Controls.Add(this.picpathTxtbox19);
+            this.groupBox2.Controls.Add(this.picpathTxtbox8);
+            this.groupBox2.Controls.Add(this.picpathTxtbox17);
+            this.groupBox2.Controls.Add(this.picpathTxtbox16);
+            this.groupBox2.Controls.Add(this.picpathTxtbox15);
+            this.groupBox2.Controls.Add(this.picpathTxtbox14);
+            this.groupBox2.Controls.Add(this.picpathTxtbox13);
+            this.groupBox2.Controls.Add(this.picpathTxtbox12);
+            this.groupBox2.Controls.Add(this.picpathTxtbox11);
+            this.groupBox2.Controls.Add(this.picpathTxtbox10);
+            this.groupBox2.Controls.Add(this.picpathTxtbox9);
+            this.groupBox2.Controls.Add(this.picpathTxtbox18);
+            this.groupBox2.Controls.Add(this.picpathTxtbox7);
+            this.groupBox2.Controls.Add(this.picpathTxtbox6);
+            this.groupBox2.Controls.Add(this.picpathTxtbox5);
+            this.groupBox2.Controls.Add(this.picpathTxtbox4);
+            this.groupBox2.Controls.Add(this.picpathTxtbox3);
+            this.groupBox2.Controls.Add(this.picpathTxtbox2);
+            this.groupBox2.Controls.Add(this.picpathTxtbox1);
             this.groupBox2.Controls.Add(this.name20lbl);
             this.groupBox2.Controls.Add(this.name19lbl);
             this.groupBox2.Controls.Add(this.name18lbl);
@@ -720,7 +760,7 @@
             this.groupBox2.Controls.Add(this.name1lbl);
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Controls.Add(this.pictureBox2);
-            this.groupBox2.Controls.Add(this.pictureBox5);
+            this.groupBox2.Controls.Add(this.pictureBox10);
             this.groupBox2.Controls.Add(this.pictureBox15);
             this.groupBox2.Controls.Add(this.pictureBox19);
             this.groupBox2.Controls.Add(this.pictureBox20);
@@ -737,7 +777,7 @@
             this.groupBox2.Controls.Add(this.pictureBox8);
             this.groupBox2.Controls.Add(this.pictureBox4);
             this.groupBox2.Controls.Add(this.pictureBox9);
-            this.groupBox2.Controls.Add(this.pictureBox10);
+            this.groupBox2.Controls.Add(this.pictureBox5);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Location = new System.Drawing.Point(827, 12);
             this.groupBox2.Name = "groupBox2";
@@ -990,16 +1030,16 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox5
+            // pictureBox10
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(866, 262);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(205, 185);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(866, 262);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(205, 185);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 4;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox15
             // 
@@ -1177,16 +1217,177 @@
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
-            // pictureBox10
+            // pictureBox5
             // 
-            this.pictureBox10.Image = global::Lesson2.Properties.Resources._1_meal;
-            this.pictureBox10.Location = new System.Drawing.Point(866, 34);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(205, 185);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 9;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
+            this.pictureBox5.Image = global::Lesson2.Properties.Resources._1_meal;
+            this.pictureBox5.Location = new System.Drawing.Point(866, 34);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(205, 185);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 9;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox10_Click);
+            // 
+            // picpathTxtbox1
+            // 
+            this.picpathTxtbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox1.Location = new System.Drawing.Point(44, 180);
+            this.picpathTxtbox1.Name = "picpathTxtbox1";
+            this.picpathTxtbox1.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox1.TabIndex = 102;
+            this.picpathTxtbox1.TextChanged += new System.EventHandler(this.picpathTxtbox1_TextChanged);
+            // 
+            // picpathTxtbox2
+            // 
+            this.picpathTxtbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox2.Location = new System.Drawing.Point(263, 180);
+            this.picpathTxtbox2.Name = "picpathTxtbox2";
+            this.picpathTxtbox2.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox2.TabIndex = 103;
+            // 
+            // picpathTxtbox3
+            // 
+            this.picpathTxtbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox3.Location = new System.Drawing.Point(472, 180);
+            this.picpathTxtbox3.Name = "picpathTxtbox3";
+            this.picpathTxtbox3.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox3.TabIndex = 104;
+            // 
+            // picpathTxtbox4
+            // 
+            this.picpathTxtbox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox4.Location = new System.Drawing.Point(681, 180);
+            this.picpathTxtbox4.Name = "picpathTxtbox4";
+            this.picpathTxtbox4.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox4.TabIndex = 105;
+            // 
+            // picpathTxtbox5
+            // 
+            this.picpathTxtbox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox5.Location = new System.Drawing.Point(895, 180);
+            this.picpathTxtbox5.Name = "picpathTxtbox5";
+            this.picpathTxtbox5.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox5.TabIndex = 106;
+            // 
+            // picpathTxtbox6
+            // 
+            this.picpathTxtbox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox6.Location = new System.Drawing.Point(44, 403);
+            this.picpathTxtbox6.Name = "picpathTxtbox6";
+            this.picpathTxtbox6.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox6.TabIndex = 107;
+            // 
+            // picpathTxtbox7
+            // 
+            this.picpathTxtbox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox7.Location = new System.Drawing.Point(263, 403);
+            this.picpathTxtbox7.Name = "picpathTxtbox7";
+            this.picpathTxtbox7.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox7.TabIndex = 108;
+            // 
+            // picpathTxtbox18
+            // 
+            this.picpathTxtbox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox18.Location = new System.Drawing.Point(476, 862);
+            this.picpathTxtbox18.Name = "picpathTxtbox18";
+            this.picpathTxtbox18.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox18.TabIndex = 109;
+            // 
+            // picpathTxtbox9
+            // 
+            this.picpathTxtbox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox9.Location = new System.Drawing.Point(678, 403);
+            this.picpathTxtbox9.Name = "picpathTxtbox9";
+            this.picpathTxtbox9.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox9.TabIndex = 110;
+            // 
+            // picpathTxtbox10
+            // 
+            this.picpathTxtbox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox10.Location = new System.Drawing.Point(904, 403);
+            this.picpathTxtbox10.Name = "picpathTxtbox10";
+            this.picpathTxtbox10.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox10.TabIndex = 111;
+            // 
+            // picpathTxtbox11
+            // 
+            this.picpathTxtbox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox11.Location = new System.Drawing.Point(44, 630);
+            this.picpathTxtbox11.Name = "picpathTxtbox11";
+            this.picpathTxtbox11.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox11.TabIndex = 112;
+            // 
+            // picpathTxtbox12
+            // 
+            this.picpathTxtbox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox12.Location = new System.Drawing.Point(263, 630);
+            this.picpathTxtbox12.Name = "picpathTxtbox12";
+            this.picpathTxtbox12.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox12.TabIndex = 113;
+            // 
+            // picpathTxtbox13
+            // 
+            this.picpathTxtbox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox13.Location = new System.Drawing.Point(476, 630);
+            this.picpathTxtbox13.Name = "picpathTxtbox13";
+            this.picpathTxtbox13.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox13.TabIndex = 114;
+            // 
+            // picpathTxtbox14
+            // 
+            this.picpathTxtbox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox14.Location = new System.Drawing.Point(678, 630);
+            this.picpathTxtbox14.Name = "picpathTxtbox14";
+            this.picpathTxtbox14.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox14.TabIndex = 115;
+            // 
+            // picpathTxtbox15
+            // 
+            this.picpathTxtbox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox15.Location = new System.Drawing.Point(895, 630);
+            this.picpathTxtbox15.Name = "picpathTxtbox15";
+            this.picpathTxtbox15.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox15.TabIndex = 116;
+            // 
+            // picpathTxtbox16
+            // 
+            this.picpathTxtbox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox16.Location = new System.Drawing.Point(44, 862);
+            this.picpathTxtbox16.Name = "picpathTxtbox16";
+            this.picpathTxtbox16.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox16.TabIndex = 117;
+            // 
+            // picpathTxtbox17
+            // 
+            this.picpathTxtbox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox17.Location = new System.Drawing.Point(263, 862);
+            this.picpathTxtbox17.Name = "picpathTxtbox17";
+            this.picpathTxtbox17.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox17.TabIndex = 118;
+            // 
+            // picpathTxtbox8
+            // 
+            this.picpathTxtbox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox8.Location = new System.Drawing.Point(476, 403);
+            this.picpathTxtbox8.Name = "picpathTxtbox8";
+            this.picpathTxtbox8.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox8.TabIndex = 119;
+            // 
+            // picpathTxtbox19
+            // 
+            this.picpathTxtbox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox19.Location = new System.Drawing.Point(678, 862);
+            this.picpathTxtbox19.Name = "picpathTxtbox19";
+            this.picpathTxtbox19.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox19.TabIndex = 120;
+            // 
+            // picpathTxtbox20
+            // 
+            this.picpathTxtbox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox20.Location = new System.Drawing.Point(895, 862);
+            this.picpathTxtbox20.Name = "picpathTxtbox20";
+            this.picpathTxtbox20.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox20.TabIndex = 121;
             // 
             // POS1_shortened
             // 
@@ -1230,7 +1431,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
@@ -1247,7 +1448,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1327,7 +1528,7 @@
         private System.Windows.Forms.Label name1lbl;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox20;
@@ -1344,6 +1545,26 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.TextBox picpathTxtbox20;
+        private System.Windows.Forms.TextBox picpathTxtbox19;
+        private System.Windows.Forms.TextBox picpathTxtbox8;
+        private System.Windows.Forms.TextBox picpathTxtbox17;
+        private System.Windows.Forms.TextBox picpathTxtbox16;
+        private System.Windows.Forms.TextBox picpathTxtbox15;
+        private System.Windows.Forms.TextBox picpathTxtbox14;
+        private System.Windows.Forms.TextBox picpathTxtbox13;
+        private System.Windows.Forms.TextBox picpathTxtbox12;
+        private System.Windows.Forms.TextBox picpathTxtbox11;
+        private System.Windows.Forms.TextBox picpathTxtbox10;
+        private System.Windows.Forms.TextBox picpathTxtbox9;
+        private System.Windows.Forms.TextBox picpathTxtbox18;
+        private System.Windows.Forms.TextBox picpathTxtbox7;
+        private System.Windows.Forms.TextBox picpathTxtbox6;
+        private System.Windows.Forms.TextBox picpathTxtbox5;
+        private System.Windows.Forms.TextBox picpathTxtbox4;
+        private System.Windows.Forms.TextBox picpathTxtbox3;
+        private System.Windows.Forms.TextBox picpathTxtbox2;
+        private System.Windows.Forms.TextBox picpathTxtbox1;
     }
 }
