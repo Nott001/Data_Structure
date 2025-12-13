@@ -49,7 +49,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.terminal_noLbl = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.discounted_totaltxtbox = new System.Windows.Forms.TextBox();
@@ -80,6 +80,26 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.picpathTxtbox20 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox19 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox8 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox17 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox16 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox15 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox14 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox13 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox12 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox11 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox10 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox9 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox18 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox7 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox6 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox5 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox4 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox3 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox2 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox1 = new System.Windows.Forms.TextBox();
             this.name20lbl = new System.Windows.Forms.Label();
             this.name19lbl = new System.Windows.Forms.Label();
             this.name18lbl = new System.Windows.Forms.Label();
@@ -120,26 +140,12 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.picpathTxtbox1 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox2 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox3 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox4 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox5 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox6 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox7 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox18 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox9 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox10 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox11 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox12 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox13 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox14 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox15 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox16 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox17 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox8 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox19 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox20 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.emp_idLbl = new System.Windows.Forms.Label();
+            this.time_dateLbl = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.emp_fnameLbl = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -403,33 +409,34 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(252, 36);
+            this.label1.Location = new System.Drawing.Point(174, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(450, 29);
             this.label1.TabIndex = 25;
             this.label1.Text = "JABEE FOODS INC. POINT OF SALE";
             // 
-            // label13
+            // terminal_noLbl
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label13.Location = new System.Drawing.Point(583, 75);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(95, 17);
-            this.label13.TabIndex = 45;
-            this.label13.Text = "Terminal # 21";
+            this.terminal_noLbl.AutoSize = true;
+            this.terminal_noLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.terminal_noLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.terminal_noLbl.Location = new System.Drawing.Point(571, 81);
+            this.terminal_noLbl.Name = "terminal_noLbl";
+            this.terminal_noLbl.Size = new System.Drawing.Size(95, 17);
+            this.terminal_noLbl.TabIndex = 45;
+            this.terminal_noLbl.Text = "Terminal # 21";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label12.Location = new System.Drawing.Point(391, 75);
+            this.label12.Location = new System.Drawing.Point(361, 55);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(175, 17);
+            this.label12.Size = new System.Drawing.Size(129, 17);
             this.label12.TabIndex = 44;
-            this.label12.Text = "By: Karl Robert C. Villamor";
+            this.label12.Text = "Employee Name:";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // groupBox3
             // 
@@ -786,6 +793,167 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Items DIsplay";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // picpathTxtbox20
+            // 
+            this.picpathTxtbox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox20.Location = new System.Drawing.Point(895, 862);
+            this.picpathTxtbox20.Name = "picpathTxtbox20";
+            this.picpathTxtbox20.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox20.TabIndex = 121;
+            // 
+            // picpathTxtbox19
+            // 
+            this.picpathTxtbox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox19.Location = new System.Drawing.Point(678, 862);
+            this.picpathTxtbox19.Name = "picpathTxtbox19";
+            this.picpathTxtbox19.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox19.TabIndex = 120;
+            // 
+            // picpathTxtbox8
+            // 
+            this.picpathTxtbox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox8.Location = new System.Drawing.Point(476, 403);
+            this.picpathTxtbox8.Name = "picpathTxtbox8";
+            this.picpathTxtbox8.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox8.TabIndex = 119;
+            // 
+            // picpathTxtbox17
+            // 
+            this.picpathTxtbox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox17.Location = new System.Drawing.Point(263, 862);
+            this.picpathTxtbox17.Name = "picpathTxtbox17";
+            this.picpathTxtbox17.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox17.TabIndex = 118;
+            // 
+            // picpathTxtbox16
+            // 
+            this.picpathTxtbox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox16.Location = new System.Drawing.Point(44, 862);
+            this.picpathTxtbox16.Name = "picpathTxtbox16";
+            this.picpathTxtbox16.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox16.TabIndex = 117;
+            // 
+            // picpathTxtbox15
+            // 
+            this.picpathTxtbox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox15.Location = new System.Drawing.Point(895, 630);
+            this.picpathTxtbox15.Name = "picpathTxtbox15";
+            this.picpathTxtbox15.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox15.TabIndex = 116;
+            // 
+            // picpathTxtbox14
+            // 
+            this.picpathTxtbox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox14.Location = new System.Drawing.Point(678, 630);
+            this.picpathTxtbox14.Name = "picpathTxtbox14";
+            this.picpathTxtbox14.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox14.TabIndex = 115;
+            // 
+            // picpathTxtbox13
+            // 
+            this.picpathTxtbox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox13.Location = new System.Drawing.Point(476, 630);
+            this.picpathTxtbox13.Name = "picpathTxtbox13";
+            this.picpathTxtbox13.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox13.TabIndex = 114;
+            // 
+            // picpathTxtbox12
+            // 
+            this.picpathTxtbox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox12.Location = new System.Drawing.Point(263, 630);
+            this.picpathTxtbox12.Name = "picpathTxtbox12";
+            this.picpathTxtbox12.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox12.TabIndex = 113;
+            // 
+            // picpathTxtbox11
+            // 
+            this.picpathTxtbox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox11.Location = new System.Drawing.Point(44, 630);
+            this.picpathTxtbox11.Name = "picpathTxtbox11";
+            this.picpathTxtbox11.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox11.TabIndex = 112;
+            // 
+            // picpathTxtbox10
+            // 
+            this.picpathTxtbox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox10.Location = new System.Drawing.Point(904, 403);
+            this.picpathTxtbox10.Name = "picpathTxtbox10";
+            this.picpathTxtbox10.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox10.TabIndex = 111;
+            // 
+            // picpathTxtbox9
+            // 
+            this.picpathTxtbox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox9.Location = new System.Drawing.Point(678, 403);
+            this.picpathTxtbox9.Name = "picpathTxtbox9";
+            this.picpathTxtbox9.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox9.TabIndex = 110;
+            // 
+            // picpathTxtbox18
+            // 
+            this.picpathTxtbox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox18.Location = new System.Drawing.Point(476, 862);
+            this.picpathTxtbox18.Name = "picpathTxtbox18";
+            this.picpathTxtbox18.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox18.TabIndex = 109;
+            // 
+            // picpathTxtbox7
+            // 
+            this.picpathTxtbox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox7.Location = new System.Drawing.Point(263, 403);
+            this.picpathTxtbox7.Name = "picpathTxtbox7";
+            this.picpathTxtbox7.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox7.TabIndex = 108;
+            // 
+            // picpathTxtbox6
+            // 
+            this.picpathTxtbox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox6.Location = new System.Drawing.Point(44, 403);
+            this.picpathTxtbox6.Name = "picpathTxtbox6";
+            this.picpathTxtbox6.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox6.TabIndex = 107;
+            // 
+            // picpathTxtbox5
+            // 
+            this.picpathTxtbox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox5.Location = new System.Drawing.Point(895, 180);
+            this.picpathTxtbox5.Name = "picpathTxtbox5";
+            this.picpathTxtbox5.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox5.TabIndex = 106;
+            // 
+            // picpathTxtbox4
+            // 
+            this.picpathTxtbox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox4.Location = new System.Drawing.Point(681, 180);
+            this.picpathTxtbox4.Name = "picpathTxtbox4";
+            this.picpathTxtbox4.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox4.TabIndex = 105;
+            // 
+            // picpathTxtbox3
+            // 
+            this.picpathTxtbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox3.Location = new System.Drawing.Point(472, 180);
+            this.picpathTxtbox3.Name = "picpathTxtbox3";
+            this.picpathTxtbox3.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox3.TabIndex = 104;
+            // 
+            // picpathTxtbox2
+            // 
+            this.picpathTxtbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox2.Location = new System.Drawing.Point(263, 180);
+            this.picpathTxtbox2.Name = "picpathTxtbox2";
+            this.picpathTxtbox2.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox2.TabIndex = 103;
+            // 
+            // picpathTxtbox1
+            // 
+            this.picpathTxtbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picpathTxtbox1.Location = new System.Drawing.Point(44, 180);
+            this.picpathTxtbox1.Name = "picpathTxtbox1";
+            this.picpathTxtbox1.Size = new System.Drawing.Size(153, 24);
+            this.picpathTxtbox1.TabIndex = 102;
+            this.picpathTxtbox1.TextChanged += new System.EventHandler(this.picpathTxtbox1_TextChanged);
             // 
             // name20lbl
             // 
@@ -1228,166 +1396,72 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
-            // picpathTxtbox1
+            // label14
             // 
-            this.picpathTxtbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox1.Location = new System.Drawing.Point(44, 180);
-            this.picpathTxtbox1.Name = "picpathTxtbox1";
-            this.picpathTxtbox1.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox1.TabIndex = 102;
-            this.picpathTxtbox1.TextChanged += new System.EventHandler(this.picpathTxtbox1_TextChanged);
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label14.Location = new System.Drawing.Point(39, 55);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(47, 17);
+            this.label14.TabIndex = 65;
+            this.label14.Text = "Date:";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // picpathTxtbox2
+            // label13
             // 
-            this.picpathTxtbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox2.Location = new System.Drawing.Point(263, 180);
-            this.picpathTxtbox2.Name = "picpathTxtbox2";
-            this.picpathTxtbox2.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox2.TabIndex = 103;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label13.Location = new System.Drawing.Point(196, 55);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(103, 17);
+            this.label13.TabIndex = 66;
+            this.label13.Text = "Employee ID:";
             // 
-            // picpathTxtbox3
+            // emp_idLbl
             // 
-            this.picpathTxtbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox3.Location = new System.Drawing.Point(472, 180);
-            this.picpathTxtbox3.Name = "picpathTxtbox3";
-            this.picpathTxtbox3.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox3.TabIndex = 104;
+            this.emp_idLbl.AutoSize = true;
+            this.emp_idLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emp_idLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.emp_idLbl.Location = new System.Drawing.Point(196, 81);
+            this.emp_idLbl.Name = "emp_idLbl";
+            this.emp_idLbl.Size = new System.Drawing.Size(95, 17);
+            this.emp_idLbl.TabIndex = 67;
+            this.emp_idLbl.Text = "Terminal # 21";
             // 
-            // picpathTxtbox4
+            // time_dateLbl
             // 
-            this.picpathTxtbox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox4.Location = new System.Drawing.Point(681, 180);
-            this.picpathTxtbox4.Name = "picpathTxtbox4";
-            this.picpathTxtbox4.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox4.TabIndex = 105;
+            this.time_dateLbl.AutoSize = true;
+            this.time_dateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time_dateLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.time_dateLbl.Location = new System.Drawing.Point(39, 81);
+            this.time_dateLbl.Name = "time_dateLbl";
+            this.time_dateLbl.Size = new System.Drawing.Size(95, 17);
+            this.time_dateLbl.TabIndex = 68;
+            this.time_dateLbl.Text = "Terminal # 21";
             // 
-            // picpathTxtbox5
+            // label17
             // 
-            this.picpathTxtbox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox5.Location = new System.Drawing.Point(895, 180);
-            this.picpathTxtbox5.Name = "picpathTxtbox5";
-            this.picpathTxtbox5.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox5.TabIndex = 106;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label17.Location = new System.Drawing.Point(571, 55);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(126, 17);
+            this.label17.TabIndex = 69;
+            this.label17.Text = "PC Terminal No.";
             // 
-            // picpathTxtbox6
+            // emp_fnameLbl
             // 
-            this.picpathTxtbox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox6.Location = new System.Drawing.Point(44, 403);
-            this.picpathTxtbox6.Name = "picpathTxtbox6";
-            this.picpathTxtbox6.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox6.TabIndex = 107;
-            // 
-            // picpathTxtbox7
-            // 
-            this.picpathTxtbox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox7.Location = new System.Drawing.Point(263, 403);
-            this.picpathTxtbox7.Name = "picpathTxtbox7";
-            this.picpathTxtbox7.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox7.TabIndex = 108;
-            // 
-            // picpathTxtbox18
-            // 
-            this.picpathTxtbox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox18.Location = new System.Drawing.Point(476, 862);
-            this.picpathTxtbox18.Name = "picpathTxtbox18";
-            this.picpathTxtbox18.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox18.TabIndex = 109;
-            // 
-            // picpathTxtbox9
-            // 
-            this.picpathTxtbox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox9.Location = new System.Drawing.Point(678, 403);
-            this.picpathTxtbox9.Name = "picpathTxtbox9";
-            this.picpathTxtbox9.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox9.TabIndex = 110;
-            // 
-            // picpathTxtbox10
-            // 
-            this.picpathTxtbox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox10.Location = new System.Drawing.Point(904, 403);
-            this.picpathTxtbox10.Name = "picpathTxtbox10";
-            this.picpathTxtbox10.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox10.TabIndex = 111;
-            // 
-            // picpathTxtbox11
-            // 
-            this.picpathTxtbox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox11.Location = new System.Drawing.Point(44, 630);
-            this.picpathTxtbox11.Name = "picpathTxtbox11";
-            this.picpathTxtbox11.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox11.TabIndex = 112;
-            // 
-            // picpathTxtbox12
-            // 
-            this.picpathTxtbox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox12.Location = new System.Drawing.Point(263, 630);
-            this.picpathTxtbox12.Name = "picpathTxtbox12";
-            this.picpathTxtbox12.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox12.TabIndex = 113;
-            // 
-            // picpathTxtbox13
-            // 
-            this.picpathTxtbox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox13.Location = new System.Drawing.Point(476, 630);
-            this.picpathTxtbox13.Name = "picpathTxtbox13";
-            this.picpathTxtbox13.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox13.TabIndex = 114;
-            // 
-            // picpathTxtbox14
-            // 
-            this.picpathTxtbox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox14.Location = new System.Drawing.Point(678, 630);
-            this.picpathTxtbox14.Name = "picpathTxtbox14";
-            this.picpathTxtbox14.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox14.TabIndex = 115;
-            // 
-            // picpathTxtbox15
-            // 
-            this.picpathTxtbox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox15.Location = new System.Drawing.Point(895, 630);
-            this.picpathTxtbox15.Name = "picpathTxtbox15";
-            this.picpathTxtbox15.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox15.TabIndex = 116;
-            // 
-            // picpathTxtbox16
-            // 
-            this.picpathTxtbox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox16.Location = new System.Drawing.Point(44, 862);
-            this.picpathTxtbox16.Name = "picpathTxtbox16";
-            this.picpathTxtbox16.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox16.TabIndex = 117;
-            // 
-            // picpathTxtbox17
-            // 
-            this.picpathTxtbox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox17.Location = new System.Drawing.Point(263, 862);
-            this.picpathTxtbox17.Name = "picpathTxtbox17";
-            this.picpathTxtbox17.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox17.TabIndex = 118;
-            // 
-            // picpathTxtbox8
-            // 
-            this.picpathTxtbox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox8.Location = new System.Drawing.Point(476, 403);
-            this.picpathTxtbox8.Name = "picpathTxtbox8";
-            this.picpathTxtbox8.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox8.TabIndex = 119;
-            // 
-            // picpathTxtbox19
-            // 
-            this.picpathTxtbox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox19.Location = new System.Drawing.Point(678, 862);
-            this.picpathTxtbox19.Name = "picpathTxtbox19";
-            this.picpathTxtbox19.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox19.TabIndex = 120;
-            // 
-            // picpathTxtbox20
-            // 
-            this.picpathTxtbox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picpathTxtbox20.Location = new System.Drawing.Point(895, 862);
-            this.picpathTxtbox20.Name = "picpathTxtbox20";
-            this.picpathTxtbox20.Size = new System.Drawing.Size(153, 24);
-            this.picpathTxtbox20.TabIndex = 121;
+            this.emp_fnameLbl.AutoSize = true;
+            this.emp_fnameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emp_fnameLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.emp_fnameLbl.Location = new System.Drawing.Point(361, 81);
+            this.emp_fnameLbl.Name = "emp_fnameLbl";
+            this.emp_fnameLbl.Size = new System.Drawing.Size(95, 17);
+            this.emp_fnameLbl.TabIndex = 70;
+            this.emp_fnameLbl.Text = "Terminal # 21";
             // 
             // POS1_shortened
             // 
@@ -1395,6 +1469,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
+            this.Controls.Add(this.emp_fnameLbl);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.time_dateLbl);
+            this.Controls.Add(this.emp_idLbl);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.button20);
@@ -1414,7 +1494,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.terminal_noLbl);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
@@ -1467,7 +1547,7 @@
         private System.Windows.Forms.TextBox itemnametxtbox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label terminal_noLbl;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox discounted_totaltxtbox;
@@ -1566,5 +1646,11 @@
         private System.Windows.Forms.TextBox picpathTxtbox3;
         private System.Windows.Forms.TextBox picpathTxtbox2;
         private System.Windows.Forms.TextBox picpathTxtbox1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label emp_idLbl;
+        private System.Windows.Forms.Label time_dateLbl;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label emp_fnameLbl;
     }
 }

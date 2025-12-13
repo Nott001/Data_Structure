@@ -122,11 +122,25 @@ namespace Lesson2
         }
 
         // ---------- CLEARING & EXIT ----------
-        public void ClearAllTextboxes(Form form)
+        public void ClearAllTextboxes(Control parent)
         {
-            foreach (Control c in form.Controls)
-                if (c is TextBox) ((TextBox)c).Clear();
+            foreach (Control c in parent.Controls)
+            {
+                if (c is TextBox tb && tb.Enabled)
+                    tb.Clear();
+
+                else if (c is ComboBox cb && cb.Enabled)
+                    cb.SelectedIndex = -1;
+
+                else if (c is DateTimePicker dtp && dtp.Enabled)
+                    dtp.Value = DateTime.Now;
+
+                if (c.HasChildren)
+                    ClearAllTextboxes(c);
+            }
+
         }
+
 
         public void ExitApp(Form form)
         {

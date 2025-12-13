@@ -34,7 +34,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.emp_status_box = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.num_dependants_box = new System.Windows.Forms.TextBox();
+            this.num_dependents_box = new System.Windows.Forms.TextBox();
             this.department_box = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -111,6 +111,10 @@
             this.new_button = new System.Windows.Forms.Button();
             this.calculate_button = new System.Windows.Forms.Button();
             this.Payslip_view_listbox = new System.Windows.Forms.ListBox();
+            this.save_button = new System.Windows.Forms.Button();
+            this.search_button = new System.Windows.Forms.Button();
+            this.edit_button = new System.Windows.Forms.Button();
+            this.delete_button = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -129,7 +133,7 @@
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.emp_status_box);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.num_dependants_box);
+            this.groupBox1.Controls.Add(this.num_dependents_box);
             this.groupBox1.Controls.Add(this.department_box);
             this.groupBox1.Controls.Add(this.label32);
             this.groupBox1.Controls.Add(this.label31);
@@ -152,6 +156,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1405, 292);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // browse_button
             // 
@@ -196,13 +201,13 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(293, 24);
             this.dateTimePicker1.TabIndex = 19;
             // 
-            // num_dependants_box
+            // num_dependents_box
             // 
-            this.num_dependants_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_dependants_box.Location = new System.Drawing.Point(841, 22);
-            this.num_dependants_box.Name = "num_dependants_box";
-            this.num_dependants_box.Size = new System.Drawing.Size(293, 24);
-            this.num_dependants_box.TabIndex = 18;
+            this.num_dependents_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.num_dependents_box.Location = new System.Drawing.Point(841, 22);
+            this.num_dependents_box.Name = "num_dependents_box";
+            this.num_dependents_box.Size = new System.Drawing.Size(293, 24);
+            this.num_dependents_box.TabIndex = 18;
             // 
             // department_box
             // 
@@ -919,9 +924,9 @@
             // exit_button
             // 
             this.exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit_button.Location = new System.Drawing.Point(1233, 941);
+            this.exit_button.Location = new System.Drawing.Point(1114, 931);
             this.exit_button.Name = "exit_button";
-            this.exit_button.Size = new System.Drawing.Size(186, 42);
+            this.exit_button.Size = new System.Drawing.Size(147, 42);
             this.exit_button.TabIndex = 35;
             this.exit_button.Text = "EXIT";
             this.exit_button.UseVisualStyleBackColor = true;
@@ -930,9 +935,9 @@
             // preview_button
             // 
             this.preview_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.preview_button.Location = new System.Drawing.Point(874, 941);
+            this.preview_button.Location = new System.Drawing.Point(744, 931);
             this.preview_button.Name = "preview_button";
-            this.preview_button.Size = new System.Drawing.Size(353, 42);
+            this.preview_button.Size = new System.Drawing.Size(364, 42);
             this.preview_button.TabIndex = 34;
             this.preview_button.Text = "PREVIEW PAYSLIP DETAILS";
             this.preview_button.UseVisualStyleBackColor = true;
@@ -941,9 +946,9 @@
             // print_payslip_button
             // 
             this.print_payslip_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print_payslip_button.Location = new System.Drawing.Point(604, 941);
+            this.print_payslip_button.Location = new System.Drawing.Point(516, 931);
             this.print_payslip_button.Name = "print_payslip_button";
-            this.print_payslip_button.Size = new System.Drawing.Size(264, 42);
+            this.print_payslip_button.Size = new System.Drawing.Size(222, 42);
             this.print_payslip_button.TabIndex = 33;
             this.print_payslip_button.Text = "PRINT PAYSLIP";
             this.print_payslip_button.UseVisualStyleBackColor = true;
@@ -952,9 +957,9 @@
             // cancel_button
             // 
             this.cancel_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel_button.Location = new System.Drawing.Point(412, 941);
+            this.cancel_button.Location = new System.Drawing.Point(360, 931);
             this.cancel_button.Name = "cancel_button";
-            this.cancel_button.Size = new System.Drawing.Size(186, 42);
+            this.cancel_button.Size = new System.Drawing.Size(150, 42);
             this.cancel_button.TabIndex = 32;
             this.cancel_button.Text = "CANCEL";
             this.cancel_button.UseVisualStyleBackColor = true;
@@ -963,9 +968,9 @@
             // new_button
             // 
             this.new_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.new_button.Location = new System.Drawing.Point(234, 941);
+            this.new_button.Location = new System.Drawing.Point(203, 931);
             this.new_button.Name = "new_button";
-            this.new_button.Size = new System.Drawing.Size(172, 42);
+            this.new_button.Size = new System.Drawing.Size(151, 42);
             this.new_button.TabIndex = 31;
             this.new_button.Text = "NEW";
             this.new_button.UseVisualStyleBackColor = true;
@@ -974,9 +979,9 @@
             // calculate_button
             // 
             this.calculate_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculate_button.Location = new System.Drawing.Point(15, 941);
+            this.calculate_button.Location = new System.Drawing.Point(12, 931);
             this.calculate_button.Name = "calculate_button";
-            this.calculate_button.Size = new System.Drawing.Size(213, 42);
+            this.calculate_button.Size = new System.Drawing.Size(185, 42);
             this.calculate_button.TabIndex = 30;
             this.calculate_button.Text = "CALCULATE";
             this.calculate_button.UseVisualStyleBackColor = true;
@@ -989,14 +994,63 @@
             this.Payslip_view_listbox.ItemHeight = 18;
             this.Payslip_view_listbox.Location = new System.Drawing.Point(1435, 12);
             this.Payslip_view_listbox.Name = "Payslip_view_listbox";
-            this.Payslip_view_listbox.Size = new System.Drawing.Size(477, 922);
+            this.Payslip_view_listbox.Size = new System.Drawing.Size(477, 904);
             this.Payslip_view_listbox.TabIndex = 36;
+            // 
+            // save_button
+            // 
+            this.save_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save_button.Location = new System.Drawing.Point(1423, 931);
+            this.save_button.Name = "save_button";
+            this.save_button.Size = new System.Drawing.Size(162, 42);
+            this.save_button.TabIndex = 37;
+            this.save_button.Text = "SAVE";
+            this.save_button.UseVisualStyleBackColor = true;
+            this.save_button.Click += new System.EventHandler(this.save_button_Click);
+            // 
+            // search_button
+            // 
+            this.search_button.BackColor = System.Drawing.Color.White;
+            this.search_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_button.Location = new System.Drawing.Point(1267, 931);
+            this.search_button.Name = "search_button";
+            this.search_button.Size = new System.Drawing.Size(150, 42);
+            this.search_button.TabIndex = 38;
+            this.search_button.Text = "SEARCH";
+            this.search_button.UseVisualStyleBackColor = false;
+            this.search_button.Click += new System.EventHandler(this.search_button_Click);
+            // 
+            // edit_button
+            // 
+            this.edit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edit_button.Location = new System.Drawing.Point(1591, 931);
+            this.edit_button.Name = "edit_button";
+            this.edit_button.Size = new System.Drawing.Size(152, 42);
+            this.edit_button.TabIndex = 39;
+            this.edit_button.Text = "EDIT";
+            this.edit_button.UseVisualStyleBackColor = true;
+            this.edit_button.Click += new System.EventHandler(this.edit_button_Click);
+            // 
+            // delete_button
+            // 
+            this.delete_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_button.Location = new System.Drawing.Point(1749, 931);
+            this.delete_button.Name = "delete_button";
+            this.delete_button.Size = new System.Drawing.Size(163, 42);
+            this.delete_button.TabIndex = 40;
+            this.delete_button.Text = "DELETE";
+            this.delete_button.UseVisualStyleBackColor = true;
+            this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
             // Payroll_shortened
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
+            this.Controls.Add(this.delete_button);
+            this.Controls.Add(this.edit_button);
+            this.Controls.Add(this.search_button);
+            this.Controls.Add(this.save_button);
             this.Controls.Add(this.Payslip_view_listbox);
             this.Controls.Add(this.exit_button);
             this.Controls.Add(this.preview_button);
@@ -1044,7 +1098,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox emp_status_box;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox num_dependants_box;
+        private System.Windows.Forms.TextBox num_dependents_box;
         private System.Windows.Forms.TextBox department_box;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label31;
@@ -1121,5 +1175,9 @@
         private System.Windows.Forms.Button new_button;
         private System.Windows.Forms.Button calculate_button;
         public System.Windows.Forms.ListBox Payslip_view_listbox;
+        private System.Windows.Forms.Button save_button;
+        private System.Windows.Forms.Button search_button;
+        private System.Windows.Forms.Button edit_button;
+        private System.Windows.Forms.Button delete_button;
     }
 }

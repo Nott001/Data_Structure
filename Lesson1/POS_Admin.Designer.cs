@@ -159,6 +159,8 @@
             this.exit_button = new System.Windows.Forms.Button();
             this.dataGridDisplay = new System.Windows.Forms.DataGridView();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.emp_textbox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
@@ -1476,7 +1478,7 @@
             // 
             this.pos_id_comboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pos_id_comboBox.FormattingEnabled = true;
-            this.pos_id_comboBox.Location = new System.Drawing.Point(1617, 34);
+            this.pos_id_comboBox.Location = new System.Drawing.Point(1617, 12);
             this.pos_id_comboBox.Name = "pos_id_comboBox";
             this.pos_id_comboBox.Size = new System.Drawing.Size(295, 28);
             this.pos_id_comboBox.TabIndex = 1;
@@ -1486,7 +1488,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(1617, 65);
+            this.label1.Location = new System.Drawing.Point(1617, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 18);
             this.label1.TabIndex = 2;
@@ -1582,12 +1584,32 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // emp_textbox
+            // 
+            this.emp_textbox.Location = new System.Drawing.Point(1617, 64);
+            this.emp_textbox.Name = "emp_textbox";
+            this.emp_textbox.Size = new System.Drawing.Size(295, 20);
+            this.emp_textbox.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(1617, 87);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 18);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "POS ID NO.";
+            // 
             // POS_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.emp_textbox);
             this.Controls.Add(this.dataGridDisplay);
             this.Controls.Add(this.exit_button);
             this.Controls.Add(this.new_cancel_button);
@@ -1763,5 +1785,7 @@
         private System.Windows.Forms.TextBox picpathTxtbox12;
         private System.Windows.Forms.TextBox picpathTxtbox16;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox emp_textbox;
+        private System.Windows.Forms.Label label2;
     }
 }

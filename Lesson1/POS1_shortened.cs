@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Lesson2
 {
@@ -12,6 +12,10 @@ namespace Lesson2
         double price = 0.00;
         double discount_amt = 0.00;
         double discounted_amt = 0.00;
+
+        // Store prices from database
+        private string[] prices = new string[20];
+        private string currentPosId = "1"; 
 
         public POS1_shortened()
         {
@@ -49,6 +53,9 @@ namespace Lesson2
             discounttxtbox.Text = "0";
             discountedtxtbox.Text = "0";
             cashrenderedtxtbox.Text = "0";
+
+            // Load initial data for POS ID 1
+            LoadPOSData(currentPosId);
         }
 
         private void Example2_DatabaseApp_Load(object sender, EventArgs e)
@@ -69,131 +76,246 @@ namespace Lesson2
                 picpathTxtbox11.Hide(); picpathTxtbox12.Hide(); picpathTxtbox13.Hide(); picpathTxtbox14.Hide(); picpathTxtbox15.Hide();
                 picpathTxtbox16.Hide(); picpathTxtbox17.Hide(); picpathTxtbox18.Hide(); picpathTxtbox19.Hide(); picpathTxtbox20.Hide();
 
-                posdb_connect.pos_select_cashier();
+                // Check if dataset has data
+                if (posdb_connect.pos_sql_dataset == null || 
+                    posdb_connect.pos_sql_dataset.Tables.Count == 0 || 
+                    posdb_connect.pos_sql_dataset.Tables[0].Rows.Count == 0)
+                {
+                    MessageBox.Show("No data found for the selected POS ID.");
+                    return;
+                }
+
+                // Load data from database
+                DataRow row = posdb_connect.pos_sql_dataset.Tables[0].Rows[0];
+
+                // Load names
+                name1lbl.Text = row["name1"].ToString();
+                name2lbl.Text = row["name2"].ToString();
+                name3lbl.Text = row["name3"].ToString();
+                name4lbl.Text = row["name4"].ToString();
+                name5lbl.Text = row["name5"].ToString();
+                name6lbl.Text = row["name6"].ToString();
+                name7lbl.Text = row["name7"].ToString();
+                name8lbl.Text = row["name8"].ToString();
+                name9lbl.Text = row["name9"].ToString();
+                name10lbl.Text = row["name10"].ToString();
+                name11lbl.Text = row["name11"].ToString();
+                name12lbl.Text = row["name12"].ToString();
+                name13lbl.Text = row["name13"].ToString();
+                name14lbl.Text = row["name14"].ToString();
+                name15lbl.Text = row["name15"].ToString();
+                name16lbl.Text = row["name16"].ToString();
+                name17lbl.Text = row["name17"].ToString();
+                name18lbl.Text = row["name18"].ToString();
+                name19lbl.Text = row["name19"].ToString();
+                name20lbl.Text = row["name20"].ToString();
+
+                // Load pictures
+                helper.LoadPictureBox(pictureBox1, picpathTxtbox1, row["pic1"].ToString());
+                helper.LoadPictureBox(pictureBox2, picpathTxtbox2, row["pic2"].ToString());
+                helper.LoadPictureBox(pictureBox3, picpathTxtbox3, row["pic3"].ToString());
+                helper.LoadPictureBox(pictureBox4, picpathTxtbox4, row["pic4"].ToString());
+                helper.LoadPictureBox(pictureBox5, picpathTxtbox5, row["pic5"].ToString());
+                helper.LoadPictureBox(pictureBox6, picpathTxtbox6, row["pic6"].ToString());
+                helper.LoadPictureBox(pictureBox7, picpathTxtbox7, row["pic7"].ToString());
+                helper.LoadPictureBox(pictureBox8, picpathTxtbox8, row["pic8"].ToString());
+                helper.LoadPictureBox(pictureBox9, picpathTxtbox9, row["pic9"].ToString());
+                helper.LoadPictureBox(pictureBox10, picpathTxtbox10, row["pic10"].ToString());
+                helper.LoadPictureBox(pictureBox11, picpathTxtbox11, row["pic11"].ToString());
+                helper.LoadPictureBox(pictureBox12, picpathTxtbox12, row["pic12"].ToString());
+                helper.LoadPictureBox(pictureBox13, picpathTxtbox13, row["pic13"].ToString());
+                helper.LoadPictureBox(pictureBox14, picpathTxtbox14, row["pic14"].ToString());
+                helper.LoadPictureBox(pictureBox15, picpathTxtbox15, row["pic15"].ToString());
+                helper.LoadPictureBox(pictureBox16, picpathTxtbox16, row["pic16"].ToString());
+                helper.LoadPictureBox(pictureBox17, picpathTxtbox17, row["pic17"].ToString());
+                helper.LoadPictureBox(pictureBox18, picpathTxtbox18, row["pic18"].ToString());
+                helper.LoadPictureBox(pictureBox19, picpathTxtbox19, row["pic19"].ToString());
+                helper.LoadPictureBox(pictureBox20, picpathTxtbox20, row["pic20"].ToString());
+
+                // Store prices from database
+                prices[0] = row["price1"].ToString();
+                prices[1] = row["price2"].ToString();
+                prices[2] = row["price3"].ToString();
+                prices[3] = row["price4"].ToString();
+                prices[4] = row["price5"].ToString();
+                prices[5] = row["price6"].ToString();
+                prices[6] = row["price7"].ToString();
+                prices[7] = row["price8"].ToString();
+                prices[8] = row["price9"].ToString();
+                prices[9] = row["price10"].ToString();
+                prices[10] = row["price11"].ToString();
+                prices[11] = row["price12"].ToString();
+                prices[12] = row["price13"].ToString();
+                prices[13] = row["price14"].ToString();
+                prices[14] = row["price15"].ToString();
+                prices[15] = row["price16"].ToString();
+                prices[16] = row["price17"].ToString();
+                prices[17] = row["price18"].ToString();
+                prices[18] = row["price19"].ToString();
+                prices[19] = row["price20"].ToString();
+
+                terminal_noLbl.Text = "Terminal # " + row["pos_id"].ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        // Method to dynamically load data based on pos_id
+        public void LoadPOSData(string posId)
+        {
+            try
+            {
+                currentPosId = posId;
+                
+                posdb_connect.pos_sql = "SELECT pos_nameTbl.pos_id, " +
+                      "pos_nameTbl.name1, pos_nameTbl.name2, pos_nameTbl.name3, pos_nameTbl.name4, pos_nameTbl.name5, " +
+                      "pos_nameTbl.name6, pos_nameTbl.name7, pos_nameTbl.name8, pos_nameTbl.name9, pos_nameTbl.name10, " +
+                      "pos_nameTbl.name11, pos_nameTbl.name12, pos_nameTbl.name13, pos_nameTbl.name14, pos_nameTbl.name15, " +
+                      "pos_nameTbl.name16, pos_nameTbl.name17, pos_nameTbl.name18, pos_nameTbl.name19, pos_nameTbl.name20, " +
+                      "pos_picTbl.pic1, pos_picTbl.pic2, pos_picTbl.pic3, pos_picTbl.pic4, pos_picTbl.pic5, " +
+                      "pos_picTbl.pic6, pos_picTbl.pic7, pos_picTbl.pic8, pos_picTbl.pic9, pos_picTbl.pic10, " +
+                      "pos_picTbl.pic11, pos_picTbl.pic12, pos_picTbl.pic13, pos_picTbl.pic14, pos_picTbl.pic15, " +
+                      "pos_picTbl.pic16, pos_picTbl.pic17, pos_picTbl.pic18, pos_picTbl.pic19, pos_picTbl.pic20, " +
+                      "pos_priceTbl.price1, pos_priceTbl.price2, pos_priceTbl.price3, pos_priceTbl.price4, pos_priceTbl.price5, " +
+                      "pos_priceTbl.price6, pos_priceTbl.price7, pos_priceTbl.price8, pos_priceTbl.price9, pos_priceTbl.price10, " +
+                      "pos_priceTbl.price11, pos_priceTbl.price12, pos_priceTbl.price13, pos_priceTbl.price14, pos_priceTbl.price15, " +
+                      "pos_priceTbl.price16, pos_priceTbl.price17, pos_priceTbl.price18, pos_priceTbl.price19, pos_priceTbl.price20 " +
+                      "FROM pos_nameTbl " +
+                      "INNER JOIN pos_picTbl ON pos_nameTbl.pos_id = pos_picTbl.pos_id " +
+                      "INNER JOIN pos_priceTbl ON pos_picTbl.pos_id = pos_priceTbl.pos_id " +
+                      "WHERE pos_nameTbl.pos_id = '" + posId + "'";
+                
                 posdb_connect.pos_cmd();
                 posdb_connect.pos_sqladapterSelect();
                 posdb_connect.pos_sqldatasetSELECT();
 
+                Example2_DatabaseApp_Load(null, null); // Reload all data
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading POS data: " + ex.Message);
             }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name1lbl.Text, "101.50");
+            price_item_TextValue(name1lbl.Text, prices[0]);
             quantityTxtbox();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name2lbl.Text, "100.50");
+            price_item_TextValue(name2lbl.Text, prices[1]);
             quantityTxtbox();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name3lbl.Text, "111.50");
+            price_item_TextValue(name3lbl.Text, prices[2]);
             quantityTxtbox();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name4lbl.Text, "120.50");
+            price_item_TextValue(name4lbl.Text, prices[3]);
             quantityTxtbox();
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name5lbl.Text, "90.50");
+            price_item_TextValue(name5lbl.Text, prices[4]);
             quantityTxtbox();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name6lbl.Text, "101.50");
+            price_item_TextValue(name6lbl.Text, prices[5]);
             quantityTxtbox();
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name7lbl.Text, "123.50");
+            price_item_TextValue(name7lbl.Text, prices[6]);
             quantityTxtbox();
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name8lbl.Text, "188.50");
+            price_item_TextValue(name8lbl.Text, prices[7]);
             quantityTxtbox();
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name9lbl.Text, "680.50");
+            price_item_TextValue(name9lbl.Text, prices[8]);
             quantityTxtbox();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name10lbl.Text, "199.50");
+            price_item_TextValue(name10lbl.Text, prices[9]);
             quantityTxtbox();
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name11lbl.Text, "99.00");
+            price_item_TextValue(name11lbl.Text, prices[10]);
             quantityTxtbox();
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name12lbl.Text, "190.50");
+            price_item_TextValue(name12lbl.Text, prices[11]);
             quantityTxtbox();
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name13lbl.Text, "121.50");
+            price_item_TextValue(name13lbl.Text, prices[12]);
             quantityTxtbox();
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name14lbl.Text, "599.50");
+            price_item_TextValue(name14lbl.Text, prices[13]);
             quantityTxtbox();
         }
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name15lbl.Text, "91.50");
+            price_item_TextValue(name15lbl.Text, prices[14]);
             quantityTxtbox();
         }
 
         private void pictureBox16_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name16lbl.Text, "81.50");
+            price_item_TextValue(name16lbl.Text, prices[15]);
             quantityTxtbox();
         }
 
         private void pictureBox17_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name17lbl.Text, "71.50");
+            price_item_TextValue(name17lbl.Text, prices[16]);
             quantityTxtbox();
         }
 
         private void pictureBox18_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name18lbl.Text, "211.50");
+            price_item_TextValue(name18lbl.Text, prices[17]);
             quantityTxtbox();
         }
 
         private void pictureBox19_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name19lbl.Text, "200.50");
+            price_item_TextValue(name19lbl.Text, prices[18]);
             quantityTxtbox();
         }
 
         private void pictureBox20_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name20lbl.Text, "576.00");
+            price_item_TextValue(name20lbl.Text, prices[19]);
             quantityTxtbox();
         }
 
@@ -314,13 +436,12 @@ namespace Lesson2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            helper.ClearEntryFields( itemnametxtbox, pricetextbox, qty_box, discountedtxtbox, discounttxtbox, changetxtbox, cashrenderedtxtbox);
+            helper.ClearEntryFields(itemnametxtbox, pricetextbox, qty_box, discountedtxtbox, discounttxtbox, changetxtbox, cashrenderedtxtbox);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            helper.ClearEntryFields(itemnametxtbox, pricetextbox, qty_box, discounttxtbox, changetxtbox, cashrenderedtxtbox);
-
+            helper.ClearEntryFields(itemnametxtbox, pricetextbox, qty_box, discounttxtbox, changetxtbox, cashrenderedtxtbox, discountedtxtbox);
             helper.ResetTotals(qty_totaltxtbox, discount_totaltxtbox, discounted_totaltxtbox);
         }
 
@@ -329,24 +450,11 @@ namespace Lesson2
             helper.ExitApp(this);
         }
 
-        private void name1lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void picpathTxtbox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        private void name1lbl_Click(object sender, EventArgs e) { }
+        private void groupBox1_Enter(object sender, EventArgs e) { }
+        private void groupBox2_Enter(object sender, EventArgs e) { }
+        private void picpathTxtbox1_TextChanged(object sender, EventArgs e) { }
+        private void label14_Click(object sender, EventArgs e) { }
+        private void label12_Click(object sender, EventArgs e) { }
     }
 }
