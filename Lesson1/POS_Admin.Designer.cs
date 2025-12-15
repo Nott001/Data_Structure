@@ -1490,9 +1490,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(1617, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 18);
+            this.label1.Size = new System.Drawing.Size(155, 18);
             this.label1.TabIndex = 2;
-            this.label1.Text = "POS ID NO.";
+            this.label1.Text = "POS ID NO. SEARCH";
             // 
             // search_button
             // 
@@ -1598,9 +1598,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(1617, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 18);
+            this.label2.Size = new System.Drawing.Size(147, 18);
             this.label2.TabIndex = 10;
-            this.label2.Text = "POS ID NO.";
+            this.label2.Text = "POS ID NO. INSERT";
             // 
             // POS_Admin
             // 
