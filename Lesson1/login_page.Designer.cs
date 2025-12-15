@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.exit_button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.cancel_button = new System.Windows.Forms.Button();
             this.login_button = new System.Windows.Forms.Button();
@@ -37,7 +38,6 @@
             this.passwordbox = new System.Windows.Forms.TextBox();
             this.username_box = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.exit_button = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +59,19 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // exit_button
+            // 
+            this.exit_button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.exit_button.Location = new System.Drawing.Point(418, 265);
+            this.exit_button.Name = "exit_button";
+            this.exit_button.Size = new System.Drawing.Size(100, 42);
+            this.exit_button.TabIndex = 5;
+            this.exit_button.Text = "Exit";
+            this.exit_button.UseVisualStyleBackColor = false;
+            this.exit_button.Click += new System.EventHandler(this.exit_button_Click);
             // 
             // label3
             // 
@@ -123,6 +136,7 @@
             this.passwordbox.Name = "passwordbox";
             this.passwordbox.Size = new System.Drawing.Size(262, 26);
             this.passwordbox.TabIndex = 1;
+            this.passwordbox.UseSystemPasswordChar = true;
             // 
             // username_box
             // 
@@ -142,19 +156,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // exit_button
-            // 
-            this.exit_button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.exit_button.Location = new System.Drawing.Point(418, 265);
-            this.exit_button.Name = "exit_button";
-            this.exit_button.Size = new System.Drawing.Size(100, 42);
-            this.exit_button.TabIndex = 5;
-            this.exit_button.Text = "Exit";
-            this.exit_button.UseVisualStyleBackColor = false;
-            this.exit_button.Click += new System.EventHandler(this.exit_button_Click);
             // 
             // login_page
             // 

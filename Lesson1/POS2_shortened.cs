@@ -164,6 +164,28 @@ namespace Lesson2
             helper.LoadPictureBox(pictureBox19, picpathTxtbox19, row["pic19"].ToString());
             helper.LoadPictureBox(pictureBox20, picpathTxtbox20, row["pic20"].ToString());
 
+            // Price labels
+            label101.Text = row["price1"].ToString();
+            label102.Text = row["price2"].ToString();
+            label103.Text = row["price3"].ToString();
+            label104.Text = row["price4"].ToString();
+            label105.Text = row["price5"].ToString();
+            label106.Text = row["price6"].ToString();
+            label107.Text = row["price7"].ToString();
+            label108.Text = row["price8"].ToString();
+            label109.Text = row["price9"].ToString();
+            label110.Text = row["price10"].ToString();
+            label111.Text = row["price11"].ToString();
+            label112.Text = row["price12"].ToString();
+            label113.Text = row["price13"].ToString();
+            label114.Text = row["price14"].ToString();
+            label115.Text = row["price15"].ToString();
+            label116.Text = row["price16"].ToString();
+            label117.Text = row["price17"].ToString();
+            label118.Text = row["price18"].ToString();
+            label119.Text = row["price19"].ToString();
+            label120.Text = row["price20"].ToString();
+
             // Prices
             for (int i = 0; i < 20; i++)
                 prices[i] = row[$"price{i + 1}"].ToString();
