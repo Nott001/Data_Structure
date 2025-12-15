@@ -12,14 +12,15 @@ namespace Lesson2
 {
     public partial class employee_reports : Form
     {
+        // Initializes the class connection
         payrol_dbconnection payrol_db_connect = new payrol_dbconnection();
         public employee_reports()
         {
-            payrol_db_connect.payrol_connString();
+            payrol_db_connect.payrol_connString(); // Connecting with the database
             InitializeComponent();
         }
 
-        private void payrol_select()
+        private void payrol_select() // Method for for sql commands
         {
             payrol_db_connect.payrol_cmd();
             payrol_db_connect.payrol_sqldataadapterSelect();
@@ -27,14 +28,14 @@ namespace Lesson2
             dataGridView1.DataSource = payrol_db_connect.payrol_sql_dataset.Tables[0];
         }
 
-        private void cleartextboxes()
+        private void cleartextboxes() //  Method for clearing textboxes and comboboxes
         {
             optionCombo.Text = "";
             optionInputTxtbox.Clear();
             optionCombo.Focus();
         }
 
-        private void cleartextboxes1()
+        private void cleartextboxes1() //  Method for clearing textboxes
         {
             optionInputTxtbox.Clear();
             optionInputTxtbox.Focus();
@@ -55,7 +56,82 @@ namespace Lesson2
             payrol_select();
         }
 
-        private void search_button_Click(object sender, EventArgs e)
+        private void search_button_Click(object sender, EventArgs e) // Codes for search button
+        {
+            if (optionCombo.Text == "employee_number")
+            {
+                payrol_db_connect.payrol_sql = "SELECT * FROM pos_empRegTbl WHERE emp_id = '" + optionInputTxtbox.Text + "'";
+                payrol_select();
+                cleartextboxes1();
+            }
+            else if (optionCombo.Text == "surname")
+            {
+                payrol_db_connect.payrol_sql = "SELECT * FROM pos_empRegTbl WHERE emp_surname = '" + optionInputTxtbox.Text + "'";
+                payrol_select();
+                cleartextboxes1();
+            }
+            else if (optionCombo.Text == "firstname")
+            {
+                payrol_db_connect.payrol_sql = "SELECT * FROM pos_empRegTbl WHERE emp_fname = '" + optionInputTxtbox.Text + "'";
+                payrol_select();
+                cleartextboxes1();
+            }
+            else if (optionCombo.Text == "department")
+            {
+                payrol_db_connect.payrol_sql = "SELECT * FROM pos_empRegTbl WHERE emp_department = '" + optionInputTxtbox.Text + "'";
+                payrol_select();
+                cleartextboxes1();
+            }
+            else if (optionCombo.Text == "designation")
+            {
+                payrol_db_connect.payrol_sql = "SELECT * FROM pos_empRegTbl WHERE position = '" + optionInputTxtbox.Text + "'";
+                payrol_select();
+                cleartextboxes1();
+            }
+            else if (optionCombo.Text == "zipcode")
+            {
+                payrol_db_connect.payrol_sql = "SELECT * FROM pos_empRegTbl WHERE add_zipcode = '" + optionInputTxtbox.Text + "'";
+                payrol_select();
+                cleartextboxes1();
+            }
+            else if (optionCombo.Text == "province")
+            {
+                payrol_db_connect.payrol_sql = "SELECT * FROM pos_empRegTbl WHERE add_state_province = '" + optionInputTxtbox.Text + "'";
+                payrol_select();
+                cleartextboxes1();
+            }
+            else if (optionCombo.Text == "city")
+            {
+                payrol_db_connect.payrol_sql = "SELECT * FROM pos_empRegTbl WHERE add_city = '" + optionInputTxtbox.Text + "'";
+                payrol_select();
+                cleartextboxes1();
+            }
+            else
+            {
+                MessageBox.Show("No Available Record Found!");
+            }
+        }
+
+        private void back_button_Click(object sender, EventArgs e) // Codes for back button
+        {
+            try
+            {
+                payrol_db_connect.payrol_sql = "SELECT * FROM pos_empRegTbl";
+                payrol_select();
+                cleartextboxes();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error occurs in this area. Please contact your administrator!");
+            }
+        }
+
+        private void exit_button_Click(object sender, EventArgs e) // Codes for exit button
+        {
+            this.Close();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

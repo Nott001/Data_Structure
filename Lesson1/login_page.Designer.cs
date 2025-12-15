@@ -37,6 +37,7 @@
             this.passwordbox = new System.Windows.Forms.TextBox();
             this.username_box = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.exit_button = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,6 +45,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.Controls.Add(this.exit_button);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.cancel_button);
             this.groupBox1.Controls.Add(this.login_button);
@@ -72,7 +74,7 @@
             this.cancel_button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cancel_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancel_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cancel_button.Location = new System.Drawing.Point(374, 265);
+            this.cancel_button.Location = new System.Drawing.Point(312, 265);
             this.cancel_button.Name = "cancel_button";
             this.cancel_button.Size = new System.Drawing.Size(100, 42);
             this.cancel_button.TabIndex = 4;
@@ -86,7 +88,7 @@
             this.login_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.login_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.login_button.Location = new System.Drawing.Point(254, 265);
+            this.login_button.Location = new System.Drawing.Point(206, 265);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(100, 42);
             this.login_button.TabIndex = 3;
@@ -141,6 +143,19 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // exit_button
+            // 
+            this.exit_button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.exit_button.Location = new System.Drawing.Point(418, 265);
+            this.exit_button.Name = "exit_button";
+            this.exit_button.Size = new System.Drawing.Size(100, 42);
+            this.exit_button.TabIndex = 5;
+            this.exit_button.Text = "Exit";
+            this.exit_button.UseVisualStyleBackColor = false;
+            this.exit_button.Click += new System.EventHandler(this.exit_button_Click);
+            // 
             // login_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,5 +186,6 @@
         private System.Windows.Forms.TextBox passwordbox;
         private System.Windows.Forms.TextBox username_box;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button exit_button;
     }
 }

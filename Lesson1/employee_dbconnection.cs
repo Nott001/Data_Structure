@@ -10,6 +10,7 @@ namespace Lesson2
 {
     internal class employee_dbconnection
     {
+        // Initializes public variables
         public String employee_connectionString = null;
         public SqlConnection employee_sql_connection;
         public SqlCommand employee_sql_command;

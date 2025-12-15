@@ -17,6 +17,43 @@ namespace Lesson2
             InitializeComponent();
         }
 
+        private void LoadPictureBox(PictureBox pictureBox, TextBox pathTextBox, string imagePath)
+        {
+            try
+            {
+                pathTextBox.Text = imagePath;
+
+                // Check if path is valid and not empty
+                if (!string.IsNullOrWhiteSpace(imagePath) && System.IO.File.Exists(imagePath))
+                {
+                    pictureBox.Image = Image.FromFile(imagePath);
+                }
+                else
+                {
+                    // Load default "no image" picture
+                    string defaultPath = "C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\no_image.jpg";
+                    if (System.IO.File.Exists(defaultPath))
+                    {
+                        pictureBox.Image = Image.FromFile(defaultPath);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading image: {imagePath}\nError: {ex.Message}");
+                // Load default image on error
+                try
+                {
+                    string defaultPath = "C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\no_image.jpg";
+                    if (System.IO.File.Exists(defaultPath))
+                    {
+                        pictureBox.Image = Image.FromFile(defaultPath);
+                    }
+                }
+                catch { }
+            }
+        }
+
         private void Payroll_shortened_Load(object sender, EventArgs e)
         {
             // Disable boxes
@@ -155,7 +192,7 @@ namespace Lesson2
                 // ================= EMPLOYEE INFO =================
                 payrol_db_connect.payrol_sql =
                     "SELECT emp_fname, emp_mname, emp_surname, emp_work_status, emp_department, " +
-                    "position, emp_status, emp_no_of_dependents " +
+                    "position, emp_status, emp_no_of_dependents, picpath " +
                     "FROM pos_empRegTbl WHERE emp_id = '" + emp_num_box.Text + "'";
 
                 payrol_db_connect.payrol_cmd();
@@ -178,6 +215,7 @@ namespace Lesson2
                 designation_box.Text = emp["position"].ToString();
                 civil_stat_box.Text = emp["emp_status"].ToString();
                 num_dependents_box.Text = emp["emp_no_of_dependents"].ToString();
+                LoadPictureBox(pictureBox1, pic_path_textbox, emp["picpath"].ToString());
 
                 // ================= PAYROLL INFO =================
                 payrol_db_connect.payrol_sql =
@@ -185,6 +223,8 @@ namespace Lesson2
                 payrol_db_connect.payrol_cmd();
                 payrol_db_connect.payrol_sqldataadapterSelect();
                 payrol_db_connect.payrol_sqldatasetSELECT();
+
+                
 
                 if (payrol_db_connect.payrol_sql_dataset.Tables[0].Rows.Count > 0)
                 {
@@ -334,5 +374,9 @@ namespace Lesson2
             }
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

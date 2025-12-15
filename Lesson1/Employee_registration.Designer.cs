@@ -215,7 +215,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personal Information";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // status_comboBox
             // 
@@ -246,7 +245,6 @@
             this.age_comboBox.Name = "age_comboBox";
             this.age_comboBox.Size = new System.Drawing.Size(177, 23);
             this.age_comboBox.TabIndex = 34;
-            this.age_comboBox.SelectedIndexChanged += new System.EventHandler(this.age_comboBox_SelectedIndexChanged);
             // 
             // browse_button
             // 
@@ -560,8 +558,6 @@
             this.surname_box.Location = new System.Drawing.Point(159, 476);
             this.surname_box.Name = "surname_box";
             this.surname_box.Size = new System.Drawing.Size(258, 21);
-            this.surname_box.TabIndex = 8;
-            this.surname_box.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox1
             // 
@@ -571,7 +567,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label7
             // 
@@ -1453,7 +1448,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // Employee_registration
             // 
@@ -1603,8 +1597,6 @@
         private System.Windows.Forms.TextBox college_school_address_box;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button add_button;
-        private System.Windows.Forms.Button edit_button;
-        private System.Windows.Forms.Button delete_button;
         private System.Windows.Forms.Button new_button;
         private System.Windows.Forms.Button cancel_button;
         private System.Windows.Forms.Button exit_button;
@@ -1614,5 +1606,7 @@
         private System.Windows.Forms.DateTimePicker emp_hired_date;
         private System.Windows.Forms.DateTimePicker college_graduated_date;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        public System.Windows.Forms.Button delete_button;
+        public System.Windows.Forms.Button edit_button;
     }
 }

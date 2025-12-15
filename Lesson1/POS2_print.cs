@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Lesson2
 {
-    public partial class Activity_4_lesson2_Print : Form
+    public partial class POS2_print : Form
     {
-        public Activity_4_lesson2_Print()
+        public POS2_print()
         {
             InitializeComponent();
             listBox1.Items.AddRange(listBox1.Items);

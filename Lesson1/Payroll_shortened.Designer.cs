@@ -179,11 +179,14 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(1164, 15);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(235, 197);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // emp_status_box
             // 
@@ -1177,7 +1180,7 @@
         public System.Windows.Forms.ListBox Payslip_view_listbox;
         private System.Windows.Forms.Button save_button;
         private System.Windows.Forms.Button search_button;
-        private System.Windows.Forms.Button edit_button;
-        private System.Windows.Forms.Button delete_button;
+        public System.Windows.Forms.Button edit_button;
+        public System.Windows.Forms.Button delete_button;
     }
 }

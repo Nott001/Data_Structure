@@ -16,7 +16,7 @@ namespace Lesson2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Payroll_shortened());
+            Application.Run(new Employee_registration());
         }
     }
 }

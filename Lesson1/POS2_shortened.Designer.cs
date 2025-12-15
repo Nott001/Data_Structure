@@ -62,8 +62,27 @@
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.display_picturebox = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.picpathTxtbox20 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox19 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox18 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox17 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox16 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox15 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox14 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox13 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox12 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox11 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox10 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox9 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox8 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox7 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox6 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox5 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox4 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox3 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox2 = new System.Windows.Forms.TextBox();
+            this.picpathTxtbox1 = new System.Windows.Forms.TextBox();
             this.checkBox30 = new System.Windows.Forms.CheckBox();
             this.checkBox29 = new System.Windows.Forms.CheckBox();
             this.checkBox28 = new System.Windows.Forms.CheckBox();
@@ -110,26 +129,17 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.picpathTxtbox1 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox2 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox3 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox4 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox5 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox6 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox7 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox8 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox9 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox10 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox11 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox12 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox13 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox14 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox15 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox16 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox17 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox18 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox19 = new System.Windows.Forms.TextBox();
-            this.picpathTxtbox20 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.emp_id_TxtBox = new System.Windows.Forms.TextBox();
+            this.emp_name_TxtBox = new System.Windows.Forms.TextBox();
+            this.terminal_no_TxtBox = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.save_button = new System.Windows.Forms.Button();
+            this.POS_comboBox = new System.Windows.Forms.ComboBox();
+            this.change_pos_button = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -163,12 +173,13 @@
             this.groupBox1.Controls.Add(this.radioButton_bundleB);
             this.groupBox1.Controls.Add(this.radioButton_bundleA);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 61);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(423, 121);
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Food Order Choices";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // radioButton_bundleB
             // 
@@ -180,7 +191,7 @@
             this.radioButton_bundleB.TabIndex = 31;
             this.radioButton_bundleB.Text = "Food Bundle B";
             this.radioButton_bundleB.UseVisualStyleBackColor = true;
-            this.radioButton_bundleB.CheckedChanged += new System.EventHandler(this.radioButton_bundleB_CheckedChanged_1);
+            this.radioButton_bundleB.CheckedChanged += new System.EventHandler(this.RadioButton_bundleB_CheckedChanged);
             // 
             // radioButton_bundleA
             // 
@@ -213,7 +224,7 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 139);
+            this.groupBox2.Location = new System.Drawing.Point(12, 188);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(423, 471);
             this.groupBox2.TabIndex = 36;
@@ -373,7 +384,7 @@
             this.groupBox3.Controls.Add(this.checkBox3);
             this.groupBox3.Controls.Add(this.checkBox1);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(441, 12);
+            this.groupBox3.Location = new System.Drawing.Point(441, 61);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(411, 319);
             this.groupBox3.TabIndex = 37;
@@ -444,7 +455,7 @@
             this.groupBox4.Controls.Add(this.checkBox7);
             this.groupBox4.Controls.Add(this.checkBox6);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(441, 337);
+            this.groupBox4.Location = new System.Drawing.Point(441, 386);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(411, 320);
             this.groupBox4.TabIndex = 38;
@@ -509,29 +520,19 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 616);
+            this.listBox1.Location = new System.Drawing.Point(12, 665);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(423, 342);
+            this.listBox1.Size = new System.Drawing.Size(423, 316);
             this.listBox1.TabIndex = 42;
             // 
             // display_picturebox
             // 
-            this.display_picturebox.Location = new System.Drawing.Point(441, 663);
+            this.display_picturebox.Location = new System.Drawing.Point(441, 712);
             this.display_picturebox.Name = "display_picturebox";
-            this.display_picturebox.Size = new System.Drawing.Size(411, 271);
+            this.display_picturebox.Size = new System.Drawing.Size(411, 265);
             this.display_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.display_picturebox.TabIndex = 43;
             this.display_picturebox.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(584, 940);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 18);
-            this.label4.TabIndex = 44;
-            this.label4.Text = "Order Image:";
             // 
             // groupBox5
             // 
@@ -602,6 +603,147 @@
             this.groupBox5.TabIndex = 45;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "FOOD CHOICES";
+            // 
+            // picpathTxtbox20
+            // 
+            this.picpathTxtbox20.Location = new System.Drawing.Point(868, 793);
+            this.picpathTxtbox20.Name = "picpathTxtbox20";
+            this.picpathTxtbox20.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox20.TabIndex = 77;
+            // 
+            // picpathTxtbox19
+            // 
+            this.picpathTxtbox19.Location = new System.Drawing.Point(655, 793);
+            this.picpathTxtbox19.Name = "picpathTxtbox19";
+            this.picpathTxtbox19.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox19.TabIndex = 76;
+            // 
+            // picpathTxtbox18
+            // 
+            this.picpathTxtbox18.Location = new System.Drawing.Point(453, 793);
+            this.picpathTxtbox18.Name = "picpathTxtbox18";
+            this.picpathTxtbox18.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox18.TabIndex = 75;
+            // 
+            // picpathTxtbox17
+            // 
+            this.picpathTxtbox17.Location = new System.Drawing.Point(247, 793);
+            this.picpathTxtbox17.Name = "picpathTxtbox17";
+            this.picpathTxtbox17.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox17.TabIndex = 74;
+            // 
+            // picpathTxtbox16
+            // 
+            this.picpathTxtbox16.Location = new System.Drawing.Point(39, 793);
+            this.picpathTxtbox16.Name = "picpathTxtbox16";
+            this.picpathTxtbox16.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox16.TabIndex = 73;
+            // 
+            // picpathTxtbox15
+            // 
+            this.picpathTxtbox15.Location = new System.Drawing.Point(868, 578);
+            this.picpathTxtbox15.Name = "picpathTxtbox15";
+            this.picpathTxtbox15.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox15.TabIndex = 72;
+            // 
+            // picpathTxtbox14
+            // 
+            this.picpathTxtbox14.Location = new System.Drawing.Point(655, 578);
+            this.picpathTxtbox14.Name = "picpathTxtbox14";
+            this.picpathTxtbox14.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox14.TabIndex = 71;
+            // 
+            // picpathTxtbox13
+            // 
+            this.picpathTxtbox13.Location = new System.Drawing.Point(453, 578);
+            this.picpathTxtbox13.Name = "picpathTxtbox13";
+            this.picpathTxtbox13.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox13.TabIndex = 70;
+            // 
+            // picpathTxtbox12
+            // 
+            this.picpathTxtbox12.Location = new System.Drawing.Point(247, 578);
+            this.picpathTxtbox12.Name = "picpathTxtbox12";
+            this.picpathTxtbox12.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox12.TabIndex = 69;
+            // 
+            // picpathTxtbox11
+            // 
+            this.picpathTxtbox11.Location = new System.Drawing.Point(39, 578);
+            this.picpathTxtbox11.Name = "picpathTxtbox11";
+            this.picpathTxtbox11.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox11.TabIndex = 68;
+            // 
+            // picpathTxtbox10
+            // 
+            this.picpathTxtbox10.Location = new System.Drawing.Point(868, 365);
+            this.picpathTxtbox10.Name = "picpathTxtbox10";
+            this.picpathTxtbox10.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox10.TabIndex = 67;
+            // 
+            // picpathTxtbox9
+            // 
+            this.picpathTxtbox9.Location = new System.Drawing.Point(655, 365);
+            this.picpathTxtbox9.Name = "picpathTxtbox9";
+            this.picpathTxtbox9.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox9.TabIndex = 66;
+            // 
+            // picpathTxtbox8
+            // 
+            this.picpathTxtbox8.Location = new System.Drawing.Point(453, 365);
+            this.picpathTxtbox8.Name = "picpathTxtbox8";
+            this.picpathTxtbox8.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox8.TabIndex = 65;
+            // 
+            // picpathTxtbox7
+            // 
+            this.picpathTxtbox7.Location = new System.Drawing.Point(247, 365);
+            this.picpathTxtbox7.Name = "picpathTxtbox7";
+            this.picpathTxtbox7.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox7.TabIndex = 64;
+            // 
+            // picpathTxtbox6
+            // 
+            this.picpathTxtbox6.Location = new System.Drawing.Point(39, 365);
+            this.picpathTxtbox6.Name = "picpathTxtbox6";
+            this.picpathTxtbox6.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox6.TabIndex = 61;
+            // 
+            // picpathTxtbox5
+            // 
+            this.picpathTxtbox5.Location = new System.Drawing.Point(868, 158);
+            this.picpathTxtbox5.Name = "picpathTxtbox5";
+            this.picpathTxtbox5.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox5.TabIndex = 61;
+            // 
+            // picpathTxtbox4
+            // 
+            this.picpathTxtbox4.Location = new System.Drawing.Point(655, 155);
+            this.picpathTxtbox4.Name = "picpathTxtbox4";
+            this.picpathTxtbox4.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox4.TabIndex = 63;
+            // 
+            // picpathTxtbox3
+            // 
+            this.picpathTxtbox3.Location = new System.Drawing.Point(453, 156);
+            this.picpathTxtbox3.Name = "picpathTxtbox3";
+            this.picpathTxtbox3.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox3.TabIndex = 62;
+            // 
+            // picpathTxtbox2
+            // 
+            this.picpathTxtbox2.Location = new System.Drawing.Point(247, 155);
+            this.picpathTxtbox2.Name = "picpathTxtbox2";
+            this.picpathTxtbox2.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox2.TabIndex = 61;
+            // 
+            // picpathTxtbox1
+            // 
+            this.picpathTxtbox1.Location = new System.Drawing.Point(39, 156);
+            this.picpathTxtbox1.Name = "picpathTxtbox1";
+            this.picpathTxtbox1.Size = new System.Drawing.Size(165, 23);
+            this.picpathTxtbox1.TabIndex = 60;
+            this.picpathTxtbox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // checkBox30
             // 
@@ -1026,20 +1168,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.Location = new System.Drawing.Point(1175, 24);
+            this.label1.Location = new System.Drawing.Point(218, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(409, 29);
+            this.label1.Size = new System.Drawing.Size(339, 25);
             this.label1.TabIndex = 46;
             this.label1.Text = "JABEE Food Ordering Application";
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button6.Location = new System.Drawing.Point(1756, 940);
+            this.button6.Location = new System.Drawing.Point(1778, 940);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(154, 37);
+            this.button6.Size = new System.Drawing.Size(132, 37);
             this.button6.TabIndex = 55;
             this.button6.Text = "EXIT";
             this.button6.UseVisualStyleBackColor = false;
@@ -1048,9 +1190,9 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button4.Location = new System.Drawing.Point(1590, 940);
+            this.button4.Location = new System.Drawing.Point(1640, 940);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(160, 37);
+            this.button4.Size = new System.Drawing.Size(132, 37);
             this.button4.TabIndex = 54;
             this.button4.Text = "NEW";
             this.button4.UseVisualStyleBackColor = false;
@@ -1059,9 +1201,9 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button3.Location = new System.Drawing.Point(1365, 940);
+            this.button3.Location = new System.Drawing.Point(1434, 940);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(219, 37);
+            this.button3.Size = new System.Drawing.Size(200, 37);
             this.button3.TabIndex = 53;
             this.button3.Text = "REMOVE ORDER";
             this.button3.UseVisualStyleBackColor = false;
@@ -1070,9 +1212,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button2.Location = new System.Drawing.Point(1095, 940);
+            this.button2.Location = new System.Drawing.Point(1210, 940);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(264, 37);
+            this.button2.Size = new System.Drawing.Size(219, 37);
             this.button2.TabIndex = 52;
             this.button2.Text = "PRINT TRANSACTION";
             this.button2.UseVisualStyleBackColor = false;
@@ -1083,152 +1225,125 @@
             this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.Location = new System.Drawing.Point(861, 940);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 37);
+            this.button1.Size = new System.Drawing.Size(184, 37);
             this.button1.TabIndex = 51;
             this.button1.Text = "CALCULATE BILLS";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // picpathTxtbox1
+            // dateTimePicker1
             // 
-            this.picpathTxtbox1.Location = new System.Drawing.Point(39, 156);
-            this.picpathTxtbox1.Name = "picpathTxtbox1";
-            this.picpathTxtbox1.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox1.TabIndex = 60;
-            this.picpathTxtbox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.ControlDarkDark;
+            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(1045, 31);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(124, 18);
+            this.dateTimePicker1.TabIndex = 83;
             // 
-            // picpathTxtbox2
+            // emp_id_TxtBox
             // 
-            this.picpathTxtbox2.Location = new System.Drawing.Point(247, 155);
-            this.picpathTxtbox2.Name = "picpathTxtbox2";
-            this.picpathTxtbox2.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox2.TabIndex = 61;
+            this.emp_id_TxtBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.emp_id_TxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.emp_id_TxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emp_id_TxtBox.Location = new System.Drawing.Point(1219, 31);
+            this.emp_id_TxtBox.Name = "emp_id_TxtBox";
+            this.emp_id_TxtBox.Size = new System.Drawing.Size(133, 13);
+            this.emp_id_TxtBox.TabIndex = 82;
             // 
-            // picpathTxtbox3
+            // emp_name_TxtBox
             // 
-            this.picpathTxtbox3.Location = new System.Drawing.Point(453, 156);
-            this.picpathTxtbox3.Name = "picpathTxtbox3";
-            this.picpathTxtbox3.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox3.TabIndex = 62;
+            this.emp_name_TxtBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.emp_name_TxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.emp_name_TxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emp_name_TxtBox.Location = new System.Drawing.Point(1390, 31);
+            this.emp_name_TxtBox.Name = "emp_name_TxtBox";
+            this.emp_name_TxtBox.Size = new System.Drawing.Size(133, 13);
+            this.emp_name_TxtBox.TabIndex = 81;
             // 
-            // picpathTxtbox4
+            // terminal_no_TxtBox
             // 
-            this.picpathTxtbox4.Location = new System.Drawing.Point(655, 155);
-            this.picpathTxtbox4.Name = "picpathTxtbox4";
-            this.picpathTxtbox4.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox4.TabIndex = 63;
+            this.terminal_no_TxtBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.terminal_no_TxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.terminal_no_TxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.terminal_no_TxtBox.Location = new System.Drawing.Point(1600, 31);
+            this.terminal_no_TxtBox.Name = "terminal_no_TxtBox";
+            this.terminal_no_TxtBox.Size = new System.Drawing.Size(133, 13);
+            this.terminal_no_TxtBox.TabIndex = 80;
             // 
-            // picpathTxtbox5
+            // label17
             // 
-            this.picpathTxtbox5.Location = new System.Drawing.Point(868, 158);
-            this.picpathTxtbox5.Name = "picpathTxtbox5";
-            this.picpathTxtbox5.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox5.TabIndex = 61;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label17.Location = new System.Drawing.Point(1604, 12);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(126, 17);
+            this.label17.TabIndex = 79;
+            this.label17.Text = "PC Terminal No.";
             // 
-            // picpathTxtbox6
+            // label13
             // 
-            this.picpathTxtbox6.Location = new System.Drawing.Point(39, 365);
-            this.picpathTxtbox6.Name = "picpathTxtbox6";
-            this.picpathTxtbox6.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox6.TabIndex = 61;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label13.Location = new System.Drawing.Point(1229, 12);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(103, 17);
+            this.label13.TabIndex = 78;
+            this.label13.Text = "Employee ID:";
             // 
-            // picpathTxtbox7
+            // label14
             // 
-            this.picpathTxtbox7.Location = new System.Drawing.Point(247, 365);
-            this.picpathTxtbox7.Name = "picpathTxtbox7";
-            this.picpathTxtbox7.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox7.TabIndex = 64;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label14.Location = new System.Drawing.Point(1072, 12);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(47, 17);
+            this.label14.TabIndex = 77;
+            this.label14.Text = "Date:";
             // 
-            // picpathTxtbox8
+            // label12
             // 
-            this.picpathTxtbox8.Location = new System.Drawing.Point(453, 365);
-            this.picpathTxtbox8.Name = "picpathTxtbox8";
-            this.picpathTxtbox8.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox8.TabIndex = 65;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.Location = new System.Drawing.Point(1394, 12);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(129, 17);
+            this.label12.TabIndex = 76;
+            this.label12.Text = "Employee Name:";
             // 
-            // picpathTxtbox9
+            // save_button
             // 
-            this.picpathTxtbox9.Location = new System.Drawing.Point(655, 365);
-            this.picpathTxtbox9.Name = "picpathTxtbox9";
-            this.picpathTxtbox9.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox9.TabIndex = 66;
+            this.save_button.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.save_button.Location = new System.Drawing.Point(1051, 940);
+            this.save_button.Name = "save_button";
+            this.save_button.Size = new System.Drawing.Size(153, 37);
+            this.save_button.TabIndex = 55;
+            this.save_button.Text = "SAVE";
+            this.save_button.UseVisualStyleBackColor = false;
+            this.save_button.Click += new System.EventHandler(this.save_button_Click);
             // 
-            // picpathTxtbox10
+            // POS_comboBox
             // 
-            this.picpathTxtbox10.Location = new System.Drawing.Point(868, 365);
-            this.picpathTxtbox10.Name = "picpathTxtbox10";
-            this.picpathTxtbox10.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox10.TabIndex = 67;
+            this.POS_comboBox.FormattingEnabled = true;
+            this.POS_comboBox.Location = new System.Drawing.Point(1770, 8);
+            this.POS_comboBox.Name = "POS_comboBox";
+            this.POS_comboBox.Size = new System.Drawing.Size(121, 21);
+            this.POS_comboBox.TabIndex = 84;
             // 
-            // picpathTxtbox11
+            // change_pos_button
             // 
-            this.picpathTxtbox11.Location = new System.Drawing.Point(39, 578);
-            this.picpathTxtbox11.Name = "picpathTxtbox11";
-            this.picpathTxtbox11.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox11.TabIndex = 68;
-            // 
-            // picpathTxtbox12
-            // 
-            this.picpathTxtbox12.Location = new System.Drawing.Point(247, 578);
-            this.picpathTxtbox12.Name = "picpathTxtbox12";
-            this.picpathTxtbox12.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox12.TabIndex = 69;
-            // 
-            // picpathTxtbox13
-            // 
-            this.picpathTxtbox13.Location = new System.Drawing.Point(453, 578);
-            this.picpathTxtbox13.Name = "picpathTxtbox13";
-            this.picpathTxtbox13.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox13.TabIndex = 70;
-            // 
-            // picpathTxtbox14
-            // 
-            this.picpathTxtbox14.Location = new System.Drawing.Point(655, 578);
-            this.picpathTxtbox14.Name = "picpathTxtbox14";
-            this.picpathTxtbox14.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox14.TabIndex = 71;
-            // 
-            // picpathTxtbox15
-            // 
-            this.picpathTxtbox15.Location = new System.Drawing.Point(868, 578);
-            this.picpathTxtbox15.Name = "picpathTxtbox15";
-            this.picpathTxtbox15.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox15.TabIndex = 72;
-            // 
-            // picpathTxtbox16
-            // 
-            this.picpathTxtbox16.Location = new System.Drawing.Point(39, 793);
-            this.picpathTxtbox16.Name = "picpathTxtbox16";
-            this.picpathTxtbox16.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox16.TabIndex = 73;
-            // 
-            // picpathTxtbox17
-            // 
-            this.picpathTxtbox17.Location = new System.Drawing.Point(247, 793);
-            this.picpathTxtbox17.Name = "picpathTxtbox17";
-            this.picpathTxtbox17.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox17.TabIndex = 74;
-            // 
-            // picpathTxtbox18
-            // 
-            this.picpathTxtbox18.Location = new System.Drawing.Point(453, 793);
-            this.picpathTxtbox18.Name = "picpathTxtbox18";
-            this.picpathTxtbox18.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox18.TabIndex = 75;
-            // 
-            // picpathTxtbox19
-            // 
-            this.picpathTxtbox19.Location = new System.Drawing.Point(655, 793);
-            this.picpathTxtbox19.Name = "picpathTxtbox19";
-            this.picpathTxtbox19.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox19.TabIndex = 76;
-            // 
-            // picpathTxtbox20
-            // 
-            this.picpathTxtbox20.Location = new System.Drawing.Point(868, 793);
-            this.picpathTxtbox20.Name = "picpathTxtbox20";
-            this.picpathTxtbox20.Size = new System.Drawing.Size(165, 23);
-            this.picpathTxtbox20.TabIndex = 77;
+            this.change_pos_button.Location = new System.Drawing.Point(1790, 35);
+            this.change_pos_button.Name = "change_pos_button";
+            this.change_pos_button.Size = new System.Drawing.Size(75, 23);
+            this.change_pos_button.TabIndex = 85;
+            this.change_pos_button.Text = "CHANGE";
+            this.change_pos_button.UseVisualStyleBackColor = true;
             // 
             // POS2_shortened
             // 
@@ -1236,11 +1351,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.change_pos_button);
+            this.Controls.Add(this.POS_comboBox);
+            this.Controls.Add(this.save_button);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.emp_id_TxtBox);
+            this.Controls.Add(this.emp_name_TxtBox);
+            this.Controls.Add(this.terminal_no_TxtBox);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.display_picturebox);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -1326,7 +1451,6 @@
         public System.Windows.Forms.CheckBox checkBox6;
         public System.Windows.Forms.ListBox listBox1;
         public System.Windows.Forms.PictureBox display_picturebox;
-        public System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.CheckBox checkBox30;
         private System.Windows.Forms.CheckBox checkBox29;
@@ -1394,5 +1518,16 @@
         private System.Windows.Forms.TextBox picpathTxtbox9;
         private System.Windows.Forms.TextBox picpathTxtbox8;
         private System.Windows.Forms.TextBox picpathTxtbox7;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label12;
+        public System.Windows.Forms.Button save_button;
+        public System.Windows.Forms.TextBox emp_id_TxtBox;
+        public System.Windows.Forms.TextBox emp_name_TxtBox;
+        public System.Windows.Forms.TextBox terminal_no_TxtBox;
+        private System.Windows.Forms.ComboBox POS_comboBox;
+        private System.Windows.Forms.Button change_pos_button;
     }
 }

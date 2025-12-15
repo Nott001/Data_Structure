@@ -49,7 +49,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.terminal_noLbl = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.discounted_totaltxtbox = new System.Windows.Forms.TextBox();
@@ -67,18 +66,13 @@
             this.button20 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.picpathTxtbox20 = new System.Windows.Forms.TextBox();
             this.picpathTxtbox19 = new System.Windows.Forms.TextBox();
@@ -142,10 +136,14 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.emp_idLbl = new System.Windows.Forms.Label();
-            this.time_dateLbl = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.emp_fnameLbl = new System.Windows.Forms.Label();
+            this.save_button = new System.Windows.Forms.Button();
+            this.terminal_no_TxtBox = new System.Windows.Forms.TextBox();
+            this.emp_name_TxtBox = new System.Windows.Forms.TextBox();
+            this.emp_id_TxtBox = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.change_pos_button = new System.Windows.Forms.Button();
+            this.POS_comboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -415,23 +413,12 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "JABEE FOODS INC. POINT OF SALE";
             // 
-            // terminal_noLbl
-            // 
-            this.terminal_noLbl.AutoSize = true;
-            this.terminal_noLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.terminal_noLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.terminal_noLbl.Location = new System.Drawing.Point(571, 81);
-            this.terminal_noLbl.Name = "terminal_noLbl";
-            this.terminal_noLbl.Size = new System.Drawing.Size(95, 17);
-            this.terminal_noLbl.TabIndex = 45;
-            this.terminal_noLbl.Text = "Terminal # 21";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label12.Location = new System.Drawing.Point(361, 55);
+            this.label12.Location = new System.Drawing.Point(335, 55);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(129, 17);
             this.label12.TabIndex = 44;
@@ -568,17 +555,18 @@
             this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.Location = new System.Drawing.Point(12, 689);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(202, 280);
+            this.button21.Size = new System.Drawing.Size(168, 280);
             this.button21.TabIndex = 63;
             this.button21.Text = "ENTER";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button20
             // 
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(221, 904);
+            this.button20.Location = new System.Drawing.Point(372, 903);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(297, 65);
+            this.button20.Size = new System.Drawing.Size(447, 65);
             this.button20.TabIndex = 62;
             this.button20.Text = "0";
             this.button20.UseVisualStyleBackColor = true;
@@ -586,7 +574,7 @@
             // button19
             // 
             this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(221, 833);
+            this.button19.Location = new System.Drawing.Point(524, 832);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(145, 65);
             this.button19.TabIndex = 61;
@@ -596,27 +584,17 @@
             // button18
             // 
             this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Location = new System.Drawing.Point(221, 761);
+            this.button18.Location = new System.Drawing.Point(674, 759);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(145, 66);
             this.button18.TabIndex = 60;
             this.button18.Text = "6";
             this.button18.UseVisualStyleBackColor = true;
             // 
-            // button17
-            // 
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(220, 689);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(145, 66);
-            this.button17.TabIndex = 59;
-            this.button17.Text = "/";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
             // button15
             // 
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(371, 833);
+            this.button15.Location = new System.Drawing.Point(674, 832);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(145, 65);
             this.button15.TabIndex = 58;
@@ -626,39 +604,19 @@
             // button14
             // 
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(372, 761);
+            this.button14.Location = new System.Drawing.Point(371, 688);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(145, 66);
+            this.button14.Size = new System.Drawing.Size(147, 66);
             this.button14.TabIndex = 57;
             this.button14.Text = "7";
             this.button14.UseVisualStyleBackColor = true;
             // 
-            // button13
-            // 
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(371, 689);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(145, 66);
-            this.button13.TabIndex = 56;
-            this.button13.Text = "*";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(523, 904);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(145, 65);
-            this.button12.TabIndex = 55;
-            this.button12.Text = ".";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
             // button11
             // 
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(524, 833);
+            this.button11.Location = new System.Drawing.Point(371, 760);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(144, 65);
+            this.button11.Size = new System.Drawing.Size(147, 65);
             this.button11.TabIndex = 54;
             this.button11.Text = "4";
             this.button11.UseVisualStyleBackColor = true;
@@ -666,39 +624,30 @@
             // button10
             // 
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(524, 761);
+            this.button10.Location = new System.Drawing.Point(525, 688);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(144, 66);
             this.button10.TabIndex = 53;
             this.button10.Text = "8";
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // button9
-            // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(524, 689);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(144, 66);
-            this.button9.TabIndex = 52;
-            this.button9.Text = "-";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(674, 904);
+            this.button8.Location = new System.Drawing.Point(371, 832);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(147, 65);
             this.button8.TabIndex = 51;
             this.button8.Text = "1";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(674, 833);
+            this.button7.Location = new System.Drawing.Point(524, 760);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(147, 65);
+            this.button7.Size = new System.Drawing.Size(145, 65);
             this.button7.TabIndex = 50;
             this.button7.Text = "5";
             this.button7.UseVisualStyleBackColor = true;
@@ -706,22 +655,12 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(674, 761);
+            this.button6.Location = new System.Drawing.Point(674, 689);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(145, 66);
+            this.button6.Size = new System.Drawing.Size(145, 65);
             this.button6.TabIndex = 49;
             this.button6.Text = "9";
             this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(674, 689);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(145, 66);
-            this.button5.TabIndex = 48;
-            this.button5.Text = "+";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -1413,55 +1352,92 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label13.Location = new System.Drawing.Point(196, 55);
+            this.label13.Location = new System.Drawing.Point(174, 55);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(103, 17);
             this.label13.TabIndex = 66;
             this.label13.Text = "Employee ID:";
-            // 
-            // emp_idLbl
-            // 
-            this.emp_idLbl.AutoSize = true;
-            this.emp_idLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emp_idLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.emp_idLbl.Location = new System.Drawing.Point(196, 81);
-            this.emp_idLbl.Name = "emp_idLbl";
-            this.emp_idLbl.Size = new System.Drawing.Size(95, 17);
-            this.emp_idLbl.TabIndex = 67;
-            this.emp_idLbl.Text = "Terminal # 21";
-            // 
-            // time_dateLbl
-            // 
-            this.time_dateLbl.AutoSize = true;
-            this.time_dateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.time_dateLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.time_dateLbl.Location = new System.Drawing.Point(39, 81);
-            this.time_dateLbl.Name = "time_dateLbl";
-            this.time_dateLbl.Size = new System.Drawing.Size(95, 17);
-            this.time_dateLbl.TabIndex = 68;
-            this.time_dateLbl.Text = "Terminal # 21";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label17.Location = new System.Drawing.Point(571, 55);
+            this.label17.Location = new System.Drawing.Point(531, 55);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(126, 17);
             this.label17.TabIndex = 69;
             this.label17.Text = "PC Terminal No.";
             // 
-            // emp_fnameLbl
+            // save_button
             // 
-            this.emp_fnameLbl.AutoSize = true;
-            this.emp_fnameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emp_fnameLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.emp_fnameLbl.Location = new System.Drawing.Point(361, 81);
-            this.emp_fnameLbl.Name = "emp_fnameLbl";
-            this.emp_fnameLbl.Size = new System.Drawing.Size(95, 17);
-            this.emp_fnameLbl.TabIndex = 70;
-            this.emp_fnameLbl.Text = "Terminal # 21";
+            this.save_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save_button.Location = new System.Drawing.Point(186, 689);
+            this.save_button.Name = "save_button";
+            this.save_button.Size = new System.Drawing.Size(178, 280);
+            this.save_button.TabIndex = 71;
+            this.save_button.Text = "SAVE";
+            this.save_button.UseVisualStyleBackColor = true;
+            this.save_button.Click += new System.EventHandler(this.save_button_Click);
+            // 
+            // terminal_no_TxtBox
+            // 
+            this.terminal_no_TxtBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.terminal_no_TxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.terminal_no_TxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.terminal_no_TxtBox.Location = new System.Drawing.Point(527, 74);
+            this.terminal_no_TxtBox.Name = "terminal_no_TxtBox";
+            this.terminal_no_TxtBox.Size = new System.Drawing.Size(133, 13);
+            this.terminal_no_TxtBox.TabIndex = 72;
+            // 
+            // emp_name_TxtBox
+            // 
+            this.emp_name_TxtBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.emp_name_TxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.emp_name_TxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emp_name_TxtBox.Location = new System.Drawing.Point(331, 74);
+            this.emp_name_TxtBox.Name = "emp_name_TxtBox";
+            this.emp_name_TxtBox.Size = new System.Drawing.Size(133, 13);
+            this.emp_name_TxtBox.TabIndex = 73;
+            // 
+            // emp_id_TxtBox
+            // 
+            this.emp_id_TxtBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.emp_id_TxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.emp_id_TxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emp_id_TxtBox.Location = new System.Drawing.Point(164, 74);
+            this.emp_id_TxtBox.Name = "emp_id_TxtBox";
+            this.emp_id_TxtBox.Size = new System.Drawing.Size(133, 13);
+            this.emp_id_TxtBox.TabIndex = 74;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.ControlDarkDark;
+            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 74);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(124, 18);
+            this.dateTimePicker1.TabIndex = 75;
+            // 
+            // change_pos_button
+            // 
+            this.change_pos_button.Location = new System.Drawing.Point(726, 64);
+            this.change_pos_button.Name = "change_pos_button";
+            this.change_pos_button.Size = new System.Drawing.Size(75, 23);
+            this.change_pos_button.TabIndex = 87;
+            this.change_pos_button.Text = "CHANGE";
+            this.change_pos_button.UseVisualStyleBackColor = true;
+            // 
+            // POS_comboBox
+            // 
+            this.POS_comboBox.FormattingEnabled = true;
+            this.POS_comboBox.Location = new System.Drawing.Point(698, 37);
+            this.POS_comboBox.Name = "POS_comboBox";
+            this.POS_comboBox.Size = new System.Drawing.Size(121, 21);
+            this.POS_comboBox.TabIndex = 86;
             // 
             // POS1_shortened
             // 
@@ -1469,10 +1445,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
-            this.Controls.Add(this.emp_fnameLbl);
+            this.Controls.Add(this.change_pos_button);
+            this.Controls.Add(this.POS_comboBox);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.emp_id_TxtBox);
+            this.Controls.Add(this.emp_name_TxtBox);
+            this.Controls.Add(this.terminal_no_TxtBox);
+            this.Controls.Add(this.save_button);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.time_dateLbl);
-            this.Controls.Add(this.emp_idLbl);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.groupBox2);
@@ -1480,21 +1462,13 @@
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button18);
-            this.Controls.Add(this.button17);
             this.Controls.Add(this.button15);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.terminal_noLbl);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
@@ -1547,7 +1521,6 @@
         private System.Windows.Forms.TextBox itemnametxtbox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label terminal_noLbl;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox discounted_totaltxtbox;
@@ -1565,18 +1538,13 @@
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.RadioButton notaxRbtn;
         private System.Windows.Forms.RadioButton employeeRbtn;
         private System.Windows.Forms.RadioButton regularRbtn;
@@ -1648,9 +1616,13 @@
         private System.Windows.Forms.TextBox picpathTxtbox1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label emp_idLbl;
-        private System.Windows.Forms.Label time_dateLbl;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label emp_fnameLbl;
+        private System.Windows.Forms.Button save_button;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        public System.Windows.Forms.TextBox terminal_no_TxtBox;
+        public System.Windows.Forms.TextBox emp_name_TxtBox;
+        public System.Windows.Forms.TextBox emp_id_TxtBox;
+        private System.Windows.Forms.Button change_pos_button;
+        private System.Windows.Forms.ComboBox POS_comboBox;
     }
 }

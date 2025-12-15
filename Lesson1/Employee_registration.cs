@@ -12,6 +12,7 @@ namespace Lesson2
 {
     public partial class Employee_registration : Form
     {
+        // Initializes public variable
         string picpath;
         employee_dbconnection emp_db_connect = new employee_dbconnection();
 
@@ -21,7 +22,7 @@ namespace Lesson2
             InitializeComponent();
         }
 
-        private void cleartextboxes()
+        private void cleartextboxes() // Method to clear the textboxes and comboboxes
         {
             gender_comboBox.Items.Clear();
             status_comboBox.Items.Clear();
@@ -50,16 +51,6 @@ namespace Lesson2
             num_of_despondents_box.Clear(); pic_path_box.Clear();
             pictureBox1.Image = Image.FromFile("C:\\Users\\karlr\\Source\\Repos\\Data_Structure\\Lesson1\\pictures\\Default_pfp.jpg");
             emp_idTxtBox.Focus();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void Employee_registration_Load(object sender, EventArgs e)
@@ -97,7 +88,7 @@ namespace Lesson2
             }
         }
 
-        private void browse_button_Click(object sender, EventArgs e)
+        private void browse_button_Click(object sender, EventArgs e) // Code for browse button
         {
             try
             {
@@ -113,12 +104,7 @@ namespace Lesson2
             }
         }
 
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void search_button_Click(object sender, EventArgs e)
+        private void search_button_Click(object sender, EventArgs e) // Code for search button
         {
             try
             {
@@ -130,7 +116,7 @@ namespace Lesson2
 
                 dataGridView1.DataSource = emp_db_connect.employee_sql_dataset.Tables[0];
 
-                if (emp_db_connect.employee_sql_dataset.Tables[0].Rows.Count == 0)
+                if (emp_db_connect.employee_sql_dataset.Tables[0].Rows.Count == 0) // Searching if employee exists
                 {
                     MessageBox.Show("No record found for this Employee ID.");
                     return;
@@ -146,8 +132,8 @@ namespace Lesson2
                 // COMBOBOXES
                 age_comboBox.Text = row["emp_age"].ToString();
                 gender_comboBox.Text = row["emp_gender"].ToString();
-                status_comboBox.Text = row["emp_status"].ToString(); // educational?
-                emp_status_box.Text = row["emp_work_status"].ToString(); // employee working status
+                status_comboBox.Text = row["emp_status"].ToString(); 
+                emp_status_box.Text = row["emp_work_status"].ToString(); 
 
                 position_box.Text = row["position"].ToString();
                 department_box.Text = row["emp_department"].ToString();
@@ -218,9 +204,7 @@ namespace Lesson2
             }
         }
 
-
-
-        private void delete_button_Click(object sender, EventArgs e)
+        private void delete_button_Click(object sender, EventArgs e) // Codes for delete button
         {
             try
             {
@@ -240,22 +224,7 @@ namespace Lesson2
             }
         }
 
-        private void new_button_Click(object sender, EventArgs e)
-        {
-            cleartextboxes();
-        }
-
-        private void cancel_button_Click(object sender, EventArgs e)
-        {
-            cleartextboxes();
-        }
-
-        private void exit_button_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void add_button_Click(object sender, EventArgs e)
+        private void add_button_Click(object sender, EventArgs e) // Codes for add button
         {
             try
             {
@@ -333,8 +302,7 @@ namespace Lesson2
             }
         }
 
-
-        private void edit_button_Click(object sender, EventArgs e)
+        private void edit_button_Click(object sender, EventArgs e) // Codes for edit button
         {
             try
             {
@@ -403,15 +371,19 @@ namespace Lesson2
             }
         }
 
-
-        private void age_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void new_button_Click(object sender, EventArgs e) // Codes fro new button
         {
-
+            cleartextboxes();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void cancel_button_Click(object sender, EventArgs e) // Codes for cancel button
         {
+            cleartextboxes();
+        }
 
+        private void exit_button_Click(object sender, EventArgs e) // Codes for exit button
+        {
+            this.Close();
         }
     }
 }

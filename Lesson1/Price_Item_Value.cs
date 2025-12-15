@@ -35,18 +35,6 @@ namespace Lesson2
             TotalAmount = 0;
         }
 
-        // Set a food item (price + name)
-        public void SetFoodItem(CheckBox box, double price, TextBox priceBox, TextBox discountBox, TextBox qtyBox, ListBox listBox)
-        {
-            Price = price;
-            Discount = 0;
-            discountBox.Text = Discount.ToString("n");
-            priceBox.Text = Price.ToString("n");
-            listBox.Items.Add($"{box.Text}   P{priceBox.Text}");
-            qtyBox.Clear();
-            qtyBox.Focus();
-        }
-
         // Compute totals after quantity is entered
         public void ComputeTotals(TextBox qtyBox, TextBox priceBox, TextBox discountBox,
                                   TextBox discountedBox, TextBox totalBillsBox, TextBox totalQtyBox)

@@ -1,6 +1,6 @@
 ﻿namespace Lesson2
 {
-    partial class employee_reports
+    partial class useraccount_reports
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.exit_button = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.back_button = new System.Windows.Forms.Button();
             this.search_button = new System.Windows.Forms.Button();
             this.optionInputTxtbox = new System.Windows.Forms.TextBox();
@@ -39,6 +39,17 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // exit_button
+            // 
+            this.exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit_button.Location = new System.Drawing.Point(1116, 55);
+            this.exit_button.Name = "exit_button";
+            this.exit_button.Size = new System.Drawing.Size(129, 36);
+            this.exit_button.TabIndex = 5;
+            this.exit_button.Text = "Exit";
+            this.exit_button.UseVisualStyleBackColor = true;
+            this.exit_button.Click += new System.EventHandler(this.exit_button_Click);
             // 
             // groupBox1
             // 
@@ -51,20 +62,8 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1900, 141);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // exit_button
-            // 
-            this.exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit_button.Location = new System.Drawing.Point(1116, 55);
-            this.exit_button.Name = "exit_button";
-            this.exit_button.Size = new System.Drawing.Size(129, 36);
-            this.exit_button.TabIndex = 5;
-            this.exit_button.Text = "Exit";
-            this.exit_button.UseVisualStyleBackColor = true;
-            this.exit_button.Click += new System.EventHandler(this.exit_button_Click);
             // 
             // back_button
             // 
@@ -104,6 +103,7 @@
             this.optionCombo.Name = "optionCombo";
             this.optionCombo.Size = new System.Drawing.Size(169, 28);
             this.optionCombo.TabIndex = 1;
+            this.optionCombo.SelectedIndexChanged += new System.EventHandler(this.optionCombo_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -121,18 +121,18 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 159);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1900, 792);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.TabIndex = 5;
             // 
-            // employee_reports
+            // useraccount_reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
-            this.Name = "employee_reports";
-            this.Text = "employee_reports";
-            this.Load += new System.EventHandler(this.employee_reports_Load);
+            this.Controls.Add(this.dataGridView1);
+            this.Name = "useraccount_reports";
+            this.Text = "useraccount_reports";
+            this.Load += new System.EventHandler(this.useraccount_reports_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -142,13 +142,13 @@
 
         #endregion
 
+        private System.Windows.Forms.Button exit_button;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox optionCombo;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button back_button;
         private System.Windows.Forms.Button search_button;
         private System.Windows.Forms.TextBox optionInputTxtbox;
+        private System.Windows.Forms.ComboBox optionCombo;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button exit_button;
     }
 }

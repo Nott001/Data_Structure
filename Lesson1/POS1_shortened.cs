@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Lesson2
@@ -12,6 +13,7 @@ namespace Lesson2
         double price = 0.00;
         double discount_amt = 0.00;
         double discounted_amt = 0.00;
+        bool isCalculated = false;
 
         // Store prices from database
         private string[] prices = new string[20];
@@ -154,7 +156,6 @@ namespace Lesson2
                 prices[18] = row["price19"].ToString();
                 prices[19] = row["price20"].ToString();
 
-                terminal_noLbl.Text = "Terminal # " + row["pos_id"].ToString();
             }
             catch (Exception ex)
             {
@@ -432,6 +433,8 @@ namespace Lesson2
                 discounted_totaltxtbox,
                 changetxtbox
             );
+            isCalculated = true;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -456,5 +459,115 @@ namespace Lesson2
         private void picpathTxtbox1_TextChanged(object sender, EventArgs e) { }
         private void label14_Click(object sender, EventArgs e) { }
         private void label12_Click(object sender, EventArgs e) { }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void save_button_Click(object sender, EventArgs e)
+        {
+            // Must calculate first
+            if (!isCalculated)
+            {
+                MessageBox.Show("Please click CALCULATE before saving the transaction.");
+                return;
+            }
+
+            // ❌ Required fields check
+            if (string.IsNullOrWhiteSpace(emp_id_TxtBox.Text) ||
+                string.IsNullOrWhiteSpace(terminal_no_TxtBox.Text))
+            {
+                MessageBox.Show("Employee ID and Terminal Number are required.");
+                return;
+            }
+
+            try
+            {
+                posdb_connect.pos_sql =
+                "INSERT INTO salesTbl (" +
+                "product_name, product_price, product_quantity_per_transaction, " +
+                "discount_option, discount_amount_per_transaction, discounted_amount_per_transaction, " +
+                "summary_total_quantity, summary_total_disc_given, summary_total_discounted_amount, " +
+                "terminal_no, time_date, emp_id" +
+                ") VALUES (" +
+                "@product_name, @product_price, @qty, " +
+                "@discount_option, @discount_amt, @discounted_amt, " +
+                "@total_qty, @total_disc, @total_discounted, " +
+                "@terminal_no, @time_date, @emp_id" +
+                ")";
+
+                posdb_connect.pos_cmd();
+
+                // Item details
+                posdb_connect.pos_sql_command.Parameters.AddWithValue("@product_name", itemnametxtbox.Text);
+                posdb_connect.pos_sql_command.Parameters.AddWithValue("@product_price", pricetextbox.Text);
+                posdb_connect.pos_sql_command.Parameters.AddWithValue("@qty", qty_box.Text);
+
+                // Discount type
+                string discountOption =
+                    seniorRbtn.Checked ? "Senior" :
+                    regularRbtn.Checked ? "Regular" :
+                    employeeRbtn.Checked ? "Employee" :
+                    "No Discount";
+
+                posdb_connect.pos_sql_command.Parameters.AddWithValue("@discount_option", discountOption);
+                posdb_connect.pos_sql_command.Parameters.AddWithValue("@discount_amt", discounttxtbox.Text);
+                posdb_connect.pos_sql_command.Parameters.AddWithValue("@discounted_amt", discountedtxtbox.Text);
+
+                // Summary
+                posdb_connect.pos_sql_command.Parameters.AddWithValue("@total_qty", qty_totaltxtbox.Text);
+                posdb_connect.pos_sql_command.Parameters.AddWithValue("@total_disc", discount_totaltxtbox.Text);
+                posdb_connect.pos_sql_command.Parameters.AddWithValue("@total_discounted", discounted_totaltxtbox.Text);
+
+                // NEW FIELDS
+                posdb_connect.pos_sql_command.Parameters.AddWithValue("@terminal_no", terminal_no_TxtBox.Text);
+                posdb_connect.pos_sql_command.Parameters.AddWithValue("@time_date", dateTimePicker1.Value.ToString("yyyy-MM-dd HH:mm:ss"));
+                posdb_connect.pos_sql_command.Parameters.AddWithValue("@emp_id", emp_id_TxtBox.Text);
+
+                posdb_connect.pos_sqladapterInsert();
+
+                MessageBox.Show("Transaction saved successfully.");
+
+                // Reset flag for next transaction
+                isCalculated = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error saving transaction:\n" + ex.Message);
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            // Optional: block if not calculated
+            if (!isCalculated)
+            {
+                MessageBox.Show("Please calculate the transaction first.");
+                return;
+            }
+
+            POS1_print receipt = new POS1_print(
+                terminal_no_TxtBox.Text,
+                emp_name_TxtBox.Text,
+                emp_id_TxtBox.Text,
+                dateTimePicker1.Value,
+                itemnametxtbox.Text,
+                pricetextbox.Text,
+                qty_box.Text,
+                discounttxtbox.Text,
+                discounted_totaltxtbox.Text,
+                cashrenderedtxtbox.Text,
+                changetxtbox.Text
+            );
+
+            receipt.ShowDialog(); // modal (POS waits)
+        }
+
     }
 }

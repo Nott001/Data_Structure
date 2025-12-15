@@ -104,7 +104,7 @@ namespace Lesson2
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //Code for printing in anotehr form
-            Activity_4_lesson2_Print print = new Activity_4_lesson2_Print();
+            POS2_print print = new POS2_print();
             print.listBox1.Items.AddRange(this.listBox1.Items);
 
             //Code for displaying the other form
@@ -599,7 +599,7 @@ namespace Lesson2
         private void button2_Click(object sender, EventArgs e)
         {
             //Code for printing in anotehr form
-            Activity_4_lesson2_Print print = new Activity_4_lesson2_Print();
+            POS2_print print = new POS2_print();
             print.listBox1.Items.AddRange(this.listBox1.Items);
 
             //Code for displaying the other form
@@ -632,6 +632,11 @@ namespace Lesson2
         }
 
         private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
 
         }
