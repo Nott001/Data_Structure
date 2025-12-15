@@ -144,6 +144,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.change_pos_button = new System.Windows.Forms.Button();
             this.POS_comboBox = new System.Windows.Forms.ComboBox();
+            this.clear_button = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -418,7 +419,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label12.Location = new System.Drawing.Point(335, 55);
+            this.label12.Location = new System.Drawing.Point(317, 55);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(129, 17);
             this.label12.TabIndex = 44;
@@ -557,7 +558,7 @@
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(168, 280);
             this.button21.TabIndex = 63;
-            this.button21.Text = "ENTER";
+            this.button21.Text = "RECEIPT";
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
@@ -566,7 +567,7 @@
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.Location = new System.Drawing.Point(372, 903);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(447, 65);
+            this.button20.Size = new System.Drawing.Size(218, 65);
             this.button20.TabIndex = 62;
             this.button20.Text = "0";
             this.button20.UseVisualStyleBackColor = true;
@@ -1352,7 +1353,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label13.Location = new System.Drawing.Point(174, 55);
+            this.label13.Location = new System.Drawing.Point(165, 55);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(103, 17);
             this.label13.TabIndex = 66;
@@ -1363,7 +1364,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label17.Location = new System.Drawing.Point(531, 55);
+            this.label17.Location = new System.Drawing.Point(498, 55);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(126, 17);
             this.label17.TabIndex = 69;
@@ -1385,9 +1386,9 @@
             this.terminal_no_TxtBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.terminal_no_TxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.terminal_no_TxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.terminal_no_TxtBox.Location = new System.Drawing.Point(527, 74);
+            this.terminal_no_TxtBox.Location = new System.Drawing.Point(498, 74);
             this.terminal_no_TxtBox.Name = "terminal_no_TxtBox";
-            this.terminal_no_TxtBox.Size = new System.Drawing.Size(133, 13);
+            this.terminal_no_TxtBox.Size = new System.Drawing.Size(126, 13);
             this.terminal_no_TxtBox.TabIndex = 72;
             // 
             // emp_name_TxtBox
@@ -1395,9 +1396,9 @@
             this.emp_name_TxtBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.emp_name_TxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.emp_name_TxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emp_name_TxtBox.Location = new System.Drawing.Point(331, 74);
+            this.emp_name_TxtBox.Location = new System.Drawing.Point(317, 74);
             this.emp_name_TxtBox.Name = "emp_name_TxtBox";
-            this.emp_name_TxtBox.Size = new System.Drawing.Size(133, 13);
+            this.emp_name_TxtBox.Size = new System.Drawing.Size(129, 13);
             this.emp_name_TxtBox.TabIndex = 73;
             // 
             // emp_id_TxtBox
@@ -1405,9 +1406,9 @@
             this.emp_id_TxtBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.emp_id_TxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.emp_id_TxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emp_id_TxtBox.Location = new System.Drawing.Point(164, 74);
+            this.emp_id_TxtBox.Location = new System.Drawing.Point(165, 75);
             this.emp_id_TxtBox.Name = "emp_id_TxtBox";
-            this.emp_id_TxtBox.Size = new System.Drawing.Size(133, 13);
+            this.emp_id_TxtBox.Size = new System.Drawing.Size(103, 13);
             this.emp_id_TxtBox.TabIndex = 74;
             // 
             // dateTimePicker1
@@ -1424,20 +1425,32 @@
             // 
             // change_pos_button
             // 
-            this.change_pos_button.Location = new System.Drawing.Point(726, 64);
+            this.change_pos_button.Location = new System.Drawing.Point(723, 82);
             this.change_pos_button.Name = "change_pos_button";
             this.change_pos_button.Size = new System.Drawing.Size(75, 23);
             this.change_pos_button.TabIndex = 87;
             this.change_pos_button.Text = "CHANGE";
             this.change_pos_button.UseVisualStyleBackColor = true;
+            this.change_pos_button.Click += new System.EventHandler(this.change_pos_button_Click);
             // 
             // POS_comboBox
             // 
             this.POS_comboBox.FormattingEnabled = true;
-            this.POS_comboBox.Location = new System.Drawing.Point(698, 37);
+            this.POS_comboBox.Location = new System.Drawing.Point(698, 55);
             this.POS_comboBox.Name = "POS_comboBox";
             this.POS_comboBox.Size = new System.Drawing.Size(121, 21);
             this.POS_comboBox.TabIndex = 86;
+            // 
+            // clear_button
+            // 
+            this.clear_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear_button.Location = new System.Drawing.Point(596, 903);
+            this.clear_button.Name = "clear_button";
+            this.clear_button.Size = new System.Drawing.Size(223, 65);
+            this.clear_button.TabIndex = 88;
+            this.clear_button.Text = "CLEAR";
+            this.clear_button.UseVisualStyleBackColor = true;
+            this.clear_button.Click += new System.EventHandler(this.clear_button_Click);
             // 
             // POS1_shortened
             // 
@@ -1445,6 +1458,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
+            this.Controls.Add(this.clear_button);
             this.Controls.Add(this.change_pos_button);
             this.Controls.Add(this.POS_comboBox);
             this.Controls.Add(this.dateTimePicker1);
@@ -1624,5 +1638,6 @@
         public System.Windows.Forms.TextBox emp_id_TxtBox;
         private System.Windows.Forms.Button change_pos_button;
         private System.Windows.Forms.ComboBox POS_comboBox;
+        private System.Windows.Forms.Button clear_button;
     }
 }

@@ -12,14 +12,15 @@ namespace Lesson2
 {
     public partial class payrol_report : Form
     {
+        // Initializes database connection
         payrol_dbconnection payrol_db_connect = new payrol_dbconnection();
-        public payrol_report()
+        public payrol_report() // Initializes the form
         {
             payrol_db_connect.payrol_connString();
             InitializeComponent();
         }
 
-        private void payrol_select()
+        private void payrol_select() // Method for sql commands
         {
             payrol_db_connect.payrol_cmd();
             payrol_db_connect.payrol_sqldataadapterSelect();
@@ -27,14 +28,14 @@ namespace Lesson2
             dataGridView1.DataSource = payrol_db_connect.payrol_sql_dataset.Tables[0];
         }
 
-        private void cleartextboxes()
+        private void cleartextboxes() // Method for clearing textboxes and comboboxes
         {
             optionCombo.Text = "";
             optionInputTxtbox.Clear();
             optionCombo.Focus();
         }
 
-        private void cleartextboxes1()
+        private void cleartextboxes1() // Method for clearing textboxes
         {
             optionInputTxtbox.Clear();
             optionInputTxtbox.Focus();
@@ -64,7 +65,7 @@ namespace Lesson2
 
         }
 
-        private void search_button_Click(object sender, EventArgs e)
+        private void search_button_Click(object sender, EventArgs e) // Codes for search button
         {
             try
             {
@@ -182,7 +183,7 @@ namespace Lesson2
 
         }
 
-        private void back_button_Click(object sender, EventArgs e)
+        private void back_button_Click(object sender, EventArgs e) // Codes for back button
         {
             try
             {
@@ -205,7 +206,7 @@ namespace Lesson2
             }
         }
 
-        private void exit_button_Click(object sender, EventArgs e)
+        private void exit_button_Click(object sender, EventArgs e) // Codes for exit button
         {
             this.Close();
         }

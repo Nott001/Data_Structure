@@ -23,6 +23,18 @@ namespace Lesson2
         {
             posdb_connect.pos_connString();
             InitializeComponent();
+
+            // Number buttons → cash textbox
+            button8.Click += CashNumButton_Click; 
+            button19.Click += CashNumButton_Click; 
+            button15.Click += CashNumButton_Click; 
+            button11.Click += CashNumButton_Click; 
+            button6.Click += CashNumButton_Click; 
+            button18.Click += CashNumButton_Click; 
+            button14.Click += CashNumButton_Click; 
+            button10.Click += CashNumButton_Click; 
+            button7.Click += CashNumButton_Click; 
+            button20.Click += CashNumButton_Click; 
         }
 
         //Helper to clear and focus
@@ -57,8 +69,147 @@ namespace Lesson2
             cashrenderedtxtbox.Text = "0";
 
             // Load initial data for POS ID 1
-            LoadPOSData(currentPosId);
+            LoadPOSIds();
+
+            if (POS_comboBox.SelectedItem != null)
+            {
+                LoadPOSItems(POS_comboBox.SelectedItem.ToString());
+            }
         }
+
+        private void CashNumButton_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            if (btn == null) return;
+
+            // If starting fresh or zero, replace
+            if (cashrenderedtxtbox.Text == "0")
+                cashrenderedtxtbox.Text = btn.Text;
+            else
+                cashrenderedtxtbox.Text += btn.Text;
+        }
+
+
+        private void LoadPOSIds() // Method to dynamically load data based on pos_id
+        {
+            picpathTxtbox1.Hide(); picpathTxtbox2.Hide(); picpathTxtbox3.Hide(); picpathTxtbox4.Hide(); picpathTxtbox5.Hide();
+            picpathTxtbox6.Hide(); picpathTxtbox7.Hide(); picpathTxtbox8.Hide(); picpathTxtbox9.Hide(); picpathTxtbox10.Hide();
+            picpathTxtbox11.Hide(); picpathTxtbox12.Hide(); picpathTxtbox13.Hide(); picpathTxtbox14.Hide(); picpathTxtbox15.Hide();
+            picpathTxtbox16.Hide(); picpathTxtbox17.Hide(); picpathTxtbox18.Hide(); picpathTxtbox19.Hide(); picpathTxtbox20.Hide();
+
+            POS_comboBox.Items.Clear();
+
+            posdb_connect.pos_sql = "SELECT pos_id FROM pos_nameTbl";
+            posdb_connect.pos_cmd();
+            posdb_connect.pos_sqladapterSelect();
+            posdb_connect.pos_sqldatasetSELECT();
+
+            foreach (DataRow row in posdb_connect.pos_sql_dataset.Tables[0].Rows)
+            {
+                POS_comboBox.Items.Add(row["pos_id"].ToString());
+            }
+
+            if (POS_comboBox.Items.Count > 0)
+                POS_comboBox.SelectedIndex = 0;
+        }
+
+        private void LoadPOSItems(string posId)
+        {
+            try
+            {
+                posdb_connect.pos_sql =
+                    "SELECT * FROM pos_nameTbl " +
+                    "INNER JOIN pos_picTbl ON pos_nameTbl.pos_id = pos_picTbl.pos_id " +
+                    "INNER JOIN pos_priceTbl ON pos_picTbl.pos_id = pos_priceTbl.pos_id " +
+                    "WHERE pos_nameTbl.pos_id = @pos_id";
+
+                posdb_connect.pos_cmd();
+                posdb_connect.pos_sql_command.Parameters.Clear();
+                posdb_connect.pos_sql_command.Parameters.AddWithValue("@pos_id", posId);
+
+                posdb_connect.pos_sqladapterSelect();
+                posdb_connect.pos_sqldatasetSELECT();
+
+                if (posdb_connect.pos_sql_dataset.Tables[0].Rows.Count == 0)
+                {
+                    MessageBox.Show("No data found for this POS ID.");
+                    return;
+                }
+
+                DataRow row = posdb_connect.pos_sql_dataset.Tables[0].Rows[0];
+
+                // Names
+                name1lbl.Text = row["name1"].ToString();
+                name2lbl.Text = row["name2"].ToString();
+                name3lbl.Text = row["name3"].ToString();
+                name4lbl.Text = row["name4"].ToString();
+                name5lbl.Text = row["name5"].ToString();
+                name6lbl.Text = row["name6"].ToString();
+                name7lbl.Text = row["name7"].ToString();
+                name8lbl.Text = row["name8"].ToString();
+                name9lbl.Text = row["name9"].ToString();
+                name10lbl.Text = row["name10"].ToString();
+                name11lbl.Text = row["name11"].ToString();
+                name12lbl.Text = row["name12"].ToString();
+                name13lbl.Text = row["name13"].ToString();
+                name14lbl.Text = row["name14"].ToString();
+                name15lbl.Text = row["name15"].ToString();
+                name16lbl.Text = row["name16"].ToString();
+                name17lbl.Text = row["name17"].ToString();
+                name18lbl.Text = row["name18"].ToString();
+                name19lbl.Text = row["name19"].ToString();
+                name20lbl.Text = row["name20"].ToString();
+
+                // Pictures
+                helper.LoadPictureBox(pictureBox1, picpathTxtbox1, row["pic1"].ToString());
+                helper.LoadPictureBox(pictureBox2, picpathTxtbox2, row["pic2"].ToString());
+                helper.LoadPictureBox(pictureBox3, picpathTxtbox3, row["pic3"].ToString());
+                helper.LoadPictureBox(pictureBox4, picpathTxtbox4, row["pic4"].ToString());
+                helper.LoadPictureBox(pictureBox5, picpathTxtbox5, row["pic5"].ToString());
+                helper.LoadPictureBox(pictureBox6, picpathTxtbox6, row["pic6"].ToString());
+                helper.LoadPictureBox(pictureBox7, picpathTxtbox7, row["pic7"].ToString());
+                helper.LoadPictureBox(pictureBox8, picpathTxtbox8, row["pic8"].ToString());
+                helper.LoadPictureBox(pictureBox9, picpathTxtbox9, row["pic9"].ToString());
+                helper.LoadPictureBox(pictureBox10, picpathTxtbox10, row["pic10"].ToString());
+                helper.LoadPictureBox(pictureBox11, picpathTxtbox11, row["pic11"].ToString());
+                helper.LoadPictureBox(pictureBox12, picpathTxtbox12, row["pic12"].ToString());
+                helper.LoadPictureBox(pictureBox13, picpathTxtbox13, row["pic13"].ToString());
+                helper.LoadPictureBox(pictureBox14, picpathTxtbox14, row["pic14"].ToString());
+                helper.LoadPictureBox(pictureBox15, picpathTxtbox15, row["pic15"].ToString());
+                helper.LoadPictureBox(pictureBox16, picpathTxtbox16, row["pic16"].ToString());
+                helper.LoadPictureBox(pictureBox17, picpathTxtbox17, row["pic17"].ToString());
+                helper.LoadPictureBox(pictureBox18, picpathTxtbox18, row["pic18"].ToString());
+                helper.LoadPictureBox(pictureBox19, picpathTxtbox19, row["pic19"].ToString());
+                helper.LoadPictureBox(pictureBox20, picpathTxtbox20, row["pic20"].ToString());
+
+                // Prices
+                prices[0] = row["price1"].ToString();
+                prices[1] = row["price2"].ToString();
+                prices[2] = row["price3"].ToString();
+                prices[3] = row["price4"].ToString();
+                prices[4] = row["price5"].ToString();
+                prices[5] = row["price6"].ToString();
+                prices[6] = row["price7"].ToString();
+                prices[7] = row["price8"].ToString();
+                prices[8] = row["price9"].ToString();
+                prices[9] = row["price10"].ToString();
+                prices[10] = row["price11"].ToString();
+                prices[11] = row["price12"].ToString();
+                prices[12] = row["price13"].ToString();
+                prices[13] = row["price14"].ToString();
+                prices[14] = row["price15"].ToString();
+                prices[15] = row["price16"].ToString();
+                prices[16] = row["price17"].ToString();
+                prices[17] = row["price18"].ToString();
+                prices[18] = row["price19"].ToString();
+                prices[19] = row["price20"].ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading POS data: " + ex.Message);
+            }
+        }
+
 
         private void Example2_DatabaseApp_Load(object sender, EventArgs e)
         {
@@ -160,43 +311,6 @@ namespace Lesson2
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
-            }
-        }
-
-        // Method to dynamically load data based on pos_id
-        public void LoadPOSData(string posId)
-        {
-            try
-            {
-                currentPosId = posId;
-                
-                posdb_connect.pos_sql = "SELECT pos_nameTbl.pos_id, " +
-                      "pos_nameTbl.name1, pos_nameTbl.name2, pos_nameTbl.name3, pos_nameTbl.name4, pos_nameTbl.name5, " +
-                      "pos_nameTbl.name6, pos_nameTbl.name7, pos_nameTbl.name8, pos_nameTbl.name9, pos_nameTbl.name10, " +
-                      "pos_nameTbl.name11, pos_nameTbl.name12, pos_nameTbl.name13, pos_nameTbl.name14, pos_nameTbl.name15, " +
-                      "pos_nameTbl.name16, pos_nameTbl.name17, pos_nameTbl.name18, pos_nameTbl.name19, pos_nameTbl.name20, " +
-                      "pos_picTbl.pic1, pos_picTbl.pic2, pos_picTbl.pic3, pos_picTbl.pic4, pos_picTbl.pic5, " +
-                      "pos_picTbl.pic6, pos_picTbl.pic7, pos_picTbl.pic8, pos_picTbl.pic9, pos_picTbl.pic10, " +
-                      "pos_picTbl.pic11, pos_picTbl.pic12, pos_picTbl.pic13, pos_picTbl.pic14, pos_picTbl.pic15, " +
-                      "pos_picTbl.pic16, pos_picTbl.pic17, pos_picTbl.pic18, pos_picTbl.pic19, pos_picTbl.pic20, " +
-                      "pos_priceTbl.price1, pos_priceTbl.price2, pos_priceTbl.price3, pos_priceTbl.price4, pos_priceTbl.price5, " +
-                      "pos_priceTbl.price6, pos_priceTbl.price7, pos_priceTbl.price8, pos_priceTbl.price9, pos_priceTbl.price10, " +
-                      "pos_priceTbl.price11, pos_priceTbl.price12, pos_priceTbl.price13, pos_priceTbl.price14, pos_priceTbl.price15, " +
-                      "pos_priceTbl.price16, pos_priceTbl.price17, pos_priceTbl.price18, pos_priceTbl.price19, pos_priceTbl.price20 " +
-                      "FROM pos_nameTbl " +
-                      "INNER JOIN pos_picTbl ON pos_nameTbl.pos_id = pos_picTbl.pos_id " +
-                      "INNER JOIN pos_priceTbl ON pos_picTbl.pos_id = pos_priceTbl.pos_id " +
-                      "WHERE pos_nameTbl.pos_id = '" + posId + "'";
-                
-                posdb_connect.pos_cmd();
-                posdb_connect.pos_sqladapterSelect();
-                posdb_connect.pos_sqldatasetSELECT();
-
-                Example2_DatabaseApp_Load(null, null); // Reload all data
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error loading POS data: " + ex.Message);
             }
         }
 
@@ -479,14 +593,6 @@ namespace Lesson2
                 return;
             }
 
-            // ❌ Required fields check
-            if (string.IsNullOrWhiteSpace(emp_id_TxtBox.Text) ||
-                string.IsNullOrWhiteSpace(terminal_no_TxtBox.Text))
-            {
-                MessageBox.Show("Employee ID and Terminal Number are required.");
-                return;
-            }
-
             try
             {
                 posdb_connect.pos_sql =
@@ -569,5 +675,27 @@ namespace Lesson2
             receipt.ShowDialog(); // modal (POS waits)
         }
 
+        private void change_pos_button_Click(object sender, EventArgs e)
+        {
+            if (POS_comboBox.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a POS ID.");
+                return;
+            }
+
+            string selectedPosId = POS_comboBox.SelectedItem.ToString();
+
+            LoadPOSItems(selectedPosId);
+
+            // Optional safety reset
+            itemnametxtbox.Clear();
+            pricetextbox.Clear();
+            qty_box.Clear();
+        }
+
+        private void clear_button_Click(object sender, EventArgs e)
+        {
+            cashrenderedtxtbox.Text = "0";
+        }
     }
 }

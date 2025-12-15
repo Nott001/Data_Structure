@@ -96,16 +96,6 @@ namespace Lesson2
                     {
                         MessageBox.Show("Access granted");
                         POS2_shortened myform = new POS2_shortened();
-
-                        myform.emp_id_TxtBox.Text =
-                            login_db_connect.login_sql_dataset.Tables[0].Rows[0][0].ToString();
-
-                        myform.emp_name_TxtBox.Text =
-                            login_db_connect.login_sql_dataset.Tables[0].Rows[0][2].ToString();
-
-                        myform.terminal_no_TxtBox.Text =
-                            login_db_connect.login_sql_dataset.Tables[0].Rows[0][6].ToString();
-
                         cleartextboxes();
                         myform.Show();
                     }

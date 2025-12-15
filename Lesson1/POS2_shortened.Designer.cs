@@ -130,16 +130,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.emp_id_TxtBox = new System.Windows.Forms.TextBox();
-            this.emp_name_TxtBox = new System.Windows.Forms.TextBox();
-            this.terminal_no_TxtBox = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.save_button = new System.Windows.Forms.Button();
             this.POS_comboBox = new System.Windows.Forms.ComboBox();
             this.change_pos_button = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -1170,11 +1165,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.Location = new System.Drawing.Point(218, 19);
+            this.label1.Location = new System.Drawing.Point(1234, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(339, 25);
+            this.label1.Size = new System.Drawing.Size(341, 25);
             this.label1.TabIndex = 46;
-            this.label1.Text = "JABEE Food Ordering Application";
+            this.label1.Text = "VILLA Foods Ordering Application";
             // 
             // button6
             // 
@@ -1238,84 +1233,21 @@
             this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(1045, 31);
+            this.dateTimePicker1.Location = new System.Drawing.Point(244, 32);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(124, 18);
+            this.dateTimePicker1.Size = new System.Drawing.Size(161, 18);
             this.dateTimePicker1.TabIndex = 83;
-            // 
-            // emp_id_TxtBox
-            // 
-            this.emp_id_TxtBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.emp_id_TxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.emp_id_TxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emp_id_TxtBox.Location = new System.Drawing.Point(1219, 31);
-            this.emp_id_TxtBox.Name = "emp_id_TxtBox";
-            this.emp_id_TxtBox.Size = new System.Drawing.Size(133, 13);
-            this.emp_id_TxtBox.TabIndex = 82;
-            // 
-            // emp_name_TxtBox
-            // 
-            this.emp_name_TxtBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.emp_name_TxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.emp_name_TxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emp_name_TxtBox.Location = new System.Drawing.Point(1390, 31);
-            this.emp_name_TxtBox.Name = "emp_name_TxtBox";
-            this.emp_name_TxtBox.Size = new System.Drawing.Size(133, 13);
-            this.emp_name_TxtBox.TabIndex = 81;
-            // 
-            // terminal_no_TxtBox
-            // 
-            this.terminal_no_TxtBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.terminal_no_TxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.terminal_no_TxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.terminal_no_TxtBox.Location = new System.Drawing.Point(1600, 31);
-            this.terminal_no_TxtBox.Name = "terminal_no_TxtBox";
-            this.terminal_no_TxtBox.Size = new System.Drawing.Size(133, 13);
-            this.terminal_no_TxtBox.TabIndex = 80;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label17.Location = new System.Drawing.Point(1604, 12);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(126, 17);
-            this.label17.TabIndex = 79;
-            this.label17.Text = "PC Terminal No.";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(1229, 12);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(103, 17);
-            this.label13.TabIndex = 78;
-            this.label13.Text = "Employee ID:";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(1072, 12);
+            this.label14.Location = new System.Drawing.Point(191, 33);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(47, 17);
             this.label14.TabIndex = 77;
             this.label14.Text = "Date:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(1394, 12);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(129, 17);
-            this.label12.TabIndex = 76;
-            this.label12.Text = "Employee Name:";
             // 
             // save_button
             // 
@@ -1331,19 +1263,31 @@
             // POS_comboBox
             // 
             this.POS_comboBox.FormattingEnabled = true;
-            this.POS_comboBox.Location = new System.Drawing.Point(1770, 8);
+            this.POS_comboBox.Location = new System.Drawing.Point(650, 32);
             this.POS_comboBox.Name = "POS_comboBox";
             this.POS_comboBox.Size = new System.Drawing.Size(121, 21);
             this.POS_comboBox.TabIndex = 84;
             // 
             // change_pos_button
             // 
-            this.change_pos_button.Location = new System.Drawing.Point(1790, 35);
+            this.change_pos_button.Location = new System.Drawing.Point(777, 31);
             this.change_pos_button.Name = "change_pos_button";
             this.change_pos_button.Size = new System.Drawing.Size(75, 23);
             this.change_pos_button.TabIndex = 85;
             this.change_pos_button.Text = "CHANGE";
             this.change_pos_button.UseVisualStyleBackColor = true;
+            this.change_pos_button.Click += new System.EventHandler(this.change_pos_button_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(599, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 17);
+            this.label4.TabIndex = 86;
+            this.label4.Text = "POS:";
             // 
             // POS2_shortened
             // 
@@ -1351,18 +1295,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.change_pos_button);
             this.Controls.Add(this.POS_comboBox);
             this.Controls.Add(this.save_button);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.emp_id_TxtBox);
-            this.Controls.Add(this.emp_name_TxtBox);
-            this.Controls.Add(this.terminal_no_TxtBox);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.button4);
@@ -1519,15 +1458,10 @@
         private System.Windows.Forms.TextBox picpathTxtbox8;
         private System.Windows.Forms.TextBox picpathTxtbox7;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label12;
         public System.Windows.Forms.Button save_button;
-        public System.Windows.Forms.TextBox emp_id_TxtBox;
-        public System.Windows.Forms.TextBox emp_name_TxtBox;
-        public System.Windows.Forms.TextBox terminal_no_TxtBox;
         private System.Windows.Forms.ComboBox POS_comboBox;
         private System.Windows.Forms.Button change_pos_button;
+        private System.Windows.Forms.Label label4;
     }
 }

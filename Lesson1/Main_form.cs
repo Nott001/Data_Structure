@@ -51,21 +51,22 @@ namespace Lesson2
             newMDIChild.Show();
         }
 
-        private void employeeRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
+        private void employeeRegistrationToolStripMenuItem_Click(object sender, EventArgs e) // When employee registration is clicked
         {
             Employee_registration newMDIChild = new Employee_registration();
             newMDIChild.MdiParent = this;
             newMDIChild.Show();
         }
 
-        private void employeeAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        private void employeeAccountToolStripMenuItem_Click(object sender, EventArgs e) // When employee account is clicked
         {
             user_account newMDIChild = new user_account();
             newMDIChild.MdiParent = this;
             newMDIChild.Show();
         }
 
-        private void employeeReportsToolStripMenuItem_Click(object sender, EventArgs e)
+        // When employee reports is clicked
+        private void employeeReportsToolStripMenuItem_Click(object sender, EventArgs e) 
         {
             employee_reports newMDIChild = new employee_reports();
             newMDIChild.MdiParent = this;
@@ -114,6 +115,7 @@ namespace Lesson2
             newMDIChild.Show();
         }
 
+        // For window layout
         private void tileVerticalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.LayoutMdi(MdiLayout.TileVertical);

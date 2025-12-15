@@ -24,7 +24,7 @@ namespace Lesson2
             return val;
         }
 
-        public void SetValue(TextBox box, double value)
+        public void SetValue(TextBox box, double value) // Setting value
         {
             box.Text = value.ToString("n");
         }
@@ -142,7 +142,7 @@ namespace Lesson2
         }
 
 
-        public void ExitApp(Form form)
+        public void ExitApp(Form form) // Method to close the program
         {
             form.Close();
         }
