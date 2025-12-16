@@ -21,7 +21,7 @@ namespace Lesson2
         {
             payrol_sql_connection = new SqlConnection();
             // CONNECTION STRING AND OPEN CONNECTION
-            payrol_connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=POSDB;Integrated Security=True;";
+            payrol_connectionString = "Data Source=10.211.147.115;Initial Catalog=POSDB; User=sa; Password=yuta123; TrustServerCertificate=True";
             payrol_sql_connection = new SqlConnection(payrol_connectionString);
             payrol_sql_connection.ConnectionString = payrol_connectionString;
             payrol_sql_connection.Open();

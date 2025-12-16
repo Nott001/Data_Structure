@@ -21,7 +21,7 @@ namespace Lesson2
         public void employee_connString()
         {
             employee_sql_connection = new SqlConnection();
-            employee_connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=POSDB;Integrated Security=True;";
+            employee_connectionString = "Data Source=10.211.147.115;Initial Catalog=POSDB; User=sa; Password=yuta123; TrustServerCertificate=True";
             employee_sql_connection = new SqlConnection(employee_connectionString);
             employee_sql_connection.ConnectionString = employee_connectionString;
             employee_sql_connection.Open();

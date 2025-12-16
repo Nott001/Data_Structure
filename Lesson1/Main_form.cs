@@ -96,7 +96,7 @@ namespace Lesson2
 
         private void studentInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Activity1_lesson2 newMDIChild = new Activity1_lesson2();
+            Activity1_lesson13 newMDIChild = new Activity1_lesson13();
             newMDIChild.MdiParent = this;
             newMDIChild.Show();
         }

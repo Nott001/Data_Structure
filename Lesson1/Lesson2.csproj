@@ -63,10 +63,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Other Acts\Activity1_lesson13.cs">
+    <Compile Include="Activity1_lesson13.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Other Acts\Activity1_lesson13.Designer.cs">
+    <Compile Include="Activity1_lesson13.Designer.cs">
       <DependentUpon>Activity1_lesson13.cs</DependentUpon>
     </Compile>
     <Compile Include="Other Acts\Activity4_lesson2.cs">
@@ -235,7 +235,7 @@
     <Compile Include="user_account.Designer.cs">
       <DependentUpon>user_account.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Other Acts\Activity1_lesson13.resx">
+    <EmbeddedResource Include="Activity1_lesson13.resx">
       <DependentUpon>Activity1_lesson13.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Other Acts\Activity4_lesson2.resx">
@@ -344,10 +344,14 @@
     <Content Include="pictures\1 meal.jpg" />
     <Content Include="pictures\1-pc.-Chickenjoy-With-Coke-Float.png" />
     <Content Include="pictures\10_chicken.jpeg" />
+    <Content Include="pictures\9781662603280-768x1152.jpg" />
+    <Content Include="pictures\admin_pic.jpg" />
     <Content Include="pictures\autocorrect-etgar-keret-768x1160.jpg" />
     <Content Include="pictures\bad-nature-768x1167.jpg" />
     <Content Include="pictures\burger large.jpg" />
     <Content Include="pictures\carbonara.jpg" />
+    <Content Include="pictures\cashier1.jpg" />
+    <Content Include="pictures\cashier2.jpg" />
     <Content Include="pictures\chicken_burger.jpg" />
     <Content Include="pictures\Corned-Beef-With-Drink.png" />
     <Content Include="pictures\default.png" />
@@ -357,8 +361,14 @@
     <Content Include="pictures\double_chicken_rice.jpg" />
     <Content Include="pictures\double_steak.jpg" />
     <Content Include="pictures\dwelling_book.jpg" />
+    <Content Include="pictures\emp2.jpg" />
+    <Content Include="pictures\emp3.jpg" />
+    <Content Include="pictures\emp_1.jpg" />
     <Content Include="pictures\family double bucket.png" />
+    <Content Include="pictures\Fatima-Velez-Galapagos-768x1152.jpg" />
     <Content Include="pictures\fools_love_book.jpg" />
+    <Content Include="pictures\HR.jpg" />
+    <Content Include="pictures\IT.jpg" />
     <Content Include="pictures\jabee_spag.jpg" />
     <Content Include="pictures\Jollibee-Crispy-Flavored-Fries.jpg" />
     <Content Include="pictures\jollibee_sausage_pancake.jpg" />

@@ -24,9 +24,9 @@ namespace Lesson2
 
         private void cleartextboxes() // Method to clear the textboxes and comboboxes
         {
-            gender_comboBox.Items.Clear();
-            status_comboBox.Items.Clear();
-            age_comboBox.Items.Clear();
+            gender_comboBox.SelectedIndex = -1;
+            status_comboBox.SelectedIndex = -1;
+            age_comboBox.SelectedIndex = -1;
 
             college_graduated_date.Value = DateTime.Today;
             elem_graduated_date.Value = DateTime.Today;

@@ -20,7 +20,7 @@ namespace Lesson2
         public void login_connString()
         {
             login_sql_connection = new SqlConnection();
-            login_connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=POSDB;Integrated Security=True;";
+            login_connectionString = "Data Source=10.211.147.115;Initial Catalog=POSDB; User=sa; Password=yuta123; TrustServerCertificate=True";
             login_sql_connection.ConnectionString = login_connectionString;
             login_sql_connection.Open();
         }

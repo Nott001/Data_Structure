@@ -160,7 +160,6 @@
             this.dataGridDisplay = new System.Windows.Forms.DataGridView();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.emp_textbox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
@@ -1591,24 +1590,12 @@
             this.emp_textbox.Size = new System.Drawing.Size(295, 20);
             this.emp_textbox.TabIndex = 9;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(1617, 87);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 18);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "POS ID NO. INSERT";
-            // 
             // POS_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.emp_textbox);
             this.Controls.Add(this.dataGridDisplay);
             this.Controls.Add(this.exit_button);
@@ -1786,6 +1773,5 @@
         private System.Windows.Forms.TextBox picpathTxtbox16;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox emp_textbox;
-        private System.Windows.Forms.Label label2;
     }
 }
